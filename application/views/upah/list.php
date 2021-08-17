@@ -53,7 +53,7 @@
 												<?php echo $upah->satuan ?>
 											</td>
 											<td>
-												<?php echo $upah->harga_dasar ?>
+												Rp.<?php echo number_format($upah->harga_dasar) ?>
 											</td>
 											<td>
 												<?php echo $upah->merk ?>

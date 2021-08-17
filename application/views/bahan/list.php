@@ -53,7 +53,7 @@
 												<?php echo $bahan->satuan ?>
 											</td>
 											<td>
-												Rp.<?php echo number_format ($bahan->harga_dasar,2) ?>
+												Rp.<?php echo number_format($bahan->harga_dasar) ?>
 											</td>
 											<td>
 												<?php echo $bahan->merk ?>
