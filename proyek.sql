@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 22, 2021 at 09:51 AM
+-- Generation Time: Aug 17, 2021 at 10:24 AM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 5.6.40
 
@@ -69,11 +69,22 @@ CREATE TABLE `rincian_bahan` (
 --
 
 INSERT INTO `rincian_bahan` (`kd_bahan`, `uraian_bahan`, `satuan`, `harga_dasar`, `merk`, `spesifikasi`) VALUES
-('BB', 'Besi beton (polos/ulir)', 'kg', 13409, 'Standar', 'Dia 12mm (12m) polos (SNI)'),
-('BCP', 'Bak cuci piring', 'unit', 218845, 'Standar', 'Stainless Stell'),
-('BTB', 'Batu belah', 'm3', 355624, 'Standar', 'Standar'),
-('BTM', 'Bata merah', 'buah', 1189, 'AT', 'Standar'),
-('C75', 'Baja ringan canai dingin C75', 'kg', 22808, 'Standar', '0,75 TCT, Panjang 6m (berat 5.1kg)');
+('BM', 'Bata Merah', 'buah', 500000, 'Standart', 'Standart'),
+('CCI', 'Cat Catylac Interior', 'Kg', 88000, 'Catylac', '5 kg'),
+('CDE', 'Cat Dulux Exterior', 'Klg', 206250, 'Dulux', '2.5 liter'),
+('CDI', 'Cat Dulux Interior', 'Klg', 129250, 'Dulux', '2.5 liter'),
+('CME', 'Cat Mowilex Exterior', 'Klg', 176000, 'Mowilex', '2.5 liter'),
+('CMI', 'Cat Mowilex Interior', 'Klg', 165000, 'Mowilex', '2.5 liter'),
+('CVI', 'Cat Vinilex Interior', 'kg', 82500, 'Vinilex', '5 kg'),
+('GBM', 'Genteng Beton Monier', 'buah', 5350, 'Monier', '9 pcs/m2'),
+('GBMO', 'Genteng Beton Morando', 'buah', 3750, 'Morando', '20 pcs/m2'),
+('KA1', 'Keramik 40 x 40', 'Dos', 50000, 'Asiatile', 'Isi 7'),
+('KA2', 'Keramik 30 x 30', 'Dos', 38000, 'Asia Tile', 'Isi 11'),
+('KA3', 'Keramik 20 x 20', 'Dos', 55000, 'Asia Tile', 'Isi 25'),
+('KDM', 'Kloset duduk monoblok INA', 'buah', 150000, 'Standart', 'Standart'),
+('P1', 'Pipa PVC 1\"', 'ljr', 22500, 'Standart', 'Standart'),
+('P2', 'Pipa PVC 2.5\"', 'ljr', 45000, 'Standart', 'Standart'),
+('SO', 'Sock 1\"', 'buah', 1500, 'Standart', 'Standart');
 
 -- --------------------------------------------------------
 
@@ -95,7 +106,26 @@ CREATE TABLE `rincian_upah` (
 --
 
 INSERT INTO `rincian_upah` (`kd_upah`, `uraian_upah`, `satuan`, `harga_dasar`, `merk`, `spesifikasi`) VALUES
-('KTBa', 'Kepala Tukang Batu', 'OH', 139157, 'Standar', 'Standar');
+('AAU', 'Asisten Ahli Ukur', 'hari', 87200, 'Standart', 'Standart'),
+('AU', 'Ahli Ukur', 'hari', 116300, 'Standart', 'Standart'),
+('KTBR', 'Kepala Tukang Bor', 'hari', 2900, 'Standart', 'Standart'),
+('KTBS', 'Kepala Tukang Besi', 'hari', 25000, 'Standart', 'Standart'),
+('KTBT', 'Kepala Tukang Batu', 'hari', 32500, 'Standart', 'Standart'),
+('KTCT', 'Kepala Tukang Cat', 'hari', 27000, 'Standart', 'Standart'),
+('KTPL', 'Kepala Tukang Plitur', 'hari', 29000, 'Standart', 'Standart'),
+('MD', 'Mandor', 'hari', 75000, 'Standart', 'Standart'),
+('PAT', 'Pengawas / Ahli Teknik', 'hari', 37200, 'Standart', 'Standart'),
+('PK', 'Pekerja', 'hari', 65000, 'Standart', 'Standart'),
+('TBR', 'Tukang Bor', 'hari', 27500, 'Standart', 'Standart'),
+('TBS', 'Tukang Besi', 'hari', 80000, 'Standart', 'Standart'),
+('TBT', 'Tukang Batu', 'hari', 80000, 'Standart', 'Standart'),
+('TCT', 'Tukang Cat', 'hari', 55000, 'Standart', 'Standart'),
+('TG', 'Tukang Gali', 'hari', 65000, 'Standart', 'Standart'),
+('TK', 'Tukang Kapur', 'hari', 22500, 'Standart', 'Standart'),
+('TKY', 'Tukang Kayu', 'hari', 90000, 'Standart', 'Standart'),
+('TLT', 'Tukang Listrik', 'hari', 29000, 'Standart', 'Standart'),
+('TPL', 'Tukang Plitur', 'hari', 27000, 'Standart', 'Standart'),
+('TPLD', 'Tukang Pipa Ledeng', 'hari', 27900, 'Standart', 'Standart');
 
 --
 -- Indexes for dumped tables
