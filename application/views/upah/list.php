@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<title>Rincian Upah - DeDiamondPark</title>
 <head>
 	<?php $this->load->view("_partials/head.php") ?>
 </head>
