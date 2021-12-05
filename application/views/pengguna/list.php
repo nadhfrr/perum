@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Daftar Pengguna - DeDiamondPark</title>
+<title> Daftar Pengguna - DeDiamondPark </title>
 <head>
 	<?php $this->load->view("_partials/head.php") ?>
 </head>

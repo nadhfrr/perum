@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta charset="utf-8" />
-    <title>Login - DeDiamondPark</title>
+    <title> Login - DeDiamondPark </title>
 
     <meta name="description" content="User login page" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
@@ -30,7 +30,7 @@
                     <div class="login-container">
                         <div class="center" style="margin-top: 10%;">
                             <img src="<?php echo base_url() ?>assets/img/logo.png" width="175" height="140">
-                            <h4 class="white" id="id-company-text">Perumahan De' Diamond Park</h4>
+                            <h4 class="white" id="id-company-text"> Perumahan De' Diamond Park </h4>
                         </div>
 
                         <div class="space-30"></div>
@@ -51,14 +51,14 @@
                                             <fieldset>
                                                 <label class="block clearfix">
                                                     <span class="block input-icon input-icon-right">
-                                                        <input type="text" class="form-control" name="username" placeholder="Username..." />
+                                                        <input type="text" class="form-control" name="username" placeholder="Username" />
                                                         <i class="ace-icon fa fa-user"></i>
                                                     </span>
                                                 </label>
 
                                                 <label class="block clearfix">
                                                     <span class="block input-icon input-icon-right">
-                                                        <input type="password" name="password" class="form-control" placeholder="Password..." />
+                                                        <input type="password" name="password" class="form-control" placeholder="Password" />
                                                         <i class="ace-icon fa fa-lock"></i>
                                                     </span>
                                                 </label>
