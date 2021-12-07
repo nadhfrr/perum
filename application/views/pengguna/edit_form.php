@@ -3,6 +3,7 @@
 
 <head>
 	<?php $this->load->view("_partials/head.php") ?>
+	<title> Edit Pengguna - DeDiamondPark </title>
 </head>
 
 <body id="page-top">
@@ -55,7 +56,7 @@
 
 							<div class="form-group">
 								<label for="password">Password</label>
-								<input class="form-control <?php echo form_error('password') ? 'is-invalid' : '' ?>" type="text" name="password" min="0" placeholder="password" value="<?php echo $pengguna->password ?>" />
+								<input class="form-control <?php echo form_error('password') ? 'is-invalid' : '' ?>" type="text" name="password" min="0" placeholder="Password" value="<?php echo $pengguna->password ?>" />
 								<div class="invalid-feedback">
 									<?php echo form_error('password') ?>
 								</div>
@@ -63,7 +64,7 @@
 
 							<div class="form-group">
 								<label for="vw_password">Ulangi Password</label>
-								<input class="form-control <?php echo form_error('vw_password') ? 'is-invalid' : '' ?>" type="text" name="vw_password" min="0" placeholder="vw_password" value="<?php echo $pengguna->vw_password ?>" />
+								<input class="form-control <?php echo form_error('vw_password') ? 'is-invalid' : '' ?>" type="text" name="vw_password" min="0" placeholder="Konfirmasi Password" value="<?php echo $pengguna->vw_password ?>" />
 								<div class="invalid-feedback">
 									<?php echo form_error('vw_password') ?>
 								</div>

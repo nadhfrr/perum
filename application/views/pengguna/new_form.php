@@ -3,6 +3,7 @@
 
 <head>
 	<?php $this->load->view("_partials/head.php") ?>
+	<title> Tambah Pengguna - DeDiamondPark </title>
 </head>
 
 <body id="page-top">
@@ -49,7 +50,7 @@
 
 							<div class="form-group">
 								<label for="password">Password</label>
-								<input class="form-control <?php echo form_error('password') ? 'is-invalid' : '' ?>" type="text" name="password" min="0" placeholder="password" />
+								<input class="form-control <?php echo form_error('password') ? 'is-invalid' : '' ?>" type="text" name="password" min="0" placeholder="Password" />
 								<div class="invalid-feedback">
 									<?php echo form_error('password') ?>
 								</div>
@@ -57,7 +58,7 @@
 
 							<div class="form-group">
 								<label for="vw_password">Ulangi Password</label>
-								<input class="form-control <?php echo form_error('vw_password') ? 'is-invalid' : '' ?>" type="text" name="vw_password" min="0" placeholder="vw_password" />
+								<input class="form-control <?php echo form_error('vw_password') ? 'is-invalid' : '' ?>" type="text" name="vw_password" min="0" placeholder="Konfirmasi Password" />
 								<div class="invalid-feedback">
 									<?php echo form_error('vw_password') ?>
 								</div>
@@ -65,7 +66,7 @@
 
 							<div class="form-group">
 								<label for="nama">Nama</label>
-								<input class="form-control <?php echo form_error('nama') ? 'is-invalid' : '' ?>" type="text" name="nama" min="0" placeholder="nama" />
+								<input class="form-control <?php echo form_error('nama') ? 'is-invalid' : '' ?>" type="text" name="nama" min="0" placeholder="Nama" />
 								<div class="invalid-feedback">
 									<?php echo form_error('nama') ?>
 								</div>
@@ -73,7 +74,7 @@
 
 							<div class="form-group">
 								<label for="jabatan">Jabatan</label>
-								<input class="form-control <?php echo form_error('jabatan') ? 'is-invalid' : '' ?>" type="text" name="jabatan" min="0" placeholder="jabatan" />
+								<input class="form-control <?php echo form_error('jabatan') ? 'is-invalid' : '' ?>" type="text" name="jabatan" min="0" placeholder="Jabatan" />
 								<div class="invalid-feedback">
 									<?php echo form_error('jabatan') ?>
 								</div>
@@ -81,7 +82,7 @@
 
 							<div class="form-group">
 								<label for="level">Level User</label>
-								<input class="form-control <?php echo form_error('level') ? 'is-invalid' : '' ?>" type="text" name="level" min="0" placeholder="level" />
+								<input class="form-control <?php echo form_error('level') ? 'is-invalid' : '' ?>" type="text" name="level" min="0" placeholder="Level" />
 								<div class="invalid-feedback">
 									<?php echo form_error('level') ?>
 								</div>
@@ -93,7 +94,7 @@
 					</div>
 
 					<div class="card-footer small text-muted">
-						* required fields
+						*Wajib diisi
 					</div>
 
 
