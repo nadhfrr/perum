@@ -3,6 +3,7 @@
 
 <head>
 	<?php $this->load->view("_partials/head.php") ?>
+	<title> Tambah Rincian Bahan - DeDiamondPark </title>
 </head>
 
 <body id="page-top">

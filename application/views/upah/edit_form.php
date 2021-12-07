@@ -3,6 +3,7 @@
 
 <head>
 	<?php $this->load->view("_partials/head.php") ?>
+	<title> Edit Rincian Upah - DeDiamondPark </title>
 </head>
 
 <body id="page-top">
