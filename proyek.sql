@@ -1,15 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
--- https://www.phpmyadmin.net/
+-- version 4.5.1
+-- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 17, 2021 at 10:24 AM
--- Server version: 10.1.38-MariaDB
--- PHP Version: 5.6.40
+-- Generation Time: Dec 07, 2021 at 04:20 PM
+-- Server version: 10.1.19-MariaDB
+-- PHP Version: 5.6.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -33,6 +31,7 @@ CREATE TABLE `admin` (
   `id_pengguna` varchar(10) NOT NULL,
   `username` varchar(20) DEFAULT NULL,
   `password` varchar(40) DEFAULT NULL,
+  `vw_password` varchar(40) NOT NULL,
   `nama` varchar(25) NOT NULL,
   `jabatan` enum('admin','komisaris','direktur','keuangan','manajpro') NOT NULL,
   `user_level` varchar(3) DEFAULT NULL
@@ -42,12 +41,12 @@ CREATE TABLE `admin` (
 -- Dumping data for table `admin`
 --
 
-INSERT INTO `admin` (`id`, `id_pengguna`, `username`, `password`, `nama`, `jabatan`, `user_level`) VALUES
-(1, 'N01', 'nadhfrr', '21232f297a57a5a743894a0e4a801fc3', 'Nadhief Fawaz Rezaka', 'admin', '1'),
-(2, 'K01', 'komisaris', 'e00cf25ad42683b3df678c61f42c6bda', 'Muhammad Anas Rafiq', 'komisaris', '2'),
-(3, 'D01', 'direktur', 'c84258e9c39059a89ab77d846ddab909', 'Arif Rohman Rohim', 'direktur', '3'),
-(4, 'Keu01', 'keuangan', '32cacb2f994f6b42183a1300d9a3e8d6', 'Al Kautsar Azka', 'keuangan', '4'),
-(5, 'M01', 'manajpro', 'fc1ebc848e31e0a68e868432225e3c82', 'Puguh Utomo', 'manajpro', '5');
+INSERT INTO `admin` (`id`, `id_pengguna`, `username`, `password`, `vw_password`, `nama`, `jabatan`, `user_level`) VALUES
+(1, 'N01', 'nadhfrr', '21232f297a57a5a743894a0e4a801fc3', 'admin', 'Nadhief Fawaz Rezaka', 'admin', '1'),
+(2, 'K01', 'komisaris', 'e00cf25ad42683b3df678c61f42c6bda', 'admin1', 'Muhammad Anas Rafiq', 'komisaris', '2'),
+(3, 'D01', 'direktur', 'c84258e9c39059a89ab77d846ddab909', 'admin2', 'Arif Rohman Rohim', 'direktur', '3'),
+(4, 'Keu01', 'keuangan', '32cacb2f994f6b42183a1300d9a3e8d6', 'admin3', 'Al Kautsar Azka', 'keuangan', '4'),
+(5, 'M01', 'manajpro', 'fc1ebc848e31e0a68e868432225e3c82', 'admin4', 'Puguh Utomo', 'manajpro', '5');
 
 -- --------------------------------------------------------
 
@@ -82,9 +81,9 @@ INSERT INTO `rincian_bahan` (`kd_bahan`, `uraian_bahan`, `satuan`, `harga_dasar`
 ('KA2', 'Keramik 30 x 30', 'Dos', 38000, 'Asia Tile', 'Isi 11'),
 ('KA3', 'Keramik 20 x 20', 'Dos', 55000, 'Asia Tile', 'Isi 25'),
 ('KDM', 'Kloset duduk monoblok INA', 'buah', 150000, 'Standart', 'Standart'),
-('P1', 'Pipa PVC 1\"', 'ljr', 22500, 'Standart', 'Standart'),
-('P2', 'Pipa PVC 2.5\"', 'ljr', 45000, 'Standart', 'Standart'),
-('SO', 'Sock 1\"', 'buah', 1500, 'Standart', 'Standart');
+('P1', 'Pipa PVC 1"', 'ljr', 22500, 'Standart', 'Standart'),
+('P2', 'Pipa PVC 2.5"', 'ljr', 45000, 'Standart', 'Standart'),
+('SO', 'Sock 1"', 'buah', 1500, 'Standart', 'Standart');
 
 -- --------------------------------------------------------
 
@@ -158,8 +157,6 @@ ALTER TABLE `rincian_upah`
 --
 ALTER TABLE `admin`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
-COMMIT;
-
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

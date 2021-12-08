@@ -92,7 +92,7 @@
 					</div>
 
 					<div class="card-footer small text-muted">
-						* required fields
+						*Wajib diisi
 					</div>
 
 
