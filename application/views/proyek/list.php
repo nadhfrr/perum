@@ -38,7 +38,7 @@
 										<th>Pemilik Proyek</th>
 										<th>Jasa Kontraktor</th>
                                         <th>Pajak</th>
-                                        <th>Keterangan Lain</th>
+                                        <th>Aksi</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -62,10 +62,7 @@
                                             <td>
 												<?php echo $proyek->pajak ?>
 											</td>
-                                            <td>
-												<?php echo $proyek->keterangan_lain ?>
-											</td>
-											<td width="250">
+                                            <td width="250">
 												<a href="<?php echo site_url('proyek/edit/' . $proyek->id) ?>" class="btn btn-small"><i class="fas fa-edit"></i> Edit</a>
 												<a onclick="deleteConfirm('<?php echo site_url('proyek/delete/' . $proyek->id) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a>
 											</td>
