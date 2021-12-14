@@ -57,9 +57,6 @@
 												<?php echo $proyek->pemilik_proyek ?>
 											</td>
                                             <td>
-												<?php echo $proyek->jasa_kontraktor ?>
-											</td>
-                                            <td>
 												<?php echo $proyek->pajak ?>
 											</td>
                                             <td width="250">
