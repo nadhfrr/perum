@@ -378,15 +378,15 @@ http://www.tooplate.com/view/2099-scenic
 </footer>
 
 <!-- SCRIPTS -->
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.parallax.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/magnific-popup-options.js"></script>
-<script src="js/modernizr.custom.js"></script>
-<script src="js/smoothscroll.js"></script>
-<script src="js/custom.js"></script>
+<script src="<? base_url('js/jquery.js'); ?>"></script>
+<script src="<? base_url('js/bootstrap.min.js'); ?>"></script>
+<script src="<? base_url('js/jquery.parallax.js'); ?>"></script>
+<script src="<? base_url('js/owl.carousel.min.js'); ?>"></script>
+<script src="<? base_url('js/jquery.magnific-popup.min.js'); ?>"></script>
+<script src="<? base_url('js/magnific-popup-options.js'); ?>"></script>
+<script src="<? base_url('js/modernizr.custom.js'); ?>"></script>
+<script src="<? base_url('js/smoothscroll.j'); ?>s"></script>
+<script src="<? base_url('js/custom.js'); ?>"></script>
 
 </body>
 </html>
