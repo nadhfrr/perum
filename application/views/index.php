@@ -216,31 +216,12 @@
                             <li class="nav-item">
                                 <a href="contact.html" class="nav-link">Contact</a>
                             </li>
+
+                            <li class="nav-item">
+                                <a href="<?= base_url('login'); ?>" class="get-started-btn scrollto">Masuk</a>
+                            </li>
                         </ul>
 
-                        <!-- Start Other Option -->
-                        <div class="others-option">
-                            <form class="search-form">
-                                <input class="form-control" name="search" placeholder="SEARCH" type="text">
-                                <button class="search-button" type="submit">
-                                    <i class="bx bx-search"></i>
-                                </button>
-                            </form>
-
-                            <div class="cart-icon">
-                                <a href="cart.html">
-                                    <i class="flaticon-shopping-cart"></i>
-                                    <span>3</span>
-                                </a>
-                            </div>
-
-                            <div class="menu-icon">
-                                <a href="#" class="burger-menu">
-                                    <i class="flaticon-menu-button"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- End Other Option -->
                     </div>
                 </nav>
             </div>
