@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="<?= base_url('front-end/'); ?>assets/css/responsive.css">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="<?= base_url('front-end/'); ?>assets/img/logo.png">
+    <link rel="icon" width="25px" type="image/png" href="<?= base_url('front-end/'); ?>assets/img/logo.png">
     <!-- Title -->
     <title>De' Diamond Park</title>
 
