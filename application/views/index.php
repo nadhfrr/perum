@@ -253,7 +253,7 @@
         <div class="sidebar-modal-inner">
             <div class="sidebar-header">
                 <div class="sidebar-logo">
-                    <img src="assets/img/logo.png" alt="Image">
+                    <img src="<?= base_url('front-end/'); ?>assets/img/logo.png" alt="Image">
                 </div>
 
                 <span class="close-btn sidebar-modal-close-btn">
@@ -296,32 +296,32 @@
                 <ul>
                     <li>
                         <a href="#">
-                            <img src="assets/img/instagram/1.jpg" alt="image">
+                            <img src="<?= base_url('front-end/'); ?>assets/img/instagram/1.jpg" alt="image">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="assets/img/instagram/2.jpg" alt="image">
+                            <img src="<?= base_url('front-end/'); ?>assets/img/instagram/2.jpg" alt="image">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="assets/img/instagram/3.jpg" alt="image">
+                            <img src="<?= base_url('front-end/'); ?>assets/img/instagram/3.jpg" alt="image">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="assets/img/instagram/4.jpg" alt="image">
+                            <img src="<?= base_url('front-end/'); ?>assets/img/instagram/4.jpg" alt="image">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="assets/img/instagram/5.jpg" alt="image">
+                            <img src="<?= base_url('front-end/'); ?>assets/img/instagram/5.jpg" alt="image">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="assets/img/instagram/6.jpg" alt="image">
+                            <img src="<?= base_url('front-end/'); ?>assets/img/instagram/6.jpg" alt="image">
                         </a>
                     </li>
                 </ul>
@@ -535,7 +535,7 @@
 
                     <div class="col-lg-4">
                         <div class="about-img">
-                            <img src="assets/img/about-img.jpg" alt="Image">
+                            <img src="<?= base_url('front-end/'); ?>assets/img/about-img.jpg" alt="Image">
                         </div>
                     </div>
                 </div>
@@ -548,7 +548,7 @@
     <section class="video-created-area ptb-100">
         <div class="container">
             <div class="video-created-wrap">
-                <img src="assets/img/video-created-img.jpg" alt="Image">
+                <img src="<?= base_url('front-end/'); ?>assets/img/video-created-img.jpg" alt="Image">
 
                 <div class="video-wrap">
                     <a href="https://www.youtube.com/watch?v=dkTYpP6eec0" class="popup-youtube">
@@ -577,7 +577,7 @@
                                 <div class="col-lg-4 col-sm-6">
                                     <div class="brand">
                                         <a href="#">
-                                            <img src="assets/img/brand/1.png" alt="Image">
+                                            <img src="<?= base_url('front-end/'); ?>assets/img/brand/1.png" alt="Image">
                                         </a>
                                     </div>
                                 </div>
@@ -585,7 +585,7 @@
                                 <div class="col-lg-4 col-sm-6">
                                     <div class="brand">
                                         <a href="#">
-                                            <img src="assets/img/brand/2.png" alt="Image">
+                                            <img src="<?= base_url('front-end/'); ?>assets/img/brand/2.png" alt="Image">
                                         </a>
                                     </div>
                                 </div>
@@ -593,7 +593,7 @@
                                 <div class="col-lg-4 col-sm-6 offset-sm-3 offset-lg-0">
                                     <div class="brand">
                                         <a href="#">
-                                            <img src="assets/img/brand/3.png" alt="Image">
+                                            <img src="<?= base_url('front-end/'); ?>assets/img/brand/3.png" alt="Image">
                                         </a>
                                     </div>
                                 </div>
@@ -690,7 +690,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="products">
-                            <img src="assets/img/products-img.jpg" alt="Image">
+                            <img src="<?= base_url('front-end/'); ?>assets/img/products-img.jpg" alt="Image">
                         </div>
                     </div>
 
@@ -710,7 +710,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="products">
-                            <img src="assets/img/products-img-2.jpg" alt="Image">
+                            <img src="<?= base_url('front-end/'); ?>assets/img/products-img-2.jpg" alt="Image">
                         </div>
                     </div>
 
@@ -730,7 +730,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="products">
-                            <img src="assets/img/products-img-3.jpg" alt="Image">
+                            <img src="<?= base_url('front-end/'); ?>assets/img/products-img-3.jpg" alt="Image">
                         </div>
                     </div>
 
@@ -750,7 +750,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="products">
-                            <img src="assets/img/products-img-4.jpg" alt="Image">
+                            <img src="<?= base_url('front-end/'); ?>assets/img/products-img-4.jpg" alt="Image">
                         </div>
                     </div>
 
@@ -820,7 +820,7 @@
                 <div class="col-lg-6">
                     <div class="latest-trailer-wrap owl-theme owl-carousel">
                         <div class="latest-trailer-item">
-                            <img src="assets/img/latest-trailer/1.jpg" alt="Image">
+                            <img src="<?= base_url('front-end/'); ?>assets/img/latest-trailer/1.jpg" alt="Image">
 
                             <div class="video-button">
                                 <a href="https://www.youtube.com/watch?v=2KDUtAR06UI" class="video-btn popup-youtube">
@@ -830,7 +830,7 @@
                         </div>
 
                         <div class="latest-trailer-item">
-                            <img src="assets/img/latest-trailer/2.jpg" alt="Image">
+                            <img src="<?= base_url('front-end/'); ?>assets/img/latest-trailer/2.jpg" alt="Image">
 
                             <div class="video-button">
                                 <a href="https://www.youtube.com/watch?v=2KDUtAR06UI" class="video-btn popup-youtube">
@@ -840,7 +840,7 @@
                         </div>
 
                         <div class="latest-trailer-item">
-                            <img src="assets/img/latest-trailer/3.jpg" alt="Image">
+                            <img src="<?= base_url('front-end/'); ?>assets/img/latest-trailer/3.jpg" alt="Image">
 
                             <div class="video-button">
                                 <a href="https://www.youtube.com/watch?v=2KDUtAR06UI" class="video-btn popup-youtube">
@@ -850,7 +850,7 @@
                         </div>
 
                         <div class="latest-trailer-item">
-                            <img src="assets/img/latest-trailer/4.jpg" alt="Image">
+                            <img src="<?= base_url('front-end/'); ?>assets/img/latest-trailer/4.jpg" alt="Image">
 
                             <div class="video-button">
                                 <a href="https://www.youtube.com/watch?v=2KDUtAR06UI" class="video-btn popup-youtube">
@@ -860,7 +860,7 @@
                         </div>
 
                         <div class="latest-trailer-item">
-                            <img src="assets/img/latest-trailer/5.jpg" alt="Image">
+                            <img src="<?= base_url('front-end/'); ?>assets/img/latest-trailer/5.jpg" alt="Image">
 
                             <div class="video-button">
                                 <a href="https://www.youtube.com/watch?v=2KDUtAR06UI" class="video-btn popup-youtube">
@@ -870,7 +870,7 @@
                         </div>
 
                         <div class="latest-trailer-item">
-                            <img src="assets/img/latest-trailer/6.jpg" alt="Image">
+                            <img src="<?= base_url('front-end/'); ?>assets/img/latest-trailer/6.jpg" alt="Image">
 
                             <div class="video-button">
                                 <a href="https://www.youtube.com/watch?v=2KDUtAR06UI" class="video-btn popup-youtube">
@@ -896,10 +896,10 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="exclusive-img">
-                        <img src="assets/img/exclusive-hop-img-1.jpg" alt="Image">
+                        <img src="<?= base_url('front-end/'); ?>assets/img/exclusive-hop-img-1.jpg" alt="Image">
 
                         <div class="exclusive-img-2">
-                            <img src="assets/img/exclusive-hop-img-2.png" alt="Image">
+                            <img src="<?= base_url('front-end/'); ?>assets/img/exclusive-hop-img-2.png" alt="Image">
                         </div>
                     </div>
                 </div>
@@ -989,7 +989,7 @@
             <div class="team-wrap owl-theme owl-carousel">
                 <div class="ingle-team">
                     <div class="team-img">
-                        <img src="assets/img/team/1.jpg" alt="Image">
+                        <img src="<?= base_url('front-end/'); ?>assets/img/team/1.jpg" alt="Image">
 
                         <ul class="social">
                             <li>
@@ -1020,7 +1020,7 @@
 
                 <div class="ingle-team">
                     <div class="team-img">
-                        <img src="assets/img/team/2.jpg" alt="Image">
+                        <img src="<?= base_url('front-end/'); ?>assets/img/team/2.jpg" alt="Image">
 
                         <ul class="social">
                             <li>
@@ -1049,7 +1049,7 @@
 
                 <div class="ingle-team">
                     <div class="team-img">
-                        <img src="assets/img/team/3.jpg" alt="Image">
+                        <img src="<?= base_url('front-end/'); ?>assets/img/team/3.jpg" alt="Image">
 
                         <ul class="social">
                             <li>
@@ -1078,7 +1078,7 @@
 
                 <div class="ingle-team">
                     <div class="team-img">
-                        <img src="assets/img/team/4.jpg" alt="Image">
+                        <img src="<?= base_url('front-end/'); ?>assets/img/team/4.jpg" alt="Image">
 
                         <ul class="social">
                             <li>
@@ -1107,7 +1107,7 @@
 
                 <div class="ingle-team">
                     <div class="team-img">
-                        <img src="assets/img/team/5.jpg" alt="Image">
+                        <img src="<?= base_url('front-end/'); ?>assets/img/team/5.jpg" alt="Image">
 
                         <ul class="social">
                             <li>
@@ -1144,37 +1144,37 @@
             <div class="partner-wrap owl-theme owl-carousel">
                 <div class="partner-item">
                     <a href="#">
-                        <img src="assets/img/partner-logo/1.png" alt="Image">
+                        <img src="<?= base_url('front-end/'); ?>assets/img/partner-logo/1.png" alt="Image">
                     </a>
                 </div>
 
                 <div class="partner-item">
                     <a href="#">
-                        <img src="assets/img/partner-logo/2.png" alt="Image">
+                        <img src="<?= base_url('front-end/'); ?>assets/img/partner-logo/2.png" alt="Image">
                     </a>
                 </div>
 
                 <div class="partner-item">
                     <a href="#">
-                        <img src="assets/img/partner-logo/3.png" alt="Image">
+                        <img src="<?= base_url('front-end/'); ?>assets/img/partner-logo/3.png" alt="Image">
                     </a>
                 </div>
 
                 <div class="partner-item">
                     <a href="#">
-                        <img src="assets/img/partner-logo/4.png" alt="Image">
+                        <img src="<?= base_url('front-end/'); ?>assets/img/partner-logo/4.png" alt="Image">
                     </a>
                 </div>
 
                 <div class="partner-item">
                     <a href="#">
-                        <img src="assets/img/partner-logo/5.png" alt="Image">
+                        <img src="<?= base_url('front-end/'); ?>assets/img/partner-logo/5.png" alt="Image">
                     </a>
                 </div>
 
                 <div class="partner-item">
                     <a href="#">
-                        <img src="assets/img/partner-logo/6.png" alt="Image">
+                        <img src="<?= base_url('front-end/'); ?>assets/img/partner-logo/6.png" alt="Image">
                     </a>
                 </div>
             </div>
@@ -1194,7 +1194,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single-blog">
                         <a href="blog-details.html">
-                            <img src="assets/img/blog/1.jpg" alt="Image">
+                            <img src="<?= base_url('front-end/'); ?>assets/img/blog/1.jpg" alt="Image">
                         </a>
 
                         <div class="blog-content">
@@ -1226,7 +1226,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single-blog">
                         <a href="blog-details.html">
-                            <img src="assets/img/blog/2.jpg" alt="Image">
+                            <img src="<?= base_url('front-end/'); ?>assets/img/blog/2.jpg" alt="Image">
                         </a>
 
                         <div class="blog-content">
@@ -1258,7 +1258,7 @@
                 <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
                     <div class="single-blog">
                         <a href="blog-details.html">
-                            <img src="assets/img/blog/3.jpg" alt="Image">
+                            <img src="<?= base_url('front-end/'); ?>assets/img/blog/3.jpg" alt="Image">
                         </a>
 
                         <div class="blog-content">
@@ -1297,7 +1297,7 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6">
                     <div class="single-widget">
-                        <img src="assets/img/footer-logo.png" alt="Image">
+                        <img src="<?= base_url('front-end/'); ?>assets/img/footer-logo.png" alt="Image">
 
                         <div class="newsletter-wrap">
                             <h3>Subscribe Newsletter</h3>
@@ -1406,32 +1406,32 @@
                         <ul class="instagram">
                             <li>
                                 <a href="#">
-                                    <img src="assets/img/instagram/1.jpg" alt="Image">
+                                    <img src="<?= base_url('front-end/'); ?>assets/img/instagram/1.jpg" alt="Image">
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src="assets/img/instagram/2.jpg" alt="Image">
+                                    <img src="<?= base_url('front-end/'); ?>assets/img/instagram/2.jpg" alt="Image">
                                 </a>
                             </li>
                             <li class="mr-0">
                                 <a href="#">
-                                    <img src="assets/img/instagram/3.jpg" alt="Image">
+                                    <img src="<?= base_url('front-end/'); ?>assets/img/instagram/3.jpg" alt="Image">
                                 </a>
                             </li>
                             <li class="mb-0">
                                 <a href="#">
-                                    <img src="assets/img/instagram/4.jpg" alt="Image">
+                                    <img src="<?= base_url('front-end/'); ?>assets/img/instagram/4.jpg" alt="Image">
                                 </a>
                             </li>
                             <li class="mb-0">
                                 <a href="#">
-                                    <img src="assets/img/instagram/5.jpg" alt="Image">
+                                    <img src="<?= base_url('front-end/'); ?>assets/img/instagram/5.jpg" alt="Image">
                                 </a>
                             </li>
                             <li class="mr-0 mb-0">
                                 <a href="#">
-                                    <img src="assets/img/instagram/6.jpg" alt="Image">
+                                    <img src="<?= base_url('front-end/'); ?>assets/img/instagram/6.jpg" alt="Image">
                                 </a>
                             </li>
                         </ul>
