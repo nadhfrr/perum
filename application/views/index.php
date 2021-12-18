@@ -34,9 +34,9 @@
     <link rel="stylesheet" href="<?= base_url('front-end/'); ?>assets/css/responsive.css">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="<?= base_url('front-end/'); ?>assets/img/favicon.png">
+    <link rel="icon" type="image/png" href="<?= base_url('front-end/'); ?>assets/img/logo.png">
     <!-- Title -->
-    <title>VidNext - Video Production & Movie HTML Template</title>
+    <title>De' Diamond Park</title>
 
 </head>
 
@@ -64,7 +64,7 @@
             <div class="container-fluid">
                 <nav class="navbar navbar-expand-md">
                     <a class="navbar-brand" href="index.html">
-                        <h3>WINA CINEMA FILM</h3>
+                        <h3>DE' DIAMOND PARK</h3>
                         <!-- <img src="assets/img/logo.png" alt="Logo"> -->
                     </a>
 
