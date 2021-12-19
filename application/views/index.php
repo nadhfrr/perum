@@ -1143,7 +1143,7 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6">
                     <div class="single-widget">
-                        <img src="<?= base_url('front-end/assets/img/logo.png'); ?>">
+                        <img src="<?= base_url('front-end/assets/img/logo-perum.png'); ?>">
 
                         <div class="newsletter-wrap">
                             <h3>Subscribe Newsletter</h3>
