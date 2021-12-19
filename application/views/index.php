@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="<?= base_url('front-end/'); ?>assets/css/responsive.css">
 
     <!-- Favicon -->
-    <link rel="icon" width="25px" type="image/png" href="<?= base_url('front-end/'); ?>assets/img/logo.png">
+    <link rel="icon" type="image/png" href="<?= base_url('front-end/'); ?>assets/img/logo-perum.png">
     <!-- Title -->
     <title>De' Diamond Park</title>
 
@@ -94,163 +94,6 @@
     </div>
     <!-- End Navbar Area -->
 
-    <!-- Sidebar Modal -->
-    <div class="sidebar-modal">
-        <div class="sidebar-modal-inner">
-            <div class="sidebar-header">
-                <div class="sidebar-logo">
-                    <img src="<?= base_url('front-end/'); ?>assets/img/logo.png" alt="Image">
-                </div>
-
-                <span class="close-btn sidebar-modal-close-btn">
-                    <i class="bx bx-x"></i>
-                </span>
-            </div>
-
-            <div class="sidebar-about">
-                <div class="title">
-                    <p>VidNext is a high quality video production house. We make a awesome branded videos. It is the analogical of film making, but the images are digitally recorded instead of film stock.</p>
-                </div>
-            </div>
-
-            <div class="contact-us">
-                <h2>Contact Us</h2>
-
-                <ul>
-                    <li>
-                        <i class="flaticon-pin"></i>
-                        6890 Blvd, The Bronx, NY 1058 New York, USA
-                    </li>
-
-                    <li>
-                        <i class="flaticon-email-1"></i>
-                        <a href="mailto:hello@vidnext.com">hello@vidnext.com</a>
-                        <a href="#">Skype: example</a>
-                    </li>
-
-                    <li>
-                        <i class="flaticon-phone-call"></i>
-                        <a href="tel:+1-587-785-4578">+1 587 785 4578</a>
-                        <a href="tel:+1-485-456-0102">+1 485 456 0102</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="sidebar-instagram-feed">
-                <h2>Instagram</h2>
-
-                <ul>
-                    <li>
-                        <a href="#">
-                            <img src="<?= base_url('front-end/'); ?>assets/img/instagram/1.jpg" alt="image">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="<?= base_url('front-end/'); ?>assets/img/instagram/2.jpg" alt="image">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="<?= base_url('front-end/'); ?>assets/img/instagram/3.jpg" alt="image">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="<?= base_url('front-end/'); ?>assets/img/instagram/4.jpg" alt="image">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="<?= base_url('front-end/'); ?>assets/img/instagram/5.jpg" alt="image">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="<?= base_url('front-end/'); ?>assets/img/instagram/6.jpg" alt="image">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="sidebar-follow-us">
-                <h2>Sidebar Follow</h2>
-
-                <ul class="social-wrap">
-                    <li>
-                        <a href="#" target="_blank">
-                            <i class="bx bxl-twitter"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank">
-                            <i class="bx bxl-instagram"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank">
-                            <i class="bx bxl-facebook"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank">
-                            <i class="bx bxl-youtube"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!-- End Sidebar Modal -->
-
-    <!-- Start Newsletter Modal -->
-    <!-- <div class="modal-newsletter-area">
-			<div class="modal fade" id="exampleModal" role="dialog">
-				<div class="modal-dialog" role="document">
-					<div class="modal-content">
-						<button type="button" class="close" data-dismiss="modal">
-							<i class="bx bx-x"></i>
-						</button>
-					
-						<div class="modal-body">
-							<div class="row align-items-center">
-								<div class="col-lg-5 col-sm-5 p-0">
-									<div class="newsletter-img">
-										<img src="assets/img/newsletter-img.jpg" alt="Image">
-									</div>
-								</div>
-
-								<div class="col-lg-7 col-sm-7 pl-0">
-									<div class="modal-newsletter-wrap">
-										<h3>Subscribe To Our Newsletter</h3>
-										<p>Sign up for our mailing list to get the latest updates & offers.</p>
-
-										<form class="newsletter-form" data-toggle="validator">
-											<input type="email" class="form-control" placeholder="Enter email address" name="EMAIL" required autocomplete="off">
-				
-											<button class="default-btn" type="submit">
-												Subscribe Now
-											</button>
-				
-											<div id="validator-newsletter" class="form-result"></div>
-
-											<div class="agree-label">
-												<input type="checkbox" id="chb1">
-												<label for="chb1">
-													Do Not Show This Popup Again
-												</label>
-											</div>
-										</form>	
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div> -->
-    <!-- End Newsletter Modal -->
-
     <!-- Start Hero Slider Area -->
     <section class="hero-slider-area">
         <div class="hero-slider-wrap owl-theme owl-carousel" data-slider-id="1">
@@ -259,12 +102,12 @@
                     <div class="d-table-cell">
                         <div class="container">
                             <div class="hero-slider-text one">
-                                <h1>We Make A Awesome Branded Videos</h1>
+                                <h1>DE' DIAMOND PARK</h1>
                                 <p>VidNext is a high-quality video production house!</p>
 
                                 <div class="slider-btn">
                                     <a href="about.html" class="default-btn">
-                                        View More
+                                        Lihat Selengkapnya
                                     </a>
                                 </div>
                             </div>
@@ -331,7 +174,7 @@
         <!-- End Carousel Thumbs -->
 
         <!-- Start Social Wrap -->
-        <div class="social-wrap">
+        <!-- <div class="social-wrap">
             <ul>
                 <li class="follow-us">
                     Follow Us:
@@ -357,7 +200,7 @@
                     </a>
                 </li>
             </ul>
-        </div>
+        </div> -->
         <!-- End Social Wrap -->
     </section>
     <!-- End Hero Slide Area -->
@@ -1144,56 +987,18 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="single-widget">
                         <img src="<?= base_url('front-end/assets/img/logo-perum.png'); ?>">
-
-                        <div class="newsletter-wrap">
-                            <h3>Subscribe Newsletter</h3>
-                            <form class="newsletter-form" data-toggle="validator">
-                                <input type="email" class="form-control" placeholder="Enter email address" name="EMAIL" required autocomplete="off">
-
-                                <button class="send-btn" type="submit">
-                                    <i class="bx bx-right-arrow-alt"></i>
-                                </button>
-
-                                <div id="validator-newsletter-2" class="form-result"></div>
-                            </form>
-                        </div>
-
-                        <ul class="social-wrap">
-                            <li>
-                                <a href="#" target="_blank">
-                                    <i class="bx bxl-twitter"></i>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#" target="_blank">
-                                    <i class="bx bxl-instagram"></i>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#" target="_blank">
-                                    <i class="bx bxl-facebook"></i>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#" target="_blank">
-                                    <i class="bx bxl-youtube"></i>
-                                </a>
-                            </li>
-                        </ul>
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-6">
                     <div class="single-widget">
-                        <h3>Contact Us</h3>
+                        <h3>Kontak Kami</h3>
 
                         <ul class="address">
                             <li>
                                 <i class="flaticon-pin"></i>
-                                6890 Blvd, The Bronx, NY 1058 New York, USA
+                                Ruko De Valley, Kauman, Blok D23 RT 24/RW 05, Desa Pakisaji, 
+                                Kecamatan Pakisaji, Kabupaten Malang.
                             </li>
 
                             <li>
@@ -1221,7 +1026,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6">
+                <!-- <div class="col-lg-3 col-md-6">
                     <div class="single-widget">
                         <h3>Additional Links</h3>
 
@@ -1243,9 +1048,9 @@
                             </li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
 
-                <div class="col-lg-3 col-md-6">
+                <!-- <div class="col-lg-3 col-md-6">
                     <div class="single-widget">
                         <h3>Instagram</h3>
 
@@ -1282,7 +1087,7 @@
                             </li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </footer>
@@ -1292,7 +1097,7 @@
     <footer class="footer-bottom-area">
         <div class="container">
             <div class="copyright-wrap">
-                <p>Copyright @2020 VidNext. Designed By <a href="https://envytheme.com/" target="blank">EnvyTheme</a></p>
+                <p>Copyright @2021 Proyek</p>
             </div>
         </div>
     </footer>
