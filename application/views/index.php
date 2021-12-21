@@ -82,7 +82,7 @@
                                 <a href="contact.html" class="nav-link">Kontak</a>
                             </li>
 
-                            <li class="nav-item" >
+                            <li class="nav-item">
                                 <a href="<?= base_url('login'); ?>" class="get-started-btn scrollto">Masuk</a>
                             </li>
                         </ul>
@@ -214,9 +214,9 @@
                         <div class="about-content">
                             <span>Tentang Kami</span>
                             <h2>PERUMAHAN SUBSIDI DENGAN KONSEP HUNIAN HARMONIS & TERPADU DI GRESIK</h2>
-                            <p>PT. Kilau Intan Karunia ( KIKA ) mempersembahkan hunian eksklusif 
-                               dengan sentuhan minimalis modern untuk kenyamanan anda dan keluarga. Dengan akses jalan yang mudah dijangkau menjadikan 
-                               de' DIAMOND PARK menjadi kawasan potensial untuk investasi anda dimasa yang akan datang.</p>
+                            <p>PT. Kilau Intan Karunia ( KIKA ) mempersembahkan hunian eksklusif
+                                dengan sentuhan minimalis modern untuk kenyamanan anda dan keluarga. Dengan akses jalan yang mudah dijangkau menjadikan
+                                de' DIAMOND PARK menjadi kawasan potensial untuk investasi anda dimasa yang akan datang.</p>
 
                             <a href="about.html" class="default-btn">
                                 Learn More
@@ -999,30 +999,29 @@
                         <ul class="address">
                             <li>
                                 <i class="flaticon-pin"></i>
-                                Balongjerambah, Kedamean, 
-                                Kec. Kedamean, Kabupaten Gresik, 
+                                Balongjerambah, Kedamean,
+                                Kec. Kedamean, Kabupaten Gresik,
                                 Jawa Timur 61175
                             </li>
 
                             <li>
                                 <i class="flaticon-email-1"></i>
                                 <a href="mailto:dediamondpark@kilauintankarunia.com">
-                                dediamondpark@kilauintankarunia.com
+                                    dediamondpark@kilauintankarunia.com
                                 </a>
                             </li>
 
                             <li>
                                 <i class="flaticon-phone-call"></i>
                                 <a href="tel:+6283890202336">
-                                +6283890202336
+                                    +6283890202336
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </div>
 
-                <iframe src="https://www.google.com/maps/place/DE'+DIAMOND+PARK+KEDAMEAN/@-7.324495,112.5136688,17z/data=!4m12!1m6!3m5!1s0x2e78079b68ad50f5:0x594a447648a44277!2sDE'+DIAMOND+PARK+KEDAMEAN!8m2!3d-7.3243881!4d112.5136337!3m4!1s0x2e78079b68ad50f5:0x594a447648a44277!8m2!3d-7.3243881!4d112.5136337"
-                    width="600" height="450" frameborder="0" style="boder:0"></iframe>
+                <iframe src=" https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.262469571367!2d112.51144501474558!3d-7.324388094714075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78079b68ad50f5%3A0x594a447648a44277!2sDE&#39;%20DIAMOND%20PARK%20KEDAMEAN!5e0!3m2!1sen!2sid!4v1640092449221!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 <!-- <div class="col-lg-3 col-md-6">
                     <div class="single-widget">
                         <h3>Additional Links</h3>
