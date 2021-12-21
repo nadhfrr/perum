@@ -1007,7 +1007,7 @@
                             <li>
                                 <i class="flaticon-email-1"></i>
                                 <a href="mailto:dediamondpark@kilauintankarunia.com">
-                                    dediamondpark@kilauintankarunia.com
+                                    dediamondpark@ kilauintankarunia.com
                                 </a>
                             </li>
 
