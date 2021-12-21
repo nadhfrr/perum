@@ -485,11 +485,11 @@
     <section class="get-in-touch-area ptb-100">
         <div class="container">
             <div class="get-in-touch-content">
-                <h2>Did You Like Our Work?</h2>
-                <h3>Get In Touch Today!</h3>
+                <h2>Tertarik untuk Membeli Rumah Hunian Bersubsidi ini?</h2>
+                <h3>Cepat Pesan Sebelum Kehabisan!</h3>
 
                 <a href="contact.html" class="default-btn">
-                    Contact Us
+                    Kontak Kami
                 </a>
             </div>
         </div>
