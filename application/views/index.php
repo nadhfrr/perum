@@ -82,7 +82,7 @@
                                 <a href="contact.html" class="nav-link">Kontak</a>
                             </li>
 
-                            <li class="nav-item">
+                            <li class="nav-item" >
                                 <a href="<?= base_url('login'); ?>" class="get-started-btn scrollto">Masuk</a>
                             </li>
                         </ul>
@@ -103,7 +103,7 @@
                         <div class="container">
                             <div class="hero-slider-text one">
                                 <h1>DE' DIAMOND PARK</h1>
-                                <p>VidNext is a high-quality video production house!</p>
+                                <p>Perumahan bersubsidi dan Komersil</p>
 
                                 <div class="slider-btn">
                                     <a href="about.html" class="default-btn">
@@ -121,12 +121,12 @@
                     <div class="d-table-cell">
                         <div class="container">
                             <div class="hero-slider-text two">
-                                <h1>We Work Globally Brilliantly Done</h1>
-                                <p>VidNext is a high-quality video production house!</p>
+                                <h1>De' Diamond Park </h1>
+                                <p>Hunian Asri Kawasan Berseri</p>
 
                                 <div class="slider-btn">
                                     <a href="about.html" class="default-btn">
-                                        View More
+                                        Lihat Selengkapnya
                                     </a>
                                 </div>
                             </div>
@@ -140,12 +140,12 @@
                     <div class="d-table-cell">
                         <div class="container">
                             <div class="hero-slider-text three">
-                                <h1>Introducing The Next Level Of Video Production</h1>
-                                <p>VidNext is a high-quality video production house!</p>
+                                <h1>Gerbang Perumahan De' Diamond Park</h1>
+                                <p>Perumahan bersubsidi dan Komersil</p>
 
                                 <div class="slider-btn">
                                     <a href="about.html" class="default-btn">
-                                        View More
+                                        Lihat Selengkapnya
                                     </a>
                                 </div>
                             </div>
@@ -212,9 +212,11 @@
                 <div class="row">
                     <div class="col-lg-8">
                         <div class="about-content">
-                            <span>Vidnext Bio</span>
-                            <h2>We Are A Creative Video Production Company</h2>
-                            <p>Video production work with producing video content. It is the analogical of film making, but the images are digitally recorded instead of film stock. There are three levels of video production: production, pre-production and post-production the images are digitally recorded instead of film stock producing video content. It is the</p>
+                            <span>Tentang Kami</span>
+                            <h2>PERUMAHAN SUBSIDI DENGAN KONSEP HUNIAN HARMONIS & TERPADU DI GRESIK</h2>
+                            <p>PT. Kilau Intan Karunia ( KIKA ) mempersembahkan hunian eksklusif 
+                               dengan sentuhan minimalis modern untuk kenyamanan anda dan keluarga. Dengan akses jalan yang mudah dijangkau menjadikan 
+                               de' DIAMOND PARK menjadi kawasan potensial untuk investasi anda dimasa yang akan datang.</p>
 
                             <a href="about.html" class="default-btn">
                                 Learn More
@@ -875,8 +877,8 @@
     <section class="blog-area pt-100 pb-70">
         <div class="container">
             <div class="section-title">
-                <span class="top-title">News Feeds</span>
-                <h2>Get The Latest News</h2>
+                <span class="top-title">Galeri</span>
+                <h2>Informasi Terakhir</h2>
             </div>
 
             <div class="row">
@@ -997,35 +999,30 @@
                         <ul class="address">
                             <li>
                                 <i class="flaticon-pin"></i>
-                                Ruko De Valley, Kauman, Blok D23 RT 24/RW 05, Desa Pakisaji, 
-                                Kecamatan Pakisaji, Kabupaten Malang.
+                                Balongjerambah, Kedamean, 
+                                Kec. Kedamean, Kabupaten Gresik, 
+                                Jawa Timur 61175
                             </li>
 
                             <li>
                                 <i class="flaticon-email-1"></i>
-                                <a href="mailto:hello@vidnext.com">
-                                    hello@vidnext.com
-                                </a>
-
-                                <a href="#">
-                                    Skype: example
+                                <a href="mailto:dediamondpark@kilauintankarunia.com">
+                                dediamondpark@kilauintankarunia.com
                                 </a>
                             </li>
 
                             <li>
                                 <i class="flaticon-phone-call"></i>
-                                <a href="tel:+1-587-785-4578">
-                                    +1 587 785 4578
-                                </a>
-
-                                <a href="tel:+1-485-456-0102">
-                                    +1 485 456 0102
+                                <a href="tel:+6283890202336">
+                                +6283890202336
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </div>
 
+                <iframe src="https://www.google.com/maps/place/DE'+DIAMOND+PARK+KEDAMEAN/@-7.324495,112.5136688,17z/data=!4m12!1m6!3m5!1s0x2e78079b68ad50f5:0x594a447648a44277!2sDE'+DIAMOND+PARK+KEDAMEAN!8m2!3d-7.3243881!4d112.5136337!3m4!1s0x2e78079b68ad50f5:0x594a447648a44277!8m2!3d-7.3243881!4d112.5136337"
+                    width="600" height="450" frameborder="0" style="boder:0"></iframe>
                 <!-- <div class="col-lg-3 col-md-6">
                     <div class="single-widget">
                         <h3>Additional Links</h3>
