@@ -170,36 +170,6 @@
                 </div>
             </div>
         </div>
-        <!-- End Carousel Thumbs -->
-
-        <!-- Start Social Wrap -->
-        <!-- <div class="social-wrap">
-            <ul>
-                <li class="follow-us">
-                    Follow Us:
-                </li>
-                <li>
-                    <a href="#" target="_blank">
-                        <i class="bx bxl-twitter"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" target="_blank">
-                        <i class="bx bxl-instagram"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" target="_blank">
-                        <i class="bx bxl-facebook"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" target="_blank">
-                        <i class="bx bxl-youtube"></i>
-                    </a>
-                </li>
-            </ul>
-        </div> -->
         <!-- End Social Wrap -->
     </section>
     <!-- End Hero Slide Area -->
@@ -258,8 +228,8 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="what-we-do-content">
-                        <span>What We Do</span>
-                        <h2>Video Solution Every Stage</h2>
+                        <h2>Siteplan De Diamond Park</h2>
+                        <span>Jumlah unit yang akan di bangun ada 3 type rumah</span>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
 
                         <div class="brand-wrap">
@@ -280,13 +250,13 @@
                                     </div>
                                 </div>
 
-                                <div class="col-lg-4 col-sm-6 offset-sm-3 offset-lg-0">
+                                <!-- <div class="col-lg-4 col-sm-6 offset-sm-3 offset-lg-0">
                                     <div class="brand">
                                         <a href="#">
                                             <img src="<?= base_url('front-end/'); ?>assets/img/brand/3.png" alt="Image">
                                         </a>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
 
@@ -501,13 +471,15 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="latest-trailer-content">
-                        <span>Latest Trailer</span>
-                        <h2>Upcoming Movies By Our Production</h2>
-                        <p>Video production work with producing video content. It is the analogical of film making, but the images are digitally recorded instead of film stock. There are three levels of video production: production, pre-production and post-production.</p>
+                        <h2>Siteplan De Diamond Park</h2>
+                        <span>Jumlah unit yang akan di bangun ada 3 type rumah</span>
+                        <p>Video production work with producing video content. 
+                        It is the analogical of film making, but the images are digitally recorded instead of film stock. 
+                        There are three levels of video production: production, pre-production and post-production.</p>
                     </div>
                 </div>
 
-                <div class="col-lg-6">
+                <!-- <div class="col-lg-6">
                     <div class="latest-trailer-wrap owl-theme owl-carousel">
                         <div class="latest-trailer-item">
                             <img src="<?= base_url('front-end/'); ?>assets/img/latest-trailer/1.jpg" alt="Image">
@@ -567,7 +539,7 @@
                                     <i class="bx bx-play"></i>
                                 </a>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -1020,7 +992,7 @@
                     </div>
                 </div>
 
-                <iframe src=" https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.262469571367!2d112.51144501474558!3d-7.324388094714075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78079b68ad50f5%3A0x594a447648a44277!2sDE&#39;%20DIAMOND%20PARK%20KEDAMEAN!5e0!3m2!1sen!2sid!4v1640092449221!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.262469571367!2d112.51144501474558!3d-7.324388094714075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78079b68ad50f5%3A0x594a447648a44277!2sDE&#39;%20DIAMOND%20PARK%20KEDAMEAN!5e0!3m2!1sen!2sid!4v1640092449221!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 <!-- <div class="col-lg-3 col-md-6">
                     <div class="single-widget">
                         <h3>Additional Links</h3>
