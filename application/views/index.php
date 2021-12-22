@@ -208,15 +208,15 @@
     <section class="video-created-area ptb-100">
         <div class="container">
             <div class="video-created-wrap">
-                <img src="<?= base_url('front-end/'); ?>assets/img/video-created-img.jpg" alt="Image">
+                <img src="<?= base_url('front-end/'); ?>assets/img/video-bg.jpg" alt="Image">
 
                 <div class="video-wrap">
-                    <a href="https://www.youtube.com/watch?v=dkTYpP6eec0" class="popup-youtube">
+                    <a href="https://www.youtube.com/watch?v=r9hf2T-AKhw" class="popup-youtube">
                         <i class="flaticon-play"></i>
                     </a>
                 </div>
 
-                <h2>Video Created By Vidnext</h2>
+                <h2>Video di Buat oleh PT. KIKA</h2>
             </div>
         </div>
     </section>
@@ -270,7 +270,7 @@
                     <div class="row">
                         <div class="col-lg-6 col-sm-6">
                             <div class="what-we-do-item mt-30">
-                                <i class="flaticon-house"></i>
+                                <i class="flaticon-film-editing-1"></i>
                                 <h3>Pre-Production</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                             </div>
