@@ -892,7 +892,10 @@ Hero Slider Area Style
 }
 
 .hero-slider-item.bg-1 {
-  background-image: url(/front-end/assets/img/slider-img/Type-60-New-1.jpeg);
+  background-image: url(https://i.ibb.co/51zpVDp/1.jpg);
+  /* <img src="<?= base_url('front-end/assets/img/slider-img/1.jpg'); ?>" alt="Image"> */
+  /* background-image: url(front-end/assets/img/slider-img/1.jpg) */
+  
 }
 
 .hero-slider-item.bg-2 {
