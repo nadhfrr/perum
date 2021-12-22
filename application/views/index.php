@@ -121,7 +121,7 @@
                         <div class="container">
                             <div class="hero-slider-text two">
                                 <h1>De' Diamond Park </h1>
-                                <p>Hunian Asri Kawasan Berseri</p>
+                                <p><b>Hunian Asri Kawasan Berseri</b></p>
 
                                 <div class="slider-btn">
                                     <a href="about.html" class="default-btn">
@@ -140,7 +140,7 @@
                         <div class="container">
                             <div class="hero-slider-text three">
                                 <h1>Gerbang Perumahan De' Diamond Park</h1>
-                                <p>Perumahan bersubsidi dan Komersil</p>
+                                <p><b>Perumahan bersubsidi dan Komersil</b></p>
 
                                 <div class="slider-btn">
                                     <a href="about.html" class="default-btn">
@@ -188,14 +188,14 @@
                                 de' DIAMOND PARK menjadi kawasan potensial untuk investasi anda dimasa yang akan datang.</p>
 
                             <a href="about.html" class="default-btn">
-                                Learn More
+                                Lihat Selengkapnya
                             </a>
                         </div>
                     </div>
 
                     <div class="col-lg-4">
                         <div class="about-img">
-                            <img src="<?= base_url('front-end/'); ?>assets/img/about-img.jpg" alt="Image">
+                            <img src="<?= base_url('front-end/'); ?>assets/img/tentang-kami.jpg" alt="Image">
                         </div>
                     </div>
                 </div>
@@ -270,7 +270,7 @@
                     <div class="row">
                         <div class="col-lg-6 col-sm-6">
                             <div class="what-we-do-item mt-30">
-                                <i class="flaticon-film-editing-1"></i>
+                                <i class="flaticon-house"></i>
                                 <h3>Pre-Production</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                             </div>

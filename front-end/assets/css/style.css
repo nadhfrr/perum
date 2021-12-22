@@ -893,17 +893,14 @@ Hero Slider Area Style
 
 .hero-slider-item.bg-1 {
   background-image: url(https://i.ibb.co/51zpVDp/1.jpg);
-  /* <img src="<?= base_url('front-end/assets/img/slider-img/1.jpg'); ?>" alt="Image"> */
-  /* background-image: url(front-end/assets/img/slider-img/1.jpg) */
-  
 }
 
 .hero-slider-item.bg-2 {
-  background-image: url(../img/slider-img/2.jpg);
+  background-image: url(https://i.ibb.co/51zpVDp/1.jpg);
 }
 
 .hero-slider-item.bg-3 {
-  background-image: url(../img/slider-img/3.jpg);
+  background-image: url(https://i.ibb.co/FqZqLLg/2.jpg);
 }
 
 .hero-slider-item.bg-4 {
@@ -942,7 +939,7 @@ Hero Slider Area Style
 About Area Style
 ======================================================*/
 .about-content-wrap {
-  background-image: url(../img/about-img.jpg);
+  background-image: url(../img/tentnag-kami.jpg);
   background-position: right;
   background-repeat: no-repeat;
   height: 522px;
@@ -988,7 +985,7 @@ About Area Style
   margin-left: 100px;
 }
 
-.about-content-wrap .about-img {
+.about-content-wrap .tentang-kami {
   display: none;
 }
 
