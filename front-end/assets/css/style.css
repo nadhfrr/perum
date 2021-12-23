@@ -939,7 +939,7 @@ Hero Slider Area Style
 About Area Style
 ======================================================*/
 .about-content-wrap {
-  background-image: url(../img/tentnag-kami.jpg);
+  background-image: url(../img/tentag-kami.jpg);
   background-position: right;
   background-repeat: no-repeat;
   height: 522px;
@@ -993,7 +993,7 @@ About Area Style
 Video Created Area Style
 ======================================================*/
 .video-created-area {
-  background-image: url(../img/video-created-bg.jpg);
+  background-image: url(https://i.ibb.co/SrbT20G/bg-video.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1051,7 +1051,7 @@ Video Created Area Style
 
 .video-created-wrap h2 {
   font-size: 50px;
-  color: #ffffff;
+  color: #000000;
   max-width: 375px;
   position: absolute;
   right: -215px;

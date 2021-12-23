@@ -856,7 +856,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single-blog">
                         <a href="blog-details.html">
-                            <img src="<?= base_url('front-end/'); ?>assets/img/blog/1.jpg" alt="Image">
+                            <img src="<?= base_url('front-end/'); ?>assets/img/blog/45 dp render 4.jpg" alt="Image">
                         </a>
 
                         <div class="blog-content">
@@ -868,18 +868,18 @@
 
                                 <li>
                                     <i class="flaticon-calendar"></i>
-                                    17/07/2020
+                                    23/12/2021
                                 </li>
                             </ul>
 
                             <a href="blog-details.html">
-                                <h3>Video Production Services Your Business Must Have</h3>
+                                <h3>Rumah Contoh Tipe 45</h3>
                             </a>
 
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua sit amet consectetur.</p>
+                            <p>Pembangunan progres rumah contoh tipe 45 dengan luas tanah 84.</p>
 
                             <a href="blog-details.html" class="read-more">
-                                Learn More
+                                Lihat Selengkapnya
                             </a>
                         </div>
                     </div>
@@ -888,7 +888,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single-blog">
                         <a href="blog-details.html">
-                            <img src="<?= base_url('front-end/'); ?>assets/img/blog/2.jpg" alt="Image">
+                            <img src="<?= base_url('front-end/'); ?>assets/img/blog/gerbang.jpg" alt="Image">
                         </a>
 
                         <div class="blog-content">
@@ -900,18 +900,18 @@
 
                                 <li>
                                     <i class="flaticon-calendar"></i>
-                                    18/07/2020
+                                    20/12/2021
                                 </li>
                             </ul>
 
                             <a href="blog-details.html">
-                                <h3>Why You Need To Hire top class Video Production company</h3>
+                                <h3>Pintu Masuk Menuju Perumahan de' Diamond Park</h3>
                             </a>
 
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua sit amet consectetur.</p>
+                            <p>Lokasi strategis, terdekat dengan lembaga pendidikan dan puskesmas.</p>
 
                             <a href="blog-details.html" class="read-more">
-                                Learn More
+                                Lihat Selengkapnya
                             </a>
                         </div>
                     </div>
@@ -920,7 +920,7 @@
                 <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
                     <div class="single-blog">
                         <a href="blog-details.html">
-                            <img src="<?= base_url('front-end/'); ?>assets/img/blog/3.jpg" alt="Image">
+                            <img src="<?= base_url('front-end/'); ?>assets/img/blog/progres pembangunan.jpg" alt="Image">
                         </a>
 
                         <div class="blog-content">
@@ -932,18 +932,18 @@
 
                                 <li>
                                     <i class="flaticon-calendar"></i>
-                                    19/07/2020
+                                    03/09/2018
                                 </li>
                             </ul>
 
                             <a href="blog-details.html">
-                                <h3>Choosing A Video Location For Your Next Project</h3>
+                                <h3>Tipe 36</h3>
                             </a>
 
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua sit amet consectetur.</p>
+                            <p>Progres pembangunan pada rumah dengan tipe 36 dengan luas tanah 72.</p>
 
                             <a href="blog-details.html" class="read-more">
-                                Learn More
+                                Lihat Selengkapnya
                             </a>
                         </div>
                     </div>
