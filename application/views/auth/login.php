@@ -70,7 +70,11 @@
                                                         <!-- <i class="ace-icon fa fa-key"></i> -->
                                                         <span class="bigger-110">Masuk</span>
                                                     </button>
+                                                    <div class="text">
+                                                         <a class="small" href="<?= base_url('beranda/index'); ?>">Kembali ke Beranda</a>
+                                                    </div>
                                                 </div>
+                                                
                                     </div>
                                 </div><!-- /.col -->
                             </div><!-- /.row -->
