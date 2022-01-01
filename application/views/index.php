@@ -470,75 +470,13 @@
                 </div>
 
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.262469571367!2d112.51144501474558!3d-7.324388094714075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78079b68ad50f5%3A0x594a447648a44277!2sDE&#39;%20DIAMOND%20PARK%20KEDAMEAN!5e0!3m2!1sen!2sid!4v1640092449221!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                <!-- <div class="col-lg-3 col-md-6">
-                    <div class="single-widget">
-                        <h3>Additional Links</h3>
-
-                        <ul class="additional-link">
-                            <li>
-                                <a href="#">About</a>
-                            </li>
-                            <li>
-                                <a href="#">Latest Videos</a>
-                            </li>
-                            <li>
-                                <a href="#">Team</a>
-                            </li>
-                            <li>
-                                <a href="#">Help (FAQ)</a>
-                            </li>
-                            <li>
-                                <a href="#">Contacts</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div> -->
-
-                <!-- <div class="col-lg-3 col-md-6">
-                    <div class="single-widget">
-                        <h3>Instagram</h3>
-
-                        <ul class="instagram">
-                            <li>
-                                <a href="#">
-                                    <img src="<?= base_url('front-end/'); ?>assets/img/instagram/1.jpg" alt="Image">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="<?= base_url('front-end/'); ?>assets/img/instagram/2.jpg" alt="Image">
-                                </a>
-                            </li>
-                            <li class="mr-0">
-                                <a href="#">
-                                    <img src="<?= base_url('front-end/'); ?>assets/img/instagram/3.jpg" alt="Image">
-                                </a>
-                            </li>
-                            <li class="mb-0">
-                                <a href="#">
-                                    <img src="<?= base_url('front-end/'); ?>assets/img/instagram/4.jpg" alt="Image">
-                                </a>
-                            </li>
-                            <li class="mb-0">
-                                <a href="#">
-                                    <img src="<?= base_url('front-end/'); ?>assets/img/instagram/5.jpg" alt="Image">
-                                </a>
-                            </li>
-                            <li class="mr-0 mb-0">
-                                <a href="#">
-                                    <img src="<?= base_url('front-end/'); ?>assets/img/instagram/6.jpg" alt="Image">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div> -->
             </div>
         </div>
     </footer>
     <!-- End Footer Area -->
 
     <!-- Start Footer Bottom Area -->
-    <footer class="footer-bottom-area">
+    <footer class="footer-bottom-area pt-100 pb-70">
         <div class="container">
             <div class="copyright-wrap">
                 <p>Copyright @2021 Proyek</p>

@@ -2229,8 +2229,8 @@ Footer Bottom Style
 .footer-bottom-area {
   border-top: 1px solid #2a2f2f;
   background-color: #020607;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .footer-bottom-area .copyright-wrap {
