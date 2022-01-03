@@ -404,7 +404,7 @@
                             <ul>
                                 <li>
                                     <i class="flaticon-user"></i>
-                                    <a href="#">By Admin</a>
+                                    <a href="#">Admin</a>
                                 </li>
 
                                 <li>

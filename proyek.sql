@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 07, 2021 at 04:20 PM
+-- Generation Time: Jan 01, 2022 at 09:39 AM
 -- Server version: 10.1.19-MariaDB
 -- PHP Version: 5.6.28
 
@@ -47,6 +47,22 @@ INSERT INTO `admin` (`id`, `id_pengguna`, `username`, `password`, `vw_password`,
 (3, 'D01', 'direktur', 'c84258e9c39059a89ab77d846ddab909', 'admin2', 'Arif Rohman Rohim', 'direktur', '3'),
 (4, 'Keu01', 'keuangan', '32cacb2f994f6b42183a1300d9a3e8d6', 'admin3', 'Al Kautsar Azka', 'keuangan', '4'),
 (5, 'M01', 'manajpro', 'fc1ebc848e31e0a68e868432225e3c82', 'admin4', 'Puguh Utomo', 'manajpro', '5');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `proyek`
+--
+
+CREATE TABLE `proyek` (
+  `kd_proyek` int(11) NOT NULL,
+  `nama_proyek` varchar(25) NOT NULL,
+  `type` int(11) NOT NULL,
+  `pemilik_proyek` varchar(25) NOT NULL,
+  `jasa_kontraktor` int(11) NOT NULL,
+  `pajak` int(11) NOT NULL,
+  `keterangan_lain` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -135,6 +151,12 @@ INSERT INTO `rincian_upah` (`kd_upah`, `uraian_upah`, `satuan`, `harga_dasar`, `
 --
 ALTER TABLE `admin`
   ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `proyek`
+--
+ALTER TABLE `proyek`
+  ADD PRIMARY KEY (`kd_proyek`);
 
 --
 -- Indexes for table `rincian_bahan`

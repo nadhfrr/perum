@@ -8,10 +8,10 @@
           <span aria-hidden="true">×</span>
         </button>
       </div> -->
-      <div class="modal-body">Apakah kamu yakin untuk Logout?</div>
+      <div class="modal-body">Apakah kamu yakin untuk Keluar?</div>
       <div class="modal-footer">
-        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-        <a class="btn btn-primary" href="<?php echo base_url('auth/logout') ?>">Logout</a>
+        <button class="btn btn-secondary" type="button" data-dismiss="modal">Batal</button>
+        <a class="btn btn-primary" href="<?php echo base_url('auth/logout') ?>">Keluar</a>
       </div>
     </div>
   </div>
@@ -30,8 +30,8 @@
       </div>
       <div class="modal-body">Data yang dihapus tidak akan bisa dikembalikan.</div>
       <div class="modal-footer">
-        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-        <a id="btn-delete" class="btn btn-danger" href="#">Delete</a>
+        <button class="btn btn-secondary" type="button" data-dismiss="modal">Batal</button>
+        <a id="btn-delete" class="btn btn-danger" href="#">Hapus</a>
       </div>
     </div>
   </div>

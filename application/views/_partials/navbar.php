@@ -28,7 +28,7 @@
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
                 <div class="dropdown"></div>
-                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Logout</a>
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Keluar</a>
             </div>
         </li>
     </ul>

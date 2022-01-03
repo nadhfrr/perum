@@ -24,7 +24,7 @@
 				<!-- DataTables -->
 				<div class="card mb-3">
 					<div class="card-header">
-						<a href="<?php echo site_url('pengguna/add') ?>"><i class="fas fa-plus"></i> Add New</a>
+						<a href="<?php echo site_url('pengguna/add') ?>"><i class="fas fa-plus"></i> Tambah Baru</a>
 					</div>
 					<div class="card-body">
 
