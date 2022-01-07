@@ -27,7 +27,7 @@
 
 				<div class="card mb-3">
 					<div class="card-header">
-						<a href="<?php echo site_url('proyek') ?>"><i class="fas fa-arrow-left"></i> Back</a>
+						<a href="<?php echo site_url('proyek') ?>"><i class="fas fa-arrow-left"></i> Kembali</a>
 					</div>
 					<div class="card-body">
 
@@ -63,23 +63,6 @@
 									<?php echo form_error('pemilik_proyek') ?>
 								</div>
 							</div>
-
-							<div class="form-group">
-								<label for="jasa_kontraktor">Jasa Kontraktor</label>
-								<input class="form-control <?php echo form_error('jasa_kontraktor') ? 'is-invalid' : '' ?>" type="text" name="jasa_kontraktor" min="0" placeholder="Jasa Kontraktor" />
-								<div class="invalid-feedback">
-									<?php echo form_error('jasa_kontraktor') ?>
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label for="pajak">Pajak</label>
-								<input class="form-control <?php echo form_error('pajak') ? 'is-invalid' : '' ?>" type="text" name="pajak" min="0" placeholder="Pajak" />
-								<div class="invalid-feedback">
-									<?php echo form_error('pajak') ?>
-								</div>
-							</div>
-
 							<input class="btn btn-dark" type="submit" name="btn" value="Save" />
 						</form>
 

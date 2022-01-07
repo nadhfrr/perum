@@ -24,7 +24,7 @@
 				<!-- DataTables -->
 				<div class="card mb-3">
 					<div class="card-header">
-						<a href="<?php echo site_url('proyek/add') ?>"><i class="fas fa-plus"></i> Add New</a>
+						<a href="<?php echo site_url('proyek/add') ?>"><i class="fas fa-plus"></i> Tambah Baru</a>
 					</div>
 					<div class="card-body">
 
@@ -36,8 +36,6 @@
 										<th>Nama Proyek</th>
 										<th>Type</th>
 										<th>Pemilik Proyek</th>
-										<th>Jasa Kontraktor</th>
-                                        <th>Pajak</th>
                                         <th>Aksi</th>
 									</tr>
 								</thead>
@@ -55,9 +53,6 @@
 											</td>
 											<td>
 												<?php echo $proyek->pemilik_proyek ?>
-											</td>
-                                            <td>
-												<?php echo $proyek->pajak ?>
 											</td>
                                             <td width="250">
 												<a href="<?php echo site_url('proyek/edit/' . $proyek->id) ?>" class="btn btn-small"><i class="fas fa-edit"></i> Edit</a>

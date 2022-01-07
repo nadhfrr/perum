@@ -8,8 +8,6 @@ class Proyek_model extends CI_Model
     public $nama_proyek;
     public $type;
     public $pemilik_proyek;
-    public $jasa_kontraktor;
-    public $pajak;
     public $keterangan_lain;
 
     public function rules()
@@ -40,18 +38,6 @@ class Proyek_model extends CI_Model
             ],
 
             [
-                'field' => 'jasa_kontraktor',
-                'label' => 'jasa_kontraktor',
-                'rules' => 'required'
-            ],
-
-            [
-                'field' => 'pajak',
-                'label' => 'pajak',
-                'rules' => 'required'
-            ],
-
-            [
                 'field' => 'keterangan_lain',
                 'label' => 'keterangan_lain',
                 'rules' => 'required'
@@ -76,8 +62,6 @@ class Proyek_model extends CI_Model
         $this->nama_proyek = $post["nama_proyek"];
         $this->type = $post["type"];
         $this->pemilik_proyek = $post["pemilik_proyek"];
-        $this->jasa_kontraktor = $post["jasa_kontraktor"];
-        $this->pajak = $post["pajak"];
         $this->keterangan_lain = $post["keterangan_lain"];
         $this->db->insert($this->_table, $this);
     }
@@ -89,8 +73,6 @@ class Proyek_model extends CI_Model
         $this->nama_proyek = $post["nama_proyek"];
         $this->type = $post["type"];
         $this->pemilik_proyek = $post["pemilik_proyek"];
-        $this->jasa_kontraktor = $post["jasa_kontraktor"];
-        $this->pajak = $post["pajak"];
         $this->keterangan_lain = $post["keterangan_lain"];
 
         $this->db->update($this->_table, $this, array('id' => $post['id']));
