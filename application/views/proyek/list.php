@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <title> Daftar Proyek - DeDiamondPark </title>
+
 <head>
 	<?php $this->load->view("_partials/head.php") ?>
 </head>
@@ -15,11 +16,11 @@
 		<div id="content-wrapper">
 
 			<div class="container-fluid">
-			
-			<div class="d-sm-flex align-items-center justify-content-between mb-4">
+
+				<div class="d-sm-flex align-items-center justify-content-between mb-4">
 					<h1 class="h3 mb-0 text-gray-800">Data Proyek</h1>
 				</div>
-				
+
 
 				<!-- DataTables -->
 				<div class="card mb-3">
@@ -36,7 +37,7 @@
 										<th>Nama Proyek</th>
 										<th>Type</th>
 										<th>Pemilik Proyek</th>
-                                        <th>Aksi</th>
+										<th>Aksi</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -54,9 +55,10 @@
 											<td>
 												<?php echo $proyek->pemilik_proyek ?>
 											</td>
-                                            <td width="250">
-												<a href="<?php echo site_url('proyek/edit/' . $proyek->id) ?>" class="btn btn-small"><i class="fas fa-edit"></i> Edit</a>
-												<a onclick="deleteConfirm('<?php echo site_url('proyek/delete/' . $proyek->id) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a>
+											<td width="250">
+												<a href="<?php echo site_url('proyek/details') ?>" class="btn btn-info btn-sm"> Detail</a>
+												<a href="<?php echo site_url('proyek/edit/' . $proyek->kd_proyek) ?>" class="btn btn-small"><i class="fas fa-edit"></i> Edit</a>
+												<a onclick="deleteConfirm('<?php echo site_url('proyek/delete/' . $proyek->kd_proyek) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a>
 											</td>
 										</tr>
 									<?php endforeach; ?>

@@ -2,7 +2,7 @@
 
 class Proyek_model extends CI_Model
 {
-    private $_table = "proyek";
+    private $_table = "tambah_proyek";
 
     public $kd_proyek;
     public $nama_proyek;
@@ -41,7 +41,7 @@ class Proyek_model extends CI_Model
                 'field' => 'keterangan_lain',
                 'label' => 'keterangan_lain',
                 'rules' => 'required'
-            ],
+            ]
         ];
     }
 
@@ -52,7 +52,7 @@ class Proyek_model extends CI_Model
 
     public function getById($id)
     {
-        return $this->db->get_where($this->_table, ["id" => $id])->row();
+        return $this->db->get_where($this->_table, ["kd_proyek" => $id])->row();
     }
 
     public function save()
@@ -75,11 +75,11 @@ class Proyek_model extends CI_Model
         $this->pemilik_proyek = $post["pemilik_proyek"];
         $this->keterangan_lain = $post["keterangan_lain"];
 
-        $this->db->update($this->_table, $this, array('id' => $post['id']));
+        $this->db->update($this->_table, $this, array('kd_proyek' => $post['id']));
     }
 
     public function delete($id)
     {
-        return $this->db->delete($this->_table, array("id" => $id));
+        return $this->db->delete($this->_table, array("kd_proyek" => $id));
     }
 }

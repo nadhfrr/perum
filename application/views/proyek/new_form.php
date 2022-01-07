@@ -33,7 +33,7 @@
 
 						<form action="<?php base_url('proyek/add') ?>" method="post" enctype="multipart/form-data">
 							<div class="form-group">
-								<label for="kd_upah">Kode Proyek</label>
+								<label for="kd_proyek">Kode Proyek</label>
 								<input class="form-control <?php echo form_error('kd_proyek') ? 'is-invalid' : '' ?>" type="text" name="kd_proyek" placeholder="Kode Proyek" />
 								<div class="invalid-feedback">
 									<?php echo form_error('kd_proyek') ?>
@@ -42,7 +42,7 @@
 
 							<div class="form-group">
 								<label for="nama_proyek">Nama Proyek</label>
-								<input class="form-control <?php echo form_error('nama_proyek') ? 'is-invalid' : '' ?>" type="text" name="nama_proyek" min="0" placeholder="Nama Proyek" />
+								<input class="form-control <?php echo form_error('nama_proyek') ? 'is-invalid' : '' ?>" type="text" name="nama_proyek" placeholder="Nama Proyek" />
 								<div class="invalid-feedback">
 									<?php echo form_error('nama_proyek') ?>
 								</div>
@@ -50,7 +50,7 @@
 
 							<div class="form-group">
 								<label for="type">Type</label>
-								<input class="form-control <?php echo form_error('type') ? 'is-invalid' : '' ?>" type="text" name="type" min="0" placeholder="Type" />
+								<input class="form-control <?php echo form_error('type') ? 'is-invalid' : '' ?>" type="text" name="type" placeholder="Type" />
 								<div class="invalid-feedback">
 									<?php echo form_error('type') ?>
 								</div>
@@ -58,11 +58,20 @@
 
 							<div class="form-group">
 								<label for="pemilik_proyek">Pemilik Proyek</label>
-								<input class="form-control <?php echo form_error('pemilik_proyek') ? 'is-invalid' : '' ?>" type="text" name="pemilik_proyek" min="0" placeholder="Pemilik Proyek" />
+								<input class="form-control <?php echo form_error('pemilik_proyek') ? 'is-invalid' : '' ?>" type="text" name="pemilik_proyek" placeholder="Pemilik Proyek" />
 								<div class="invalid-feedback">
 									<?php echo form_error('pemilik_proyek') ?>
 								</div>
 							</div>
+
+							<div class="form-group">
+								<label for="keterangan_lain">Keterangan Lain</label>
+								<input class="form-control <?php echo form_error('keterangan_lain') ? 'is-invalid' : '' ?>" type="text" name="keterangan_lain" placeholder="Keterangan Lain" />
+								<div class="invalid-feedback">
+									<?php echo form_error('keterangan_lain') ?>
+								</div>
+							</div>
+
 							<input class="btn btn-dark" type="submit" name="btn" value="Save" />
 						</form>
 
