@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <title> Daftar Pengguna - DeDiamondPark </title>
+
 <head>
 	<?php $this->load->view("_partials/head.php") ?>
 </head>
@@ -15,11 +16,11 @@
 		<div id="content-wrapper">
 
 			<div class="container-fluid">
-			
-			<div class="d-sm-flex align-items-center justify-content-between mb-4">
+
+				<div class="d-sm-flex align-items-center justify-content-between mb-4">
 					<h1 class="h3 mb-0 text-gray-800">Data Pengguna</h1>
 				</div>
-				
+
 
 				<!-- DataTables -->
 				<div class="card mb-3">

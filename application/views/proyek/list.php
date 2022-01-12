@@ -46,13 +46,13 @@
 											<td width="150">
 												<?php echo $proyek->kd_proyek ?>
 											</td>
-											<td>
+											<td width="250">
 												<?php echo $proyek->nama_proyek ?>
 											</td>
-											<td>
+											<td width="100">
 												<?php echo $proyek->type ?>
 											</td>
-											<td>
+											<td width="200">
 												<?php echo $proyek->pemilik_proyek ?>
 											</td>
 											<td width="250">
