@@ -41,21 +41,21 @@
 									</tr>
 								</thead>
 								<tbody>
-									<?php foreach ($proyek as $proyek) : ?>
+								<?php foreach ($proyek as $proyek) : ?>
 										<tr>
-											<td width="150">
+											<td width="140">
 												<?php echo $proyek->kd_proyek ?>
 											</td>
-											<td width="250">
+											<td width="200">
 												<?php echo $proyek->nama_proyek ?>
 											</td>
-											<td width="100">
+											<td width="90">
 												<?php echo $proyek->type ?>
 											</td>
 											<td width="200">
 												<?php echo $proyek->pemilik_proyek ?>
 											</td>
-											<td width="250">
+											<td width="300">
 												<a href="<?php echo site_url('proyek/details/' . $proyek->kd_proyek) ?>" class="btn btn-small text-info"><i class="fas fa-info-circle"></i> Detail</a>
 												<a href="<?php echo site_url('proyek/edit/' . $proyek->kd_proyek) ?>" class="btn btn-small"><i class="fas fa-edit"></i> Edit</a>
 												<a onclick="deleteConfirm('<?php echo site_url('proyek/delete/' . $proyek->kd_proyek) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a>

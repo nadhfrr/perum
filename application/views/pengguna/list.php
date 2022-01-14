@@ -41,24 +41,24 @@
 									</tr>
 								</thead>
 								<tbody>
-									<?php foreach ($pengguna as $pengguna) : ?>
+								<?php foreach ($pengguna as $pengguna) : ?>
 										<tr>
-										<td width="150">
-												<?php echo $proyek->kd_proyek ?>
+											<td width="150">
+												<?php echo $pengguna->id_pengguna ?>
 											</td>
+											<td>
+												<?php echo $pengguna->username ?>
+											</td>
+											<td>
+												<?php echo $pengguna->nama ?>
+											</td>
+											<td>
+												<?php echo $pengguna->jabatan ?>
+											</td>
+
 											<td width="250">
-												<?php echo $proyek->nama_proyek ?>
-											</td>
-											<td width="100">
-												<?php echo $proyek->type ?>
-											</td>
-											<td width="200">
-												<?php echo $proyek->pemilik_proyek ?>
-											</td>
-											<td width="250">
-												<a href="<?php echo site_url('proyek/details/' . $proyek->kd_proyek) ?>" class="btn btn-small text-info"><i class="fas fa-info-circle"></i> Detail</a>
-												<a href="<?php echo site_url('proyek/edit/' . $proyek->kd_proyek) ?>" class="btn btn-small"><i class="fas fa-edit"></i> Edit</a>
-												<a onclick="deleteConfirm('<?php echo site_url('proyek/delete/' . $proyek->kd_proyek) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a>
+												<a href="<?php echo site_url('pengguna/edit/' . $pengguna->id) ?>" class="btn btn-small"><i class="fas fa-edit"></i> Edit</a>
+												<a onclick="deleteConfirm('<?php echo site_url('pengguna/delete/' . $pengguna->id) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a>
 											</td>
 										</tr>
 									<?php endforeach; ?>
