@@ -88,7 +88,7 @@
 								</div>
 							</div>
 
-							<input class="btn btn-dark" type="submit" name="btn" value="Save" />
+							<input class="btn btn-dark" type="submit" name="btn" value="Simpan" />
 						</form>
 
 					</div>

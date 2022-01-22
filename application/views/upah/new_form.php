@@ -27,7 +27,7 @@
 
 				<div class="card mb-3">
 					<div class="card-header">
-						<a href="<?php echo site_url('upah') ?>"><i class="fas fa-arrow-left"></i> Back</a>
+						<a href="<?php echo site_url('upah') ?>"><i class="fas fa-arrow-left"></i> Kembali</a>
 					</div>
 					<div class="card-body">
 
@@ -80,13 +80,13 @@
 								</div>
 							</div>
 
-							<input class="btn btn-dark" type="submit" name="btn" value="Save" />
+							<input class="btn btn-dark" type="submit" name="btn" value="Simpan" />
 						</form>
 
 					</div>
 
 					<div class="card-footer small text-muted">
-						* required fields
+						* Wajib diisi
 					</div>
 
 

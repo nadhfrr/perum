@@ -30,7 +30,7 @@
 					<div class="card-header">
 
 						<a href="<?php echo site_url('bahan') ?>"><i class="fas fa-arrow-left"></i>
-							Back</a>
+							Kembali</a>
 					</div>
 					<div class="card-body">
 
@@ -86,7 +86,7 @@
 								</div>
 							</div>
 
-							<input class="btn btn-dark" type="submit" name="btn" value="Save" />
+							<input class="btn btn-dark" type="submit" name="btn" value="Simpan" />
 						</form>
 
 					</div>

@@ -23,7 +23,7 @@
 				<!-- DataTables -->
 				<div class="card mb-3">
 					<div class="card-header">
-						<a href="<?php echo site_url('upah/add') ?>"><i class="fas fa-plus"></i> Add New</a>
+						<a href="<?php echo site_url('upah/add') ?>"><i class="fas fa-plus"></i> Tambah Baru</a>
 					</div>
 					<div class="card-body">
 
@@ -53,7 +53,7 @@
 												<?php echo $upah->satuan ?>
 											</td>
 											<td>
-												Rp.<?php echo number_format($upah->harga_dasar) ?>
+												Rp<?php echo number_format($upah->harga_dasar) ?>
 											</td>
 											<td>
 												<?php echo $upah->merk ?>
