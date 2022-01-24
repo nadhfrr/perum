@@ -64,13 +64,13 @@
 								</div>
 							</div>
 
-							<!-- <div class="form-group">
+							<div class="form-group">
 								<label for="keterangan_lain">Keterangan Lain</label>
 								<input class="form-control <?php echo form_error('keterangan_lain') ? 'is-invalid' : '' ?>" type="text" name="keterangan_lain" placeholder="Keterangan Lain" />
 								<div class="invalid-feedback">
 									<?php echo form_error('keterangan_lain') ?>
 								</div>
-							</div> -->
+							</div>
 
 							<input class="btn btn-dark" type="submit" name="btn" value="Simpan" />
 						</form>

@@ -73,7 +73,7 @@ class Proyek_model extends CI_Model
         $this->nama_proyek = $post["nama_proyek"];
         $this->type = $post["type"];
         $this->pemilik_proyek = $post["pemilik_proyek"];
-        // $this->keterangan_lain = $post["keterangan_lain"];
+        $this->keterangan_lain = $post["keterangan_lain"];
 
         $this->db->update($this->_table, $this, array('kd_proyek' => $post['id']));
     }
