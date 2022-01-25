@@ -17,6 +17,12 @@ class Proyek extends CI_Controller
         $this->load->view("proyek/list", $data);
     }
 
+    public function details()
+    {
+        $data["proyek"] = $this->proyek_model->getAll();
+        $this->load->view("proyek/detail", $data);
+    }
+
     public function add()
     {
         $proyek = $this->proyek_model;

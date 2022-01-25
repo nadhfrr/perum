@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title> Rincian Bahan - DeDiamondPark </title>
+<title> RAB - DeDiamondPark </title>
 <head>
 	<?php $this->load->view("_partials/head.php") ?>
 </head>
@@ -17,37 +17,32 @@
 			<div class="container-fluid">
 
 				<div class="d-sm-flex align-items-center justify-content-between mb-4">
-					<h1 class="h3 mb-0 text-gray-800"> Daftar Rincian Bahan </h1>
+					<h1 class="h3 mb-0 text-gray-800"> RAB </h1>
 				</div>
 
 				<!-- DataTables -->
 				<div class="card mb-3">
-					<div class="card-header">
+					<!-- <div class="card-header">
 						<a href="<?php echo site_url('bahan/add') ?>"><i class="fas fa-plus"></i> Tambah Baru </a>
-					</div>
+					</div> -->
 					<div class="card-body">
 
 						<div class="table-responsive">
 							<table class="table table-hover" id="dataTable" width="100%" cellspacing="0">
 								<thead>
 									<tr>
-										<th>Kode Bahan</th>
-										<th>Uraian Bahan</th>
-										<th>Satuan</th>
-										<th>Harga Dasar</th>
-										<th>Merk</th>
-										<th>Spesifikasi</th>
-										<th>Aksi</th>
+										<th>No</th>
+										<th>Jenis Pekerjaan</th>
 									</tr>
 								</thead>
 								<tbody>
-									<?php foreach ($bahan as $bahan) : ?>
+									<?php foreach ($detailrab as $detailrab) : ?>
 										<tr>
-											<td width="150">
-												<?php echo $bahan->kd_bahan ?>
+											<td width="50">
+												<?php echo $detailrab->id_rab ?>
 											</td>
 											<td>
-												<?php echo $bahan->uraian_bahan ?>
+												<?php echo $detailrab->nama_rab ?>
 											</td>
 											<td>
 												<?php echo $bahan->satuan ?>
