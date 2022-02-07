@@ -2,27 +2,26 @@
 
 class Detailrab_model extends CI_Model
 {
-    private $_table = "rab";
+    private $_table = "subpek";
 
-    public $id_rab;
-    public $nama_rab;
+    public $id_subpek;
 
-    public function rules()
-    {
-        return [
-            [
-                'field' => 'id_rab',
-                'label' => 'id_rab',
-                'rules' => 'required'
-            ],
+    // public function rules()
+    // {
+    //     return [
+    //         [
+    //             'field' => 'id_rab',
+    //             'label' => 'id_rab',
+    //             'rules' => 'required'
+    //         ],
 
-            [
-                'field' => 'nama_rab',
-                'label' => 'nama_rab',
-                'rules' => 'required'
-            ],
-        ];
-    }
+    //         [
+    //             'field' => 'nama_rab',
+    //             'label' => 'nama_rab',
+    //             'rules' => 'required'
+    //         ],
+    //     ];
+    // }
 
     public function getAll()
     {
@@ -31,7 +30,7 @@ class Detailrab_model extends CI_Model
 
     public function getById($id)
     {
-        return $this->db->get_where($this->_table, ["id_rab" => $id])->row();
+        return $this->db->get_where($this->_table, ["id_subpek" => $id])->row();
     }
 
     public function save()

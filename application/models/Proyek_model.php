@@ -2,7 +2,7 @@
 
 class Proyek_model extends CI_Model
 {
-    private $_table = "tambah_proyek";
+    private $_table = "proyek";
 
     public $kd_proyek;
     public $nama_proyek;
