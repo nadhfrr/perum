@@ -14,6 +14,7 @@ class Detailrab extends CI_Controller
     public function index()
     {
         $data["detailrab"] = $this->detailrab_model->getAll();
+        //$data["detailrab"] = $this->detailrab_model->getproyek($id);
         $this->load->view("detailrab/list", $data);
     }
 
@@ -58,4 +59,10 @@ class Detailrab extends CI_Controller
             redirect(site_url('detailrab'));
         }
     }
+
+    public function getsubpek($idrab){
+        $datax = $this->detailrab_model->getSubPekByIdRab($idrab);
+        echo json_encode($datax);
+    }
+
 }
