@@ -2,7 +2,7 @@
 
 class Detailrab_model extends CI_Model
 {
-    private $_table = "subpek";
+    private $_table = "rab";
 
     public $id_subpek;
 
@@ -32,7 +32,7 @@ class Detailrab_model extends CI_Model
     {
         return $this->db->get_where($this->_table, ["id_subpek" => $id])->row();
     }
-    
+
 
     public function getproyek($id)
     {
