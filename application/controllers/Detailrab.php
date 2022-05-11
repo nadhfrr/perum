@@ -20,7 +20,7 @@ class Detailrab extends CI_Controller
 
     public function add()
     {
-        $proyek = $this->detailrab_model;
+        $detailrab = $this->detailrab_model;
         $validation = $this->form_validation;
         $validation->set_rules($detailrab->rules());
 
@@ -60,9 +60,9 @@ class Detailrab extends CI_Controller
         }
     }
 
-    public function getsubpek($idrab){
+    public function getsubpek($idrab)
+    {
         $datax = $this->detailrab_model->getSubPekByIdRab($idrab);
         echo json_encode($datax);
     }
-
 }

@@ -55,7 +55,6 @@ class Proyek_model extends CI_Model
         return $this->db->get_where($this->_table, ["kd_proyek" => $id])->row();
     }
 
-
     public function save()
     {
         $post = $this->input->post();
