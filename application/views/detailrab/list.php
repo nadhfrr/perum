@@ -45,10 +45,23 @@
 										<tr>
 											<td width="80">
 												<?php echo $detailrab->id_rab ?>
-												<a onclick="deleteConfirm('<?php echo site_url('detailrab/delete/' . $detailrab->id_rab) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-plus"></i></a>
+												<!-- <input class="btn btn-secondary" type="button" name="btn" data-toggle="modal" data-target="#addModal" value="Tolak" /> -->
+												<a href="<?php echo site_url('detailrab/edit/' . $detailrab->id_rab) ?>" class="btn btn-small text-danger"><i class="fas fa-plus"></i></a>
 											</td>
 											<td width="">
 												<?php echo $detailrab->nama_rab ?>
+											</td>
+											<td width="">
+												0.00
+											</td>
+											<td width="">
+												m2
+											</td>
+											<td width="">
+												Rp.0
+											</td>
+											<td width="">
+												Rp.0
 											</td>
 										</tr>
 									<?php endforeach; ?>
@@ -65,6 +78,34 @@
 
 			<!-- Sticky Footer -->
 			<?php $this->load->view("_partials/footer.php") ?>
+			<!-- Modal Add Product-->
+			<form action="/product/save" method="post">
+				<div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">Detail Rekap Pendaftaran</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+
+								<div class="form-group">
+									<label>Alasan Ditolak:</label>
+									<textarea class="form-control <?php echo form_error('alasan') ? 'is-invalid' : '' ?>" name="alasan" rows="2" id="alasan"></textarea>
+									<!-- <input type="text" class="form-control" name="product_name" placeholder="Product Name"> -->
+								</div>
+
+							</div>
+							<div class="modal-footer">
+								<button type="submit" class="btn btn-secondary">Simpan</button>
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
 
 		</div>
 		<!-- /.content-wrapper -->
