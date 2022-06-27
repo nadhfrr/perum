@@ -2046,7 +2046,8 @@ Partner Area Style
 Footer Top Area Style
 ======================================================*/
 .footer-top-area {
-  background-image: url(../img/footer-bg.jpg);
+  background-color: rgba(0, 0, 0, 0.9);
+  /* background-image: url(../img/footer-bg.jpg); */
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3119,7 +3120,8 @@ Partner Area Three Style
 Footer Top Area Three Style
 ======================================================*/
 .footer-top-area-three {
-  background-image: url(../img/footer-bg-three.jpg);
+  background-color: rgba(0, 0, 0, 0.9);
+  /* background-image: url(../img/footer-bg-three.jpg); */
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
