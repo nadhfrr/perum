@@ -42,22 +42,24 @@
                                             Masukkan akun anda
                                         </h4>
 
-                                        <?= $this->session->flashdata('msg'); ?>
+                                        <?= $this->session->flashdata('message'); ?>
 
                                         <div class="space-6"></div>
 
-                                        <form class="admin" method="POST" action="<?= site_url('login/auth'); ?>">
+                                        <form class="user" method="POST" action="<?= base_url('auth'); ?>">
                                             <fieldset>
                                                 <label class="block clearfix">
                                                     <span class="block input-icon input-icon-right">
-                                                        <input type="text" class="form-control" name="username" placeholder="Username" />
-                                                        <i class="ace-icon fa fa-user"></i>
+                                                        <input type="text" class="form-control form-control-user" id="email" name="email" placeholder="Username" value="<?= set_value('email'); ?>">
+                                                        <?= form_error('email', '<small class="text-danger pl-3">', '</small>'); ?>
+                                                        <i class=" ace-icon fa fa-user"></i>
                                                     </span>
                                                 </label>
 
                                                 <label class="block clearfix">
                                                     <span class="block input-icon input-icon-right">
-                                                        <input type="password" name="password" class="form-control" placeholder="Password" />
+                                                        <input type="password" name="password" class="form-control form-control-user" id="password" placeholder="Password" />
+                                                        <?= form_error('password', '<small class="text-danger pl-3">', '</small>'); ?>
                                                         <i class="ace-icon fa fa-lock"></i>
                                                     </span>
                                                 </label>
@@ -70,10 +72,10 @@
                                                         <span class="bigger-110">Masuk</span>
                                                     </button>
                                                     <div class="text">
-                                                         <a class="small" href="<?= base_url('beranda/index'); ?>">Kembali ke Beranda</a>
+                                                        <a class="small" href="<?= base_url('beranda/index'); ?>">Kembali ke Beranda</a>
                                                     </div>
                                                 </div>
-                                                
+
                                     </div>
                                 </div><!-- /.col -->
                             </div><!-- /.row -->

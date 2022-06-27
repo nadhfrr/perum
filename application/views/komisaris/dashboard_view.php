@@ -26,7 +26,7 @@
           <span>Perancangan</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-          <a class="dropdown-item" href="<?php echo site_url('proyek/add') ?>">Tambah Proyek</a>
+          <a class="dropdown-item" href="<?php echo site_url('komisaris/proyek/add') ?>">Tambah Proyek</a>
           <a class="dropdown-item" href="<?php echo site_url('home') ?>">Data Pengeluaran</a>
           <a class="dropdown-item" href="<?php echo site_url('home') ?>">Hitung RAB</a>
         </div>
