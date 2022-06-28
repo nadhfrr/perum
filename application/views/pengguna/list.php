@@ -34,9 +34,8 @@
 								<thead>
 									<tr>
 										<th>ID Pengguna</th>
-										<th>Username</th>
 										<th>Nama</th>
-										<th>Jabatan</th>
+										<th>Email</th>
 										<th>Aksi</th>
 									</tr>
 								</thead>
@@ -44,18 +43,14 @@
 								<?php foreach ($pengguna as $pengguna) : ?>
 										<tr>
 											<td width="150">
-												<?php echo $pengguna->id_pengguna ?>
+												<?php echo $pengguna->noreg_user ?>
 											</td>
 											<td>
-												<?php echo $pengguna->username ?>
+												<?php echo $pengguna->name ?>
 											</td>
 											<td>
-												<?php echo $pengguna->nama ?>
+												<?php echo $pengguna->email ?>
 											</td>
-											<td>
-												<?php echo $pengguna->jabatan ?>
-											</td>
-
 											<td width="250">
 												<a href="<?php echo site_url('pengguna/edit/' . $pengguna->id) ?>" class="btn btn-small"><i class="fas fa-edit"></i> Edit</a>
 												<a onclick="deleteConfirm('<?php echo site_url('pengguna/delete/' . $pengguna->id) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a>

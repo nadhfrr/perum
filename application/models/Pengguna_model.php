@@ -2,7 +2,7 @@
 
 class Pengguna_model extends CI_Model
 {
-    private $_table = "admin";
+    private $_table = "user";
 
     public $id_pengguna;
     public $username;
@@ -16,14 +16,32 @@ class Pengguna_model extends CI_Model
     {
         return [
             [
-                'field' => 'id_pengguna',
-                'label' => 'id_pengguna',
+                'field' => 'id',
+                'label' => 'id',
                 'rules' => 'required'
             ],
 
             [
-                'field' => 'username',
-                'label' => 'username',
+                'field' => 'noreg_user',
+                'label' => 'noreg_user',
+                'rules' => 'required'
+            ],
+
+            [
+                'field' => 'name',
+                'label' => 'name',
+                'rules' => 'required'
+            ],
+
+            [
+                'field' => 'email',
+                'label' => 'email',
+                'rules' => 'required'
+            ],
+
+            [
+                'field' => 'image',
+                'label' => 'image',
                 'rules' => 'required'
             ],
 
@@ -34,26 +52,20 @@ class Pengguna_model extends CI_Model
             ],
 
             [
-                'field' => 'vw_password',
-                'label' => 'vw_password',
+                'field' => 'role_id',
+                'label' => 'role_id',
                 'rules' => 'required'
             ],
 
             [
-                'field' => 'nama',
-                'label' => 'nama',
+                'field' => 'is_active',
+                'label' => 'is_active',
                 'rules' => 'required'
             ],
 
             [
-                'field' => 'jabatan',
-                'label' => 'jabatan',
-                'rules' => 'required'
-            ],
-
-            [
-                'field' => 'level',
-                'label' => 'level',
+                'field' => 'date_created',
+                'label' => 'date_created',
                 'rules' => 'required'
             ],
         ];

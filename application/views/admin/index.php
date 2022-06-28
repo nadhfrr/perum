@@ -2,11 +2,9 @@
 <div class="container-fluid">
 
 	<!-- Page Heading -->
-	<h1 class="h3 mb-4 text-gray-800"><?= $title; ?></h1>
-
-	<!-- <h2 style="color: 00000;">
-		Selamat datang, <?php echo $this->session->userdata($user['name']); ?>&nbsp;<img src="<?php echo base_url() ?>assets/img/happy.png" width="22" height="22">
-	</h2> -->
+	<h2>
+		Selamat datang
+	</h2>
 	<h4 style=" margin-left: 75%;">
 		<script type='text/javascript'>
 			var months = ['Januari', 'Februari', 'Maret', 'April', 'Mei',
