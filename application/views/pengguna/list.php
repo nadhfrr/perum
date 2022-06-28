@@ -37,9 +37,9 @@
 										<td><?= $p['noreg_user']; ?></td>
 										<td><?= $p['name']; ?></td>
 										<td><?= $p['email']; ?></td>
-										<td width="250">
-											<a href="<?php echo site_url('pengguna/edit') ?>" class="btn btn-small"><i class="fas fa-edit"></i>Edit</a>
-											<a href="" class="btn btn-small text-danger"><i class="fas fa-trash"></i>Hapus</a>
+										<td>
+											<a href="<?= site_url('pengguna/edit/' . $p['id']) ?>" class="btn btn-small text-primary"><i class="fas fa-edit"></i> Edit</a>
+											<a href="<?php echo site_url('pengguna/delete') ?>" class="btn btn-small text-danger" onclick="return confirm('Apakah anda yakin?');"><i class="fas fa-trash"></i>Hapus</a>
 										</td>
 									</tr>
 									<?php $i++; ?>

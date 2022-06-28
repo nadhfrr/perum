@@ -56,31 +56,49 @@ class Pengguna extends CI_Controller
         }
     }
 
-    public function edit($id = null)
+    public function edit($id)
     {
-        if (!isset($id)) redirect('pengguna');
+        $where = array('id' => $id);
+        $data['pengguna'] = $this->pengguna_model->edit_data($where, 'user')->result_();
 
-        $pengguna = $this->pengguna_model;
-        $validation = $this->form_validation;
-        $validation->set_rules($pengguna->rules());
-
-        if ($validation->run()) {
-            $pengguna->update();
-            $this->session->set_flashdata('success', 'Berhasil disimpan');
-        }
-
-        $data["pengguna"] = $pengguna->getById($id);
-        if (!$data["pengguna"]) show_404();
-
-        $this->load->view("pengguna/edit_form", $data);
+        $this->load->view('templates/header', $data);
+        $this->load->view('templates/sidebar', $data);
+        $this->load->view('templates/topbar', $data);
+        $this->load->view('pengguna/edit_form', $data);
+        $this->load->view('templates/footer');
     }
 
-    public function delete($id = null)
-    {
-        if (!isset($id)) show_404();
+    // public function edit($id = null)
+    // {
+    //     if (!isset($id));
+    //     // redirect('pengguna')
 
-        if ($this->pengguna_model->delete($id)) {
-            redirect(site_url('pengguna'));
-        }
+    //     $data['title'] = 'Edit Daftar Pengguna';
+    //     $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+    //     $pengguna = $this->pengguna_model;
+    //     $validation = $this->form_validation;
+    //     $validation->set_rules($pengguna->rules());
+
+    //     if ($validation->run() == false) {
+    //         $this->load->view('templates/header', $data);
+    //         $this->load->view('templates/sidebar', $data);
+    //         $this->load->view('templates/topbar', $data);
+    //         $this->load->view('pengguna/edit_form', $data);
+    //         $this->load->view('templates/footer');
+    //     } else {
+    //         $pengguna->update();
+    //         $this->session->set_flashdata('success', 'Berhasil disimpan');
+    //     }
+
+    //     $data["pengguna"] = $pengguna->getById($id);
+    //     if (!$data["pengguna"]) show_404();
+    // }
+
+    public function delete($id)
+    {
+        $where = array('id' => $id);
+        $this->pengguna_model->hapus_data($where, 'user');
+        redirect('pengguna');
     }
 }

@@ -4,8 +4,8 @@ class Pengguna_model extends CI_Model
 {
     private $_table = "user";
 
-    public $id_pengguna;
-    public $username;
+    public $id;
+    public $noreg_user;
     public $password;
     public $vw_password;
     public $nama;
@@ -94,10 +94,21 @@ class Pengguna_model extends CI_Model
         $this->db->insert($this->_table, $this);
     }
 
+    public function edit_data($where, $_table)
+    {
+        return $this->db->get_where($_table, $where);
+    }
+
+    public function update_data($where, $data, $table)
+    {
+        $this->db->where($where);
+        $this->db->update($table, $data);
+    }
+
     public function update()
     {
         $post = $this->input->post();
-        $this->id_pengguna = $post["id_pengguna"];
+        $this->noreg_user = $post["noreg_user"];
         $this->username = $post["username"];
         $this->password = $post["password"];
         $this->vw_password = $post["vw_password"];
@@ -106,6 +117,12 @@ class Pengguna_model extends CI_Model
         $this->level = $post["level"];
 
         $this->db->update($this->_table, $this, array('id' => $post['id']));
+    }
+
+    public function hapus_data($where, $_table)
+    {
+        $this->db->where($where);
+        $this->db->delete($_table);
     }
 
     public function delete($id)
