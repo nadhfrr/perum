@@ -82,7 +82,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <a href="<?= base_url('login'); ?>" class="get-started-btn scrollto">Masuk</a>
+                                <a href="<?= base_url('auth'); ?>" class="get-started-btn scrollto">Masuk</a>
                             </li>
                         </ul>
 
