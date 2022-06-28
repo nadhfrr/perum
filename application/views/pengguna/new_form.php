@@ -1,3 +1,4 @@
+<link rel="shortcut icon" href="<?= base_url() ?>front-end/assets/img/logo-perum.png">
 <!-- Begin Page Content -->
 <div class="container-fluid">
 

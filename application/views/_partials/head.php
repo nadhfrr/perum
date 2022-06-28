@@ -11,7 +11,7 @@
 
 <!-- Custom fonts for this template-->
 <link href="<?php echo base_url('assets/fontawesome-free/css/all.min.css') ?>" rel="stylesheet" type="text/css">
-<link rel="shortcut icon" href="<?= site_url() ?>assets/img/logo.png">
+<link rel="shortcut icon" href="<?= base_url() ?>front-end/assets/img/logo-perum.png">
 <!-- Page level plugin CSS-->
 <link href="<?php echo base_url('assets/datatables/dataTables.bootstrap4.css') ?>" rel="stylesheet">
 
