@@ -4,7 +4,7 @@
 
 <!-- Judul di taskbar -->
 <!-- <title><?php echo SITE_NAME ?></title> -->
-<!-- <title><?php echo SITE_NAME .": ". ucfirst($this->uri->segment(1)) ." - ". ucfirst($this->uri->segment(2)) ?></title> -->
+<!-- <title><?php echo SITE_NAME . ": " . ucfirst($this->uri->segment(1)) . " - " . ucfirst($this->uri->segment(2)) ?></title> -->
 
 <!-- Bootstrap core CSS-->
 <link href="<?php echo base_url('assets/bootstrap/css/bootstrap.min.css') ?>" rel="stylesheet">

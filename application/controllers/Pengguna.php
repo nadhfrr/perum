@@ -13,22 +13,47 @@ class Pengguna extends CI_Controller
 
     public function index()
     {
+        $data['title'] = 'Daftar Pengguna';
         $data["pengguna"] = $this->pengguna_model->getAll();
-        $this->load->view("pengguna/list", $data);
+
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+        $data['pengguna'] = $this->db->get('user')->result_array();
+
+        $this->form_validation->set_rules('pengguna', 'Pengguna', 'required');
+
+        if ($this->form_validation->run() == false) {
+            $this->load->view('templates/header', $data);
+            $this->load->view('templates/sidebar', $data);
+            $this->load->view('templates/topbar', $data);
+            $this->load->view('pengguna/list', $data);
+            $this->load->view('templates/footer');
+        } else {
+            $this->db->insert('user', ['pengguna' => $this->input->post('pengguna')]);
+            $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">New menu added!</div>');
+            redirect('pengguna');
+        }
     }
 
     public function add()
     {
+        $data['title'] = 'Tambah Daftar Pengguna';
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
         $pengguna = $this->pengguna_model;
         $validation = $this->form_validation;
         $validation->set_rules($pengguna->rules());
 
-        if ($validation->run()) {
+        if ($validation->run() == false) {
+            $this->load->view('templates/header', $data);
+            $this->load->view('templates/sidebar', $data);
+            $this->load->view('templates/topbar', $data);
+            $this->load->view('pengguna/new_form', $data);
+            $this->load->view('templates/footer');
+        } else {
             $pengguna->save();
             $this->session->set_flashdata('success', 'Berhasil disimpan');
         }
-
-        $this->load->view("pengguna/new_form");
     }
 
     public function edit($id = null)

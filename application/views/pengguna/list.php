@@ -1,93 +1,83 @@
-<!DOCTYPE html>
-<html lang="en">
-<title> Daftar Pengguna - DeDiamondPark </title>
+<!-- Begin Page Content -->
+<div class="container-fluid">
 
-<head>
-	<?php $this->load->view("_partials/head.php") ?>
-</head>
+	<!-- Page Heading -->
+	<h1 class="h3 mb-4 text-gray-800"><?= $title; ?></h1>
 
-<body id="page-top">
+	<div class="row">
+		<div class="col-lg">
+			<?= form_error('pengguna', '<div class="alert alert-danger" role="alert">', '</div>'); ?>
 
-	<?php $this->load->view("_partials/navbar.php") ?>
-	<div id="wrapper">
+			<?= $this->session->flashdata('message'); ?>
 
-		<?php $this->load->view("_partials/sidebar.php") ?>
-
-		<div id="content-wrapper">
-
-			<div class="container-fluid">
-
-				<div class="d-sm-flex align-items-center justify-content-between mb-4">
-					<h1 class="h3 mb-0 text-gray-800">Data Pengguna</h1>
+			<!-- DataTables -->
+			<div class="card mb-3">
+				<div class="card-header">
+					<a href="<?php echo site_url('pengguna/add') ?>"><i class="fas fa-plus"></i> Tambah Baru</a>
 				</div>
+				<div class="card-body">
 
-
-				<!-- DataTables -->
-				<div class="card mb-3">
-					<div class="card-header">
-						<a href="<?php echo site_url('pengguna/add') ?>"><i class="fas fa-plus"></i> Tambah Baru</a>
-					</div>
-					<div class="card-body">
-
-						<div class="table-responsive">
-							<table class="table table-hover" id="dataTable" width="100%" cellspacing="0">
-								<thead>
+					<div class="table-responsive">
+						<table class="table table-hover" id="dataTable" width="100%" cellspacing="0">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th>ID Pengguna</th>
+									<th>Nama</th>
+									<th>Email</th>
+									<th>Aksi</th>
+								</tr>
+							</thead>
+							<tbody>
+								<?php $i = 1; ?>
+								<?php foreach ($pengguna as $p) : ?>
 									<tr>
-										<th>ID Pengguna</th>
-										<th>Nama</th>
-										<th>Email</th>
-										<th>Aksi</th>
+										<th scope="row"><?= $i; ?></th>
+										<td><?= $p['noreg_user']; ?></td>
+										<td><?= $p['name']; ?></td>
+										<td><?= $p['email']; ?></td>
+										<td width="250">
+											<a href="" class="btn btn-small"><i class="fas fa-edit"></i>Edit</a>
+											<a href="" class="btn btn-small text-danger"><i class="fas fa-trash"></i>Hapus</a>
+										</td>
 									</tr>
-								</thead>
-								<tbody>
-								<?php foreach ($pengguna as $pengguna) : ?>
-										<tr>
-											<td width="150">
-												<?php echo $pengguna->noreg_user ?>
-											</td>
-											<td>
-												<?php echo $pengguna->name ?>
-											</td>
-											<td>
-												<?php echo $pengguna->email ?>
-											</td>
-											<td width="250">
-												<a href="<?php echo site_url('pengguna/edit/' . $pengguna->id) ?>" class="btn btn-small"><i class="fas fa-edit"></i> Edit</a>
-												<a onclick="deleteConfirm('<?php echo site_url('pengguna/delete/' . $pengguna->id) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a>
-											</td>
-										</tr>
-									<?php endforeach; ?>
-
-								</tbody>
-							</table>
-						</div>
+									<?php $i++; ?>
+								<?php endforeach; ?>
+							</tbody>
+						</table>
 					</div>
 				</div>
-
 			</div>
-			<!-- /.container-fluid -->
-
-			<!-- Sticky Footer -->
-			<?php $this->load->view("_partials/footer.php") ?>
-
 		</div>
-		<!-- /.content-wrapper -->
-
 	</div>
-	<!-- /#wrapper -->
 
+</div>
+<!-- /.container-fluid -->
 
-	<?php $this->load->view("_partials/scrolltop.php") ?>
-	<?php $this->load->view("_partials/modal.php") ?>
+</div>
+<!-- End of Main Content -->
 
-	<?php $this->load->view("_partials/js.php") ?>
-
-	<script>
-		function deleteConfirm(url) {
-			$('#btn-delete').attr('href', url);
-			$('#deleteModal').modal();
-		}
-	</script>
-</body>
-
-</html>
+<!-- Modal -->
+<!-- <div class="modal fade" id="newMenuModal" tabindex="-1" aria-labelledby="newMenuModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="newMenuModalLabel">Add New Menu</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form action="<?= base_url('menu'); ?>" method="post">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="menu" name="menu" placeholder="Menu name">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Add</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div> -->
