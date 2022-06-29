@@ -45,15 +45,15 @@ class Pengguna extends CI_Controller
         $validation->set_rules($pengguna->rules());
 
         if ($validation->run() == false) {
-            $this->load->view('templates/header', $data);
-            $this->load->view('templates/sidebar', $data);
-            $this->load->view('templates/topbar', $data);
-            $this->load->view('pengguna/new_form', $data);
-            $this->load->view('templates/footer');
         } else {
             $pengguna->save();
             $this->session->set_flashdata('success', 'Berhasil disimpan');
         }
+        $this->load->view('templates/header', $data);
+        $this->load->view('templates/sidebar', $data);
+        $this->load->view('templates/topbar', $data);
+        $this->load->view('pengguna/new_form', $data);
+        $this->load->view('templates/footer');
     }
 
     // public function edit($id = null)
@@ -87,16 +87,16 @@ class Pengguna extends CI_Controller
         $validation->set_rules($pengguna->rules());
 
         if ($validation->run() == false) {
-            $this->load->view('templates/header', $data);
-            $this->load->view('templates/sidebar', $data);
-            $this->load->view('templates/topbar', $data);
-            $this->load->view('pengguna/edit_form', $data);
-            $this->load->view('templates/footer');
         } else {
             $pengguna->update();
             $this->session->set_flashdata('success', 'Berhasil disimpan');
-            redirect('pengguna');
+            // redirect('pengguna');
         }
+        $this->load->view('templates/header', $data);
+        $this->load->view('templates/sidebar', $data);
+        $this->load->view('templates/topbar', $data);
+        $this->load->view('pengguna/edit_form', $data);
+        $this->load->view('templates/footer');
 
         $data["pengguna"] = $pengguna->getById($id);
         if (!$data["pengguna"]) show_404();
