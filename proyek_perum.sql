@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 27, 2022 at 05:56 PM
+-- Generation Time: Jun 29, 2022 at 06:54 AM
 -- Server version: 10.1.19-MariaDB
 -- PHP Version: 5.6.28
 
@@ -69,7 +69,9 @@ INSERT INTO `user_access_menu` (`id`, `role_id`, `menu_id`) VALUES
 (1, 1, 1),
 (2, 1, 2),
 (3, 2, 2),
-(4, 1, 3);
+(4, 1, 3),
+(5, 1, 4),
+(6, 1, 5);
 
 -- --------------------------------------------------------
 
@@ -90,7 +92,8 @@ INSERT INTO `user_menu` (`id`, `menu`) VALUES
 (1, 'Admin'),
 (2, 'User'),
 (3, 'Menu'),
-(4, 'Rincian');
+(4, 'Rincian'),
+(5, 'Perancangan');
 
 -- --------------------------------------------------------
 
@@ -136,8 +139,13 @@ INSERT INTO `user_sub_menu` (`id`, `menu_id`, `title`, `url`, `icon`, `is_active
 (3, 2, 'Edit Profile', 'user/edit', 'fas fa-fw fa-user-edit', 1),
 (4, 3, 'Menu Management', 'menu', 'fas fa-fw fa-folder', 1),
 (5, 3, 'Submenu Management', 'menu/submenu', 'fas fa-fw fa-folder-open', 1),
-(6, 1, 'Pengguna', 'admin/role', 'fas fa-fw fa-user-tie', 1),
-(7, 4, 'Rincian Bahan', 'admin/bahan', 'fas fa-fw fa-folder', 1);
+(6, 1, 'Role', 'admin/role', 'fas fa-fw fa-user-tie', 1),
+(7, 4, 'Rincian Bahan', 'bahan', 'fas fa-fw fa-folder', 1),
+(8, 1, 'Pengguna', 'pengguna', 'fas fa-fw fa-user', 1),
+(9, 4, 'Rincian Upah', 'upah', 'fas fa-fw fa-folder', 1),
+(10, 5, 'Tambah Proyek', 'proyek', 'fas fa-fw fa-folder', 1),
+(11, 5, 'Data Pengeluaran', 'keuangan', 'fas fa-fw fa-folder', 1),
+(12, 5, 'Hitung RAB', 'rab', 'fas fa-fw fa-folder', 1);
 
 --
 -- Indexes for dumped tables
@@ -181,17 +189,17 @@ ALTER TABLE `user_sub_menu`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 --
 -- AUTO_INCREMENT for table `user_access_menu`
 --
 ALTER TABLE `user_access_menu`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT for table `user_menu`
 --
 ALTER TABLE `user_menu`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `user_role`
 --
@@ -201,7 +209,7 @@ ALTER TABLE `user_role`
 -- AUTO_INCREMENT for table `user_sub_menu`
 --
 ALTER TABLE `user_sub_menu`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
