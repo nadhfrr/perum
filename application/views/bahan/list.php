@@ -35,22 +35,22 @@
 								<?php foreach ($bahan as $bahan) : ?>
 									<tr>
 										<td width="150">
-											<?php echo $bahan->kd_bahan ?>
+											<?= $bahan['kd_bahan']; ?>
 										</td>
 										<td>
-											<?php echo $bahan->uraian_bahan ?>
+											<?= $bahan['uraian_bahan']; ?>
 										</td>
 										<td>
-											<?php echo $bahan->satuan ?>
+											<?= $bahan['satuan']; ?>
 										</td>
 										<td>
-											Rp<?php echo number_format($bahan->harga_dasar) ?>
+											Rp<?= number_format $bahan['harga_dasar']; ?>
 										</td>
 										<td>
-											<?php echo $bahan->merk ?>
+											<?= $bahan['merk']; ?>
 										</td>
 										<td>
-											<?php echo $bahan->spesifikasi ?>
+											<?= $bahan['spesifikasi'] ?>
 										</td>
 
 										<td width="250">
