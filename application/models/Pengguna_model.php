@@ -6,21 +6,15 @@ class Pengguna_model extends CI_Model
 
     public $id;
     public $noreg_user;
+    public $name;
+    public $email;
+    public $image;
     public $password;
-    public $vw_password;
-    public $nama;
-    public $jabatan;
-    public $level;
+    public $role_id;
 
     public function rules()
     {
         return [
-            [
-                'field' => 'id',
-                'label' => 'id',
-                'rules' => 'required'
-            ],
-
             [
                 'field' => 'noreg_user',
                 'label' => 'noreg_user',
@@ -40,12 +34,6 @@ class Pengguna_model extends CI_Model
             ],
 
             [
-                'field' => 'image',
-                'label' => 'image',
-                'rules' => 'required'
-            ],
-
-            [
                 'field' => 'password',
                 'label' => 'password',
                 'rules' => 'required'
@@ -55,19 +43,7 @@ class Pengguna_model extends CI_Model
                 'field' => 'role_id',
                 'label' => 'role_id',
                 'rules' => 'required'
-            ],
-
-            [
-                'field' => 'is_active',
-                'label' => 'is_active',
-                'rules' => 'required'
-            ],
-
-            [
-                'field' => 'date_created',
-                'label' => 'date_created',
-                'rules' => 'required'
-            ],
+            ]
         ];
     }
 
@@ -84,13 +60,13 @@ class Pengguna_model extends CI_Model
     public function save()
     {
         $post = $this->input->post();
-        $this->id_pengguna = $post["id_pengguna"];
-        $this->username = $post["username"];
+        $this->ida = $post["id"];
+        $this->noreg_user = $post["noreg_user"];
+        $this->name = $post["name"];
+        $this->email = $post["email"];
         $this->password = $post["password"];
-        $this->vw_password = $post["vw_password"];
-        $this->nama = $post["nama"];
-        $this->jabatan = $post["jabatan"];
-        $this->level = $post["level"];
+        $this->role_id = $post["role_id"];
+
         $this->db->insert($this->_table, $this);
     }
 
@@ -99,22 +75,15 @@ class Pengguna_model extends CI_Model
         return $this->db->get_where($_table, $where);
     }
 
-    public function update_data($where, $data, $table)
-    {
-        $this->db->where($where);
-        $this->db->update($table, $data);
-    }
-
     public function update()
     {
         $post = $this->input->post();
+        $this->id = $post["id"];
         $this->noreg_user = $post["noreg_user"];
-        $this->username = $post["username"];
+        $this->name = $post["name"];
+        $this->email = $post["email"];
         $this->password = $post["password"];
-        $this->vw_password = $post["vw_password"];
-        $this->nama = $post["nama"];
-        $this->jabatan = $post["jabatan"];
-        $this->level = $post["level"];
+        $this->role_id = $post["role_id"];
 
         $this->db->update($this->_table, $this, array('id' => $post['id']));
     }

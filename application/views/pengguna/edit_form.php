@@ -25,39 +25,64 @@
 						Kembali</a>
 				</div>
 				<div class="card-body">
-					<?php foreach ($pengguna as $p) { ?>
-						<form action="<?php echo base_url("pengguna/edit"); ?>" method="post" enctype="multipart/form-data">
+
+					<?php foreach ($pengguna as $p) : ?>
+						<form action="<?php base_url('pengguna/edit') ?>" method="post" enctype="multipart/form-data">
+
+
+							<input type="hidden" name="id" value="<?php echo $p['id'] ?>" />
 
 							<div class="form-group">
 								<label for="noreg_user">No. Registrasi User</label>
-								<input class="form-control" type="hidden" name="id" value="<?php echo $p->id ?>">
-								<input class="form-control" type="text" name="noreg_user" value="<?php echo $p->noreg_user ?>">
-							</div>
-							<div class="form-group">
-								<label for="name">Nama</label>
-								<input class="form-control" type="text" name="name" value="<?php echo $p->name ?>">
-							</div>
-							<div class="form-group">
-								<label for="email">Email</label>
-								<input class="form-control" type="text" name="email" value="<?php echo $p->email ?>">
-							</div>
-							<div class="form-group">
-								<label for="image">Profil User</label>
-								<input class="form-control" type="text" name="image" value="<?php echo $p->image ?>">
-							</div>
-							<div class="form-group">
-								<label for="password">Password</label>
-								<input class="form-control" type="text" name="password" value="<?php echo $p->password ?>">
-							</div>
-							<div class="form-group">
-								<label for="role_id">Role ID User</label>
-								<input class="form-control" type="text" name="role_id" value="<?php echo $p->role_id ?>">
+								<input class="form-control <?php echo form_error('noreg_user') ? 'is-invalid' : '' ?>" type="text" name="noreg_user" placeholder="ID Pengguna" value="<?php echo $p['noreg_user'] ?>" />
+								<div class="invalid-feedback">
+									<?php echo form_error('noreg_user') ?>
+								</div>
 							</div>
 
-							<button class="btn btn-primary" type="reset" name="btn">Reset</button>
-							<button class="btn btn-dark" type="submit" name="btn">Simpan</button>
+							<div class="form-group">
+								<label for="name">Nama User</label>
+								<input class="form-control <?php echo form_error('name') ? 'is-invalid' : '' ?>" type="text" name="name" min="0" placeholder="name" value="<?php echo $p['name'] ?>" />
+								<div class="invalid-feedback">
+									<?php echo form_error('name') ?>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="email">Password</label>
+								<input class="form-control <?php echo form_error('email') ? 'is-invalid' : '' ?>" type="text" name="email" min="0" placeholder="email" value="<?php echo $p['email'] ?>" />
+								<div class="invalid-feedback">
+									<?php echo form_error('email') ?>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="image">Profil User</label>
+								<input class="form-control <?php echo form_error('image') ? 'is-invalid' : '' ?>" type="text" name="image" min="0" placeholder="Konfirmasi Password" value="<?php echo $p['image'] ?>" />
+								<div class="invalid-feedback">
+									<?php echo form_error('image') ?>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="password">Password</label>
+								<input class="form-control <?php echo form_error('password') ? 'is-invalid' : '' ?>" type="text" name="password" min="0" placeholder="password" value="<?php echo $p['password'] ?>" />
+								<div class="invalid-feedback">
+									<?php echo form_error('password') ?>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="role_id">Role ID User</label>
+								<input class="form-control <?php echo form_error('role_id') ? 'is-invalid' : '' ?>" type="text" name="role_id" min="0" placeholder="role_id" value="<?php echo $p['role_id'] ?>" />
+								<div class="invalid-feedback">
+									<?php echo form_error('role_id') ?>
+								</div>
+							</div>
+
+							<input class="btn btn-dark" type="submit" name="btn" value="Simpan" />
 						</form>
-					<?php } ?>
+					<?php endforeach; ?>
 
 				</div>
 

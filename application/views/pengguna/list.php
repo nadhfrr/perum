@@ -39,7 +39,7 @@
 										<td><?= $p['email']; ?></td>
 										<td>
 											<a href="<?= site_url('pengguna/edit/' . $p['id']) ?>" class="btn btn-small text-primary"><i class="fas fa-edit"></i> Edit</a>
-											<a href="<?php echo site_url('pengguna/delete') ?>" class="btn btn-small text-danger" onclick="return confirm('Apakah anda yakin?');"><i class="fas fa-trash"></i>Hapus</a>
+											<a onclick="deleteConfirm('<?php echo site_url('pengguna/delete/' . $p['id']) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a>
 										</td>
 									</tr>
 									<?php $i++; ?>
