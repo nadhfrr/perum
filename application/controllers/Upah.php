@@ -72,7 +72,7 @@ class Upah extends CI_Controller
 
         if ($validation->run() == false) {
         } else {
-            $upah->update();
+            $kd_upah->update();
             $this->session->set_flashdata('success', 'Berhasil disimpan');
             // redirect('upah');
         }
@@ -82,7 +82,7 @@ class Upah extends CI_Controller
         $this->load->view('upah/edit_form', $data);
         $this->load->view('templates/footer');
 
-        $data["kd_upah"] = $upah->getById($id);
+        $data["kd_upah"] = $kd_upah->getById($id);
         if (!$data["kd_upah"]) show_404();
     }
 

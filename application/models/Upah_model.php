@@ -73,7 +73,12 @@ class Upah_model extends CI_Model
         $this->spesifikasi = $post["spesifikasi"];
         $this->db->insert($this->_table, $this);
     }
-
+    
+    public function edit_data($where, $_table)
+    {
+        return $this->db->get_where($_table, $where);
+    }
+    
     public function update()
     {
         $post = $this->input->post();
@@ -84,11 +89,11 @@ class Upah_model extends CI_Model
         $this->merk = $post["merk"];
         $this->spesifikasi = $post["spesifikasi"];
 
-        $this->db->update($this->_table, $this, array('kd_upah' => $post['id']));
+        $this->db->update($this->_table, $this, array('kd_upah' => $post['kd_upah']));
     }
 
     public function delete($id)
     {
-        return $this->db->delete($this->_table, array("kd_upah" => $id));
+        return $this->db->delete($this->_table, array("kd_upah" => $kd_upah));
     }
 }
