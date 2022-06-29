@@ -13,8 +13,25 @@ class Proyek extends CI_Controller
 
     public function index()
     {
+        $data['title'] = 'Data Proyek';
         $data["proyek"] = $this->proyek_model->getAll();
-        $this->load->view("proyek/list", $data);
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+        $data['proyek'] = $this->db->get('proyek')->result_array();
+
+        $this->form_validation->set_rules('proyek', 'Proyek', 'required');
+
+        if ($this->form_validation->run() == false) {
+            $this->load->view('templates/header', $data);
+            $this->load->view('templates/sidebar', $data);
+            $this->load->view('templates/topbar', $data);
+            $this->load->view('proyek/list', $data);
+            $this->load->view('templates/footer');
+        } else {
+            $this->db->insert('user', ['proyek' => $this->input->post('proyek')]);
+            $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">New menu added!</div>');
+            redirect('proyek');
+        }
     }
 
     public function details()
@@ -25,35 +42,52 @@ class Proyek extends CI_Controller
 
     public function add()
     {
+        $data['title'] = 'Tambah Daftar Pengguna';
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
         $proyek = $this->proyek_model;
         $validation = $this->form_validation;
         $validation->set_rules($proyek->rules());
 
-        if ($validation->run()) {
+        if ($validation->run() == false) {
+        } else {
             $proyek->save();
             $this->session->set_flashdata('success', 'Berhasil disimpan');
         }
-
-        $this->load->view("proyek/new_form");
+        $this->load->view('templates/header', $data);
+        $this->load->view('templates/sidebar', $data);
+        $this->load->view('templates/topbar', $data);
+        $this->load->view('proyek/new_form', $data);
+        $this->load->view('templates/footer');
     }
 
-    public function edit($id = null)
+    public function edit($kd_proyek = null)
     {
-        if (!isset($id)) redirect('proyek');
+        if (!isset($kd_proyek)) redirect('proyek');
+
+        $data['title'] = 'Edit Data Proyek';
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+        $where = array('kd_proyek' => $kd_proyek);
+        $data['proyek'] = $this->proyek_model->edit_data($where, 'proyek')->result_array();
 
         $proyek = $this->proyek_model;
         $validation = $this->form_validation;
         $validation->set_rules($proyek->rules());
 
-        if ($validation->run()) {
+        if ($validation->run() == false) {
+        } else {
             $proyek->update();
             $this->session->set_flashdata('success', 'Berhasil disimpan');
         }
+        $this->load->view('templates/header', $data);
+        $this->load->view('templates/sidebar', $data);
+        $this->load->view('templates/topbar', $data);
+        $this->load->view('proyek/edit_form', $data);
+        $this->load->view('templates/footer');
 
-        $data["proyek"] = $proyek->getById($id);
+        $data["proyek"] = $proyek->getById($kd_proyek);
         if (!$data["proyek"]) show_404();
-
-        $this->load->view("proyek/edit_form", $data);
     }
 
     public function delete($id = null)

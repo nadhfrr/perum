@@ -29,8 +29,6 @@
 					<?php foreach ($bahan as $bahan) : ?>
 						<form action="<?php base_url("bahan/edit") ?>" method="post" enctype="multipart/form-data">
 
-							<!-- <input type="hidden" name="kd_bahan" value="<?php echo $bahan['kd_bahan'] ?>" /> -->
-
 							<div class="form-group">
 								<label for="kd_bahan">Kode Bahan</label>
 								<input class="form-control <?php echo form_error('kd_bahan') ? 'is-invalid' : '' ?>" type="text" name="kd_bahan" placeholder="Kode Bahan" value="<?php echo $bahan['kd_bahan'] ?>" />

@@ -13,23 +13,47 @@ class Detailrab extends CI_Controller
 
     public function index()
     {
+        $data['title'] = 'Daftar Rincian Bahan';
         $data["detailrab"] = $this->detailrab_model->getAll();
-        //$data["detailrab"] = $this->detailrab_model->getproyek($id);
-        $this->load->view("detailrab/list", $data);
+
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+        $data['detailrab'] = $this->db->get('proyek_rab')->result_array();
+
+        $this->form_validation->set_rules('detailrab', 'Detailrab', 'required');
+
+        if ($this->form_validation->run() == false) {
+            $this->load->view('templates/header', $data);
+            $this->load->view('templates/sidebar', $data);
+            $this->load->view('templates/topbar', $data);
+            $this->load->view('detailrab/list', $data);
+            $this->load->view('templates/footer');
+        } else {
+            $this->db->insert('user', ['detailrab' => $this->input->post('detailrab')]);
+            $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">New menu added!</div>');
+            redirect('detailrab');
+        }
     }
 
     public function add()
     {
+        $data['title'] = 'Tambah Daftar Pengguna';
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
         $detailrab = $this->detailrab_model;
         $validation = $this->form_validation;
         $validation->set_rules($detailrab->rules());
 
-        if ($validation->run()) {
+        if ($validation->run() == false) {
+        } else {
             $detailrab->save();
             $this->session->set_flashdata('success', 'Berhasil disimpan');
         }
-
-        $this->load->view("detailrab/new_form");
+        $this->load->view('templates/header', $data);
+        $this->load->view('templates/sidebar', $data);
+        $this->load->view('templates/topbar', $data);
+        $this->load->view('detailrab/new_form', $data);
+        $this->load->view('templates/footer');
     }
 
     public function edit($id = null)

@@ -66,6 +66,11 @@ class Proyek_model extends CI_Model
         $this->db->insert($this->_table, $this);
     }
 
+    public function edit_data($where, $_table)
+    {
+        return $this->db->get_where($_table, $where);
+    }
+
     public function update()
     {
         $post = $this->input->post();
@@ -75,7 +80,7 @@ class Proyek_model extends CI_Model
         $this->pemilik_proyek = $post["pemilik_proyek"];
         $this->keterangan_lain = $post["keterangan_lain"];
 
-        $this->db->update($this->_table, $this, array('kd_proyek' => $post['id']));
+        $this->db->update($this->_table, $this, array('kd_proyek' => $post['kd_proyek']));
     }
 
     public function delete($id)
