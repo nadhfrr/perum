@@ -13,12 +13,12 @@ class Detailrab extends CI_Controller
 
     public function index()
     {
-        $data['title'] = 'Daftar Rincian Bahan';
+        $data['title'] = 'Detail Daftar Proyek';
         $data["detailrab"] = $this->detailrab_model->getAll();
 
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
-        $data['detailrab'] = $this->db->get('proyek_rab')->result_array();
+        $data['detailrab'] = $this->db->get('rab')->result_array();
 
         $this->form_validation->set_rules('detailrab', 'Detailrab', 'required');
 
@@ -56,23 +56,34 @@ class Detailrab extends CI_Controller
         $this->load->view('templates/footer');
     }
 
-    public function edit($id = null)
+    public function edit($id_rab = null)
     {
-        if (!isset($id)) redirect('detailrab');
+        if (!isset($id_rab)) redirect('detailrab');
+
+        $data['title'] = 'Edit Daftar Rincian Detailrab';
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+        $where = array('id_rab' => $id_rab);
+        $data['detailrab'] = $this->detailrab_model->edit_data($where, 'rab')->result_array();
 
         $detailrab = $this->detailrab_model;
         $validation = $this->form_validation;
         $validation->set_rules($detailrab->rules());
 
-        if ($validation->run()) {
+        if ($validation->run() == false) {
+        } else {
             $detailrab->update();
             $this->session->set_flashdata('success', 'Berhasil disimpan');
+            // redirect('detailrab');
         }
+        $this->load->view('templates/header', $data);
+        $this->load->view('templates/sidebar', $data);
+        $this->load->view('templates/topbar', $data);
+        $this->load->view('detailrab/edit_form', $data);
+        $this->load->view('templates/footer');
 
-        $data["detailrab"] = $detailrab->getById($id);
+        $data["detailrab"] = $detailrab->getById($id_rab);
         if (!$data["detailrab"]) show_404();
-
-        $this->load->view("detailrab/edit_form", $data);
     }
 
     public function delete($id = null)

@@ -13,51 +13,50 @@
 
 			<!-- DataTables -->
 			<div class="card mb-3">
-					<div class="card-header">
-						<a href="<?php echo site_url('proyek/add') ?>"><i class="fas fa-plus"></i> Tambah Baru</a>
-					</div>
-					<div class="card-body">
+				<div class="card-header">
+					<a href="<?php echo site_url('proyek/add') ?>"><i class="fas fa-plus"></i> Tambah Baru</a>
+				</div>
+				<div class="card-body">
 
-						<div class="table-responsive">
-							<table class="table table-hover" id="dataTable" width="100%" cellspacing="0">
-								<thead>
-									<tr>
-										<th>Kode Proyek</th>
-										<th>Nama Proyek</th>
-										<th>Type</th>
-										<th>Pemilik Proyek</th>
-										<th>Aksi</th>
-									</tr>
-								</thead>
-								<tbody>
+					<div class="table-responsive">
+						<table class="table table-hover" id="dataTable" width="100%" cellspacing="0">
+							<thead>
+								<tr>
+									<th>Kode Proyek</th>
+									<th>Nama Proyek</th>
+									<th>Type</th>
+									<th>Pemilik Proyek</th>
+									<th>Aksi</th>
+								</tr>
+							</thead>
+							<tbody>
 								<?php foreach ($proyek as $proyek) : ?>
-										<tr>
-											<td width="140">
-												<?= $proyek['kd_proyek']; ?>
-											</td>
-											<td width="200">
-												<?=$proyek['nama_proyek']; ?>
-											</td>
-											<td width="90">
-												<?= $proyek['type']; ?>
-											</td>
-											<td width="200">
-												<?= $proyek['pemilik_proyek']; ?>
-											</td>
-											<td width="300">
-												<a href="<?php echo site_url('detailrab/index/' . $proyek['kd_proyek']) ?>" class="btn btn-small text-info"><i class="fas fa-info-circle"></i> Detail</a>
-												<a href="<?php echo site_url('proyek/edit/' . $proyek['kd_proyek']) ?>" class="btn btn-small"><i class="fas fa-edit"></i> Edit</a>
-												<a onclick="deleteConfirm('<?php echo site_url('proyek/delete/' . $proyek['kd_proyek']) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a>
-											</td>
-										</tr>
-									<?php endforeach; ?>
+									<tr>
+										<td width="140">
+											<?= $proyek['kd_proyek']; ?>
+										</td>
+										<td width="200">
+											<?= $proyek['nama_proyek']; ?>
+										</td>
+										<td width="90">
+											<?= $proyek['type']; ?>
+										</td>
+										<td width="200">
+											<?= $proyek['pemilik_proyek']; ?>
+										</td>
+										<td width="300">
+											<a href="<?php echo site_url('detailrab/index/' . $proyek['kd_proyek']) ?>" class="btn btn-small text-info"><i class="fas fa-info-circle"></i> Detail</a>
+											<a href="<?php echo site_url('proyek/edit/' . $proyek['kd_proyek']) ?>" class="btn btn-small"><i class="fas fa-edit"></i> Edit</a>
+											<a onclick="deleteConfirm('<?php echo site_url('proyek/delete/' . $proyek['kd_proyek']) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a>
+										</td>
+									</tr>
+								<?php endforeach; ?>
 
-								</tbody>
-							</table>
-						</div>
+							</tbody>
+						</table>
 					</div>
 				</div>
-
+			</div>
 		</div>
 	</div>
 

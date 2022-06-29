@@ -13,7 +13,7 @@ class Proyek extends CI_Controller
 
     public function index()
     {
-        $data['title'] = 'Data Proyek';
+        $data['title'] = 'Daftar Proyek';
         $data["proyek"] = $this->proyek_model->getAll();
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
@@ -42,7 +42,7 @@ class Proyek extends CI_Controller
 
     public function add()
     {
-        $data['title'] = 'Tambah Daftar Pengguna';
+        $data['title'] = 'Tambah Daftar Proyek';
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
         $proyek = $this->proyek_model;

@@ -55,6 +55,11 @@ class Detailrab_model extends CI_Model
         $this->db->insert($this->_table, $this);
     }
 
+    public function edit_data($where, $_table)
+    {
+        return $this->db->get_where($_table, $where);
+    }
+
     public function update()
     {
         $post = $this->input->post();

@@ -3,7 +3,7 @@
 <div class="container-fluid">
 
 	<!-- Page Heading -->
-	<h1 class="h3 mb-4 text-gray-800">Tambah <?= $title; ?></h1>
+	<h1 class="h3 mb-4 text-gray-800"><?= $title; ?></h1>
 
 	<div class="row">
 		<div class="col-lg">
@@ -23,7 +23,7 @@
 				</div>
 				<div class="card-body">
 
-					<form action="<?= base_url('pengguna/add'); ?>" method="post" enctype="multipart/form-data">
+					<form class="user" method="post" enctype="multipart/form-data">
 						<div class="form-group">
 							<label for="noreg_user">No. Registrasi User</label>
 							<input class="form-control <?php echo form_error('noreg_user') ? 'is-invalid' : '' ?>" type="text" name="noreg_user" placeholder="nomor registrasi anggota" />
