@@ -1,27 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<title> Rincian Upah - DeDiamondPark </title>
-<head>
-	<?php $this->load->view("_partials/head.php") ?>
-</head>
+<link rel="shortcut icon" href="<?= base_url() ?>front-end/assets/img/logo-perum.png">
+<!-- Begin Page Content -->
+<div class="container-fluid">
 
-<body id="page-top">
+	<!-- Page Heading -->
+	<h1 class="h3 mb-4 text-gray-800"><?= $title; ?></h1>
 
-	<?php $this->load->view("_partials/navbar.php") ?>
-	<div id="wrapper">
+	<div class="row">
+		<div class="col-lg">
+			<?= form_error('bahan', '<div class="alert alert-danger" role="alert">', '</div>'); ?>
 
-		<?php $this->load->view("_partials/sidebar.php") ?>
+			<?= $this->session->flashdata('message'); ?>
 
-		<div id="content-wrapper">
-
-			<div class="container-fluid">
-
-				<div class="d-sm-flex align-items-center justify-content-between mb-4">
-					<h1 class="h3 mb-0 text-gray-800">Daftar Rincian Upah</h1>
-				</div>
-
-				<!-- DataTables -->
-				<div class="card mb-3">
+			<!-- DataTables -->
+			<div class="card mb-3">
 					<div class="card-header">
 						<a href="<?php echo site_url('upah/add') ?>"><i class="fas fa-plus"></i> Tambah Baru</a>
 					</div>
@@ -44,27 +35,27 @@
 									<?php foreach ($upah as $upah) : ?>
 										<tr>
 											<td width="150">
-												<?php echo $upah->kd_upah ?>
+												<?= $upah['kd_upah']; ?>
 											</td>
 											<td>
-												<?php echo $upah->uraian_upah ?>
+												<?= $upah['uraian_upah']; ?>
 											</td>
 											<td>
-												<?php echo $upah->satuan ?>
+												<?= $upah['satuan']; ?>
 											</td>
 											<td>
-												Rp<?php echo number_format($upah->harga_dasar) ?>
+												Rp<?= number_format($upah['harga_dasar']); ?>
 											</td>
 											<td>
-												<?php echo $upah->merk ?>
+												<?= $upah['merk']; ?>
 											</td>
 											<td>
-												<?php echo $upah->spesifikasi ?>
+												<?= $upah['spesifikasi'] ?>
 											</td>
 
 											<td width="250">
-												<a href="<?php echo site_url('upah/edit/' . $upah->kd_upah) ?>" class="btn btn-small"><i class="fas fa-edit"></i> Edit</a>
-												<a onclick="deleteConfirm('<?php echo site_url('upah/delete/' . $upah->kd_upah) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a>
+												<a href="<?php echo site_url('upah/edit/' . $upah['kd_upah']) ?>" class="btn btn-small"><i class="fas fa-edit"></i> Edit</a>
+												<a onclick="deleteConfirm('<?php echo site_url('upah/delete/' . $upah['kd_upah']) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a>
 											</td>
 										</tr>
 									<?php endforeach; ?>
@@ -74,31 +65,36 @@
 						</div>
 					</div>
 				</div>
-
-			</div>
-			<!-- /.container-fluid -->
-
-			<!-- Sticky Footer -->
-			<?php $this->load->view("_partials/footer.php") ?>
-
 		</div>
-		<!-- /.content-wrapper -->
-
 	</div>
-	<!-- /#wrapper -->
 
+</div>
+<!-- /.container-fluid -->
 
-	<?php $this->load->view("_partials/scrolltop.php") ?>
-	<?php $this->load->view("_partials/modal.php") ?>
+</div>
+<!-- End of Main Content -->
 
-	<?php $this->load->view("_partials/js.php") ?>
-
-	<script>
-		function deleteConfirm(url) {
-			$('#btn-delete').attr('href', url);
-			$('#deleteModal').modal();
-		}
-	</script>
-</body>
-
-</html>
+<!-- Modal -->
+<!-- <div class="modal fade" id="newMenuModal" tabindex="-1" aria-labelledby="newMenuModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="newMenuModalLabel">Add New Menu</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form action="<?= base_url('menu'); ?>" method="post">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="menu" name="menu" placeholder="Menu name">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Add</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div> -->

@@ -18,7 +18,7 @@ class Upah extends CI_Controller
 
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
-        $data['upah'] = $this->db->get('user')->result_array();
+        $data['upah'] = $this->db->get('rincian_upah')->result_array();
 
         $this->form_validation->set_rules('upah', 'Upah', 'required');
 
@@ -56,15 +56,15 @@ class Upah extends CI_Controller
         $this->load->view('templates/footer');
     }
 
-    public function edit($id = null)
+    public function edit($kd_upah = null)
     {
-        if (!isset($id)) redirect('upah');
+        if (!isset($kd_upah)) redirect('upah');
 
         $data['title'] = 'Edit Daftar Rincian Upah';
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
-        $where = array('id' => $id);
-        $data['upah'] = $this->upah_model->edit_data($where, 'user')->result_array();
+        $where = array('kd_upah' => $kd_upah);
+        $data['upah'] = $this->upah_model->edit_data($where, 'rincian_upah')->result_array();
 
         $upah = $this->upah_model;
         $validation = $this->form_validation;
@@ -82,16 +82,16 @@ class Upah extends CI_Controller
         $this->load->view('upah/edit_form', $data);
         $this->load->view('templates/footer');
 
-        $data["upah"] = $upah->getById($id);
-        if (!$data["upah"]) show_404();
+        $data["kd_upah"] = $upah->getById($id);
+        if (!$data["kd_upah"]) show_404();
     }
 
-    public function delete($id = null)
+    public function delete($kd_upah = null)
     {
-        if (!isset($id)) show_404();
+        if (!isset($kd_upah)) show_404();
 
-        if ($this->upah_model->delete($id)) {
-            redirect(site_url('upah'));
+        if ($this->upah_model->delete($kd_upah)) {
+            redirect(site_url('kd_upah'));
         }
     }
 }
