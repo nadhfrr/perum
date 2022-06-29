@@ -56,22 +56,6 @@ class Pengguna extends CI_Controller
         $this->load->view('templates/footer');
     }
 
-    // public function edit($id = null)
-    // {
-    //     $data['title'] = 'Edit Daftar Pengguna';
-    //     $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
-    //     $where = array('id' => $id);
-    //     $data['pengguna'] = $this->pengguna_model->edit_data($where, 'user')->result_array();
-
-    //     $this->load->view('templates/header', $data);
-    //     $this->load->view('templates/sidebar', $data);
-    //     $this->load->view('templates/topbar', $data);
-    //     $this->load->view('pengguna/edit_form', $data);
-    //     $this->load->view('templates/footer');
-
-    //     $this->session->set_flashdata('success', 'Berhasil disimpan');
-    // }
-
     public function edit($id = null)
     {
         if (!isset($id)) redirect('pengguna');
