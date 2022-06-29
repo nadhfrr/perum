@@ -23,7 +23,7 @@
 				</div>
 				<div class="card-body">
 
-					<form action="<?php base_url('pengguna/add') ?>" method="post" enctype="multipart/form-data">
+					<form action="<?= base_url('pengguna/add'); ?>" method="post" enctype="multipart/form-data">
 						<div class="form-group">
 							<label for="noreg_user">No. Registrasi User</label>
 							<input class="form-control <?php echo form_error('noreg_user') ? 'is-invalid' : '' ?>" type="text" name="noreg_user" placeholder="nomor registrasi anggota" />

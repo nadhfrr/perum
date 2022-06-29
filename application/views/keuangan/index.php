@@ -1,23 +1,36 @@
+<link rel="shortcut icon" href="<?= base_url() ?>front-end/assets/img/logo-perum.png">
 <!-- Begin Page Content -->
 <div class="container-fluid">
 
     <!-- Page Heading -->
-    <h1 class="h3 mb-4 text-gray-800"><?= $title; ?></h1>
+    <h2>
+        Selamat datang
+    </h2>
+    <h4 style=" margin-left: 75%;">
+        <script type='text/javascript'>
+            var months = ['Januari', 'Februari', 'Maret', 'April', 'Mei',
+                'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'
+            ];
 
-    <div class="card mb-3" style="max-width: 540px;">
-        <div class="row no-gutters">
-            <div class="col-md-4">
-                <img src="<?= base_url('assets2/assets/img/profile/') . $user['image']; ?>">
-            </div>
-            <div class="col-md-8">
-                <div class="card-body">
-                    <h5 class="card-title"><?= $user['name']; ?></h5>
-                    <p class="card-text"><?= $user['email']; ?></p>
-                    <p class="card-text"><small class="text-muted">Member since <?= date('d F Y', $user['date_created']); ?></small></p>
-                </div>
-            </div>
-        </div>
-    </div>
+            var myDays = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
+
+            var date = new Date();
+
+            var day = date.getDate();
+
+            var month = date.getMonth();
+
+            var thisDay = date.getDay(),
+
+                thisDay = myDays[thisDay];
+            var yy = date.getYear();
+
+
+            var year = (yy < 1000) ? yy + 1900 : yy;
+
+            document.write(thisDay + ', ' + day + ' ' + months[month] + ' ' + year);
+        </script>
+    </h4>
 
 </div>
 <!-- /.container-fluid -->

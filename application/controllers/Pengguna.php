@@ -95,6 +95,7 @@ class Pengguna extends CI_Controller
         } else {
             $pengguna->update();
             $this->session->set_flashdata('success', 'Berhasil disimpan');
+            redirect('pengguna');
         }
 
         $data["pengguna"] = $pengguna->getById($id);

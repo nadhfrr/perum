@@ -60,11 +60,12 @@ class Pengguna_model extends CI_Model
     public function save()
     {
         $post = $this->input->post();
-        $this->ida = $post["id"];
+        // $this->id = $post["id"];
         $this->noreg_user = $post["noreg_user"];
         $this->name = $post["name"];
         $this->email = $post["email"];
-        $this->password = $post["password"];
+        $this->password = md5($post["password"]);
+        $this->image = $post["image"];
         $this->role_id = $post["role_id"];
 
         $this->db->insert($this->_table, $this);
