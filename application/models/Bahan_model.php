@@ -74,6 +74,11 @@ class Bahan_model extends CI_Model
         $this->db->insert($this->_table, $this);
     }
 
+    public function edit_data($where, $_table)
+    {
+        return $this->db->get_where($_table, $where);
+    }
+
     public function update()
     {
         $post = $this->input->post();
@@ -84,7 +89,7 @@ class Bahan_model extends CI_Model
         $this->merk = $post["merk"];
         $this->spesifikasi = $post["spesifikasi"];
 
-        $this->db->update($this->_table, $this, array('kd_bahan' => $post['id']));
+        $this->db->update($this->_table, $this, array('kd_bahan' => $post['kd_bahan']));
     }
 
     public function delete($id)

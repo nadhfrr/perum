@@ -18,7 +18,7 @@ class Bahan extends CI_Controller
 
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
-        $data['bahan'] = $this->db->get('user')->result_array();
+        $data['bahan'] = $this->db->get('rincian_bahan')->result_array();
 
         $this->form_validation->set_rules('bahan', 'Bahan', 'required');
 
@@ -37,27 +37,34 @@ class Bahan extends CI_Controller
 
     public function add()
     {
+        $data['title'] = 'Tambah Daftar Pengguna';
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
         $bahan = $this->bahan_model;
         $validation = $this->form_validation;
         $validation->set_rules($bahan->rules());
 
-        if ($validation->run()) {
+        if ($validation->run() == false) {
+        } else {
             $bahan->save();
             $this->session->set_flashdata('success', 'Berhasil disimpan');
         }
-
-        $this->load->view("bahan/new_form");
+        $this->load->view('templates/header', $data);
+        $this->load->view('templates/sidebar', $data);
+        $this->load->view('templates/topbar', $data);
+        $this->load->view('bahan/new_form', $data);
+        $this->load->view('templates/footer');
     }
 
-    public function edit($id = null)
+    public function edit($kd_bahan = null)
     {
-        if (!isset($id)) redirect('bahan');
+        if (!isset($kd_bahan)) redirect('bahan');
 
         $data['title'] = 'Edit Daftar Rincian Bahan';
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
-        $where = array('id' => $id);
-        $data['bahan'] = $this->bahan_model->edit_data($where, 'user')->result_array();
+        $where = array('kd_bahan' => $kd_bahan);
+        $data['bahan'] = $this->bahan_model->edit_data($where, 'rincian_bahan')->result_array();
 
         $bahan = $this->bahan_model;
         $validation = $this->form_validation;
@@ -75,7 +82,7 @@ class Bahan extends CI_Controller
         $this->load->view('bahan/edit_form', $data);
         $this->load->view('templates/footer');
 
-        $data["bahan"] = $bahan->getById($id);
+        $data["bahan"] = $bahan->getById($kd_bahan);
         if (!$data["bahan"]) show_404();
     }
 
