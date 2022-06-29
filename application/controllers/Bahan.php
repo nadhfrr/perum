@@ -13,8 +13,26 @@ class Bahan extends CI_Controller
 
     public function index()
     {
+        $data['title'] = 'Daftar Rincian Bahan';
         $data["bahan"] = $this->bahan_model->getAll();
-        $this->load->view("bahan/list", $data);
+
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+        $data['bahan'] = $this->db->get('user')->result_array();
+
+        $this->form_validation->set_rules('bahan', 'Bahan', 'required');
+
+        if ($this->form_validation->run() == false) {
+            $this->load->view('templates/header', $data);
+            $this->load->view('templates/sidebar', $data);
+            $this->load->view('templates/topbar', $data);
+            $this->load->view('bahan/list', $data);
+            $this->load->view('templates/footer');
+        } else {
+            $this->db->insert('user', ['bahan' => $this->input->post('bahan')]);
+            $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">New menu added!</div>');
+            redirect('bahan');
+        }
     }
 
     public function add()

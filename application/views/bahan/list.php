@@ -44,7 +44,7 @@
 											<?= $bahan['satuan']; ?>
 										</td>
 										<td>
-											Rp<?= number_format $bahan['harga_dasar']; ?>
+											Rp<?= number_format ($bahan  ['harga_dasar']); ?>
 										</td>
 										<td>
 											<?= $bahan['merk']; ?>
@@ -54,8 +54,8 @@
 										</td>
 
 										<td width="250">
-											<a href="<?php echo site_url('bahan/edit/' . $bahan->kd_bahan) ?>" class="btn btn-small"><i class="fas fa-edit"></i> Edit </a>
-											<a onclick="deleteConfirm('<?php echo site_url('bahan/delete/' . $bahan->kd_bahan) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus </a>
+											<a href="<?php echo site_url('bahan/edit/' . $bahan['kd_bahan']) ?>" class="btn btn-small"><i class="fas fa-edit"></i> Edit </a>
+											<a onclick="deleteConfirm('<?php echo site_url('bahan/delete/' . $bahan['kd_bahan']) ?>" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus </a>
 										</td>
 									</tr>
 								<?php endforeach; ?>
