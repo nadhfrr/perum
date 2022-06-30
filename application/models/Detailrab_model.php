@@ -4,7 +4,8 @@ class Detailrab_model extends CI_Model
 {
     private $_table = "rab";
 
-    public $id_subpek;
+    public $id_rab;
+    public $nama_rab;
 
     // public function rules()
     // {
@@ -30,7 +31,7 @@ class Detailrab_model extends CI_Model
 
     public function getById($id)
     {
-        return $this->db->get_where($this->_table, ["id_subpek" => $id])->row();
+        return $this->db->get_where($this->_table, ["id_rab" => $id])->row();
     }
 
 

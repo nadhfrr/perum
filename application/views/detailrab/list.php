@@ -35,8 +35,8 @@
 									<tr>
 										<td width="80">
 											<?php echo $detailrab['id_rab'] ?>
-											<!-- <input class="btn btn-secondary" type="button" name="btn" data-toggle="modal" data-target="#addModal" value="Tolak" /> -->
-											<a href="<?php echo site_url('detailrab/edit/' . $detailrab['id_rab']) ?>" class="btn btn-small text-danger"><i class="fas fa-plus"></i></a>
+											<!-- <input class="btn btn-small text-danger" type="button" name="btn" data-toggle="modal" data-target="#addModalDetailrab" /><i class="fas fa-plus"></i> -->
+											<a href="" class="btn btn-small text-danger" data-toggle="modal" data-target="#addModalDetailrab"><i class="fas fa-plus"></i></a>
 										</td>
 										<td width="">
 											<?php echo $detailrab['nama_rab'] ?>
@@ -45,7 +45,7 @@
 											0.00
 										</td>
 										<td width="">
-											m2
+											<?php echo $detailrab['satuan'] ?>
 										</td>
 										<td width="">
 											Rp.0
@@ -72,26 +72,69 @@
 <!-- End of Main Content -->
 
 <!-- Modal -->
-<!-- <div class="modal fade" id="newMenuModal" tabindex="-1" aria-labelledby="newMenuModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="newMenuModalLabel">Add New Menu</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <form action="<?= base_url('menu'); ?>" method="post">
-                <div class="modal-body">
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="menu" name="menu" placeholder="Menu name">
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary">Add</button>
-                </div>
-            </form>
-        </div>
-    </div>
-</div> -->
+<div class="modal fade" id="addModalDetailrab" tabindex="-1" aria-labelledby="addModalDetailrabLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="addModalDetailrabLabel">Edit Data Detail RAB</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<form action="<?= base_url('detailrab/edit'); ?>" method="post">
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="form-group">
+								<label for="">Bowplank</label>
+								<input type="text" name="" class="form-control <?php echo form_error('') ? 'is-invalid' : '' ?>">
+								<div class="invalid-feedback">
+									<?php echo form_error('') ?>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="form-group">
+								<label for="">Galian tanah</label>
+								<input type="text" name="" class="form-control <?php echo form_error('') ? 'is-invalid' : '' ?>">
+								<div class="invalid-feedback">
+									<?php echo form_error('') ?>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-5">
+							<div class="form-group">
+								<label for="">Pasangan batu kumbung 1:3:10</label>
+								<input type="text" name="" class="form-control <?php echo form_error('') ? 'is-invalid' : '' ?>">
+								<div class="invalid-feedback">
+									<?php echo form_error('') ?>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="form-group">
+								<label for="">Urukan pasir pondasi</label>
+								<input type="text" name="" class="form-control <?php echo form_error('') ? 'is-invalid' : '' ?>">
+								<div class="invalid-feedback">
+									<?php echo form_error('') ?>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-5">
+							<div class="form-group">
+								<label for="">Uruk kembali lubang pondasi</label>
+								<input type="text" name="" class="form-control <?php echo form_error('') ? 'is-invalid' : '' ?>">
+								<div class="invalid-feedback">
+									<?php echo form_error('') ?>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						<button type="submit" class="btn btn-primary">Add</button>
+					</div>
+			</form>
+		</div>
+	</div>
+</div>
