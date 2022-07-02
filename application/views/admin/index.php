@@ -4,9 +4,9 @@
 
 	<!-- Page Heading -->
 	<h2>
-		Selamat datang
+		Selamat datang,  <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?= $user['name']; ?></span>
 	</h2>
-	<h4 style=" margin-left: 75%;">
+	<h4 style= "margin-left: 80%;">
 		<script type='text/javascript'>
 			var months = ['Januari', 'Februari', 'Maret', 'April', 'Mei',
 				'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'

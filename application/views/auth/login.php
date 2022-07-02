@@ -12,7 +12,7 @@
     <!-- bootstrap & fontawesome -->
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/assets/css/bootstrap.css" />
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/assets/css/font-awesome.css" />
-    <link rel="shortcut icon" href="<?= site_url() ?>assets/img/logo.png">
+    <link rel="shortcut icon" href="<?= base_url() ?>front-end/assets/img/logo-perum.png">
     <!-- text fonts -->
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/assets/css/ace-fonts.css" />
 
