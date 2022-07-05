@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="<?= base_url('front-end/'); ?>assets/css/responsive.css">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="<?= base_url('front-end/'); ?>assets/img/logo-perum.png">
+    <link rel="shortcut icon" type="image/png" href="<?= base_url('front-end/'); ?>assets/img/logo-perum.png">
     <!-- Title -->
     <title>De' Diamond Park</title>
 
