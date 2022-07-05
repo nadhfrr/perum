@@ -45,7 +45,8 @@
 											0.00
 										</td>
 										<td width="">
-											<?php echo $detailrab['satuan'] ?>
+											<!-- <?php echo $detailrab['satuan'] ?> -->
+											m2
 										</td>
 										<td width="">
 											Rp.0
