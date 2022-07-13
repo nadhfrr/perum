@@ -23,20 +23,24 @@
 							<thead>
 								<tr>
 									<th>ID RAB</th>
+									<th>Nama RAB</th>
 									<th>Jenis Pekerjaan</th>
 									<th>Volume</th>
 									<th>Satuan</th>
 									<th>Harga Satuan</th>
 									<th>Jumlah Harga</th>
+									<th>Aksi</th>
 								</tr>
 							</thead>
 							<tbody>
 								<?php foreach ($detailrab as $detailrab) : ?>
 									<tr>
-										<td width="80">
+										<!-- <td width="80">
 											<?php echo $detailrab['id_rab'] ?>
-											<!-- <input class="btn btn-small text-danger" type="button" name="btn" data-toggle="modal" data-target="#addModalDetailrab" /><i class="fas fa-plus"></i> -->
 											<a href="" class="btn btn-small text-danger" data-toggle="modal" data-target="#addModalDetailrab"><i class="fas fa-plus"></i></a>
+										</td> -->
+										<td>
+											<?php echo $detailrab['id_rab'] ?>
 										</td>
 										<td width="">
 											<?php echo $detailrab['nama_rab'] ?>
@@ -53,6 +57,12 @@
 										</td>
 										<td width="">
 											Rp.0
+										</td>
+										<td width="">
+											Rp.0
+										</td>
+										<td>
+											<a href="" class="btn btn-small text-info"><i class="fas fa-info-circle"></i> Detail</a>
 										</td>
 									</tr>
 								<?php endforeach; ?>
