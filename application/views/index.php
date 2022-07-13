@@ -74,7 +74,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <a href="about.html" class="nav-link">Tentang Kami</a>
+                                <a href="#about">Tentang Kami</a>
                             </li>
 
                             <li class="nav-item">
@@ -105,7 +105,7 @@
                                 <p>Perumahan bersubsidi dan Komersil</p>
 
                                 <div class="slider-btn">
-                                    <a href="about.html" class="default-btn">
+                                    <a href="#about" class="default-btn">
                                         Lihat Selengkapnya
                                     </a>
                                 </div>
@@ -124,7 +124,7 @@
                                 <p><b>Hunian Asri Kawasan Berseri</b></p>
 
                                 <div class="slider-btn">
-                                    <a href="about.html" class="default-btn">
+                                    <a href="#about" class="default-btn">
                                         Lihat Selengkapnya
                                     </a>
                                 </div>
@@ -143,7 +143,7 @@
                                 <p><b>Perumahan bersubsidi dan Komersil</b></p>
 
                                 <div class="slider-btn">
-                                    <a href="about.html" class="default-btn">
+                                    <a href="#about" class="default-btn">
                                         Lihat Selengkapnya
                                     </a>
                                 </div>
