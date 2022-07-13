@@ -23,12 +23,11 @@
 							<thead>
 								<tr>
 									<th>ID RAB</th>
-									<th>Nama RAB</th>
 									<th>Jenis Pekerjaan</th>
-									<th>Volume</th>
+									<!-- <th>Volume</th>
 									<th>Satuan</th>
 									<th>Harga Satuan</th>
-									<th>Jumlah Harga</th>
+									<th>Jumlah Harga</th> -->
 									<th>Aksi</th>
 								</tr>
 							</thead>
@@ -45,11 +44,10 @@
 										<td width="">
 											<?php echo $detailrab['nama_rab'] ?>
 										</td>
-										<td width="">
+										<!-- <td width="">
 											0.00
 										</td>
 										<td width="">
-											<!-- <?php echo $detailrab['satuan'] ?> -->
 											m2
 										</td>
 										<td width="">
@@ -57,10 +55,7 @@
 										</td>
 										<td width="">
 											Rp.0
-										</td>
-										<td width="">
-											Rp.0
-										</td>
+										</td> -->
 										<td>
 											<a href="" class="btn btn-small text-info"><i class="fas fa-info-circle"></i> Detail</a>
 										</td>
