@@ -74,7 +74,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <a href="#about">Tentang Kami</a>
+                                <a href="#about" class="nav-link active">Tentang Kami</a>
                             </li>
 
                             <li class="nav-item">
@@ -187,7 +187,7 @@
                                 dengan sentuhan minimalis modern untuk kenyamanan anda dan keluarga. Dengan akses jalan yang mudah dijangkau menjadikan
                                 de' DIAMOND PARK menjadi kawasan potensial untuk investasi anda dimasa yang akan datang.</p>
 
-                            <a href="about.html" class="default-btn">
+                            <a href="#about" class="default-btn">
                                 Lihat Selengkapnya
                             </a>
                         </div>
