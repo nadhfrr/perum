@@ -18,7 +18,7 @@ class Detailrab extends CI_Controller
 
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
-        $data['detailrab'] = $this->db->get('rab')->result_array();
+        $data['detailrab'] = $this->db->get('jenis_pekerjaan')->result_array();
 
         $this->form_validation->set_rules('detailrab', 'Detailrab', 'required');
 
@@ -64,7 +64,7 @@ class Detailrab extends CI_Controller
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
         $where = array('id_rab' => $id_rab);
-        $data['detailrab'] = $this->detailrab_model->edit_data($where, 'rab')->result_array();
+        $data['detailrab'] = $this->detailrab_model->edit_data($where, 'jenis_pekerjaan')->result_array();
 
         $detailrab = $this->detailrab_model;
         $validation = $this->form_validation;

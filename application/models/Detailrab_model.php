@@ -2,7 +2,7 @@
 
 class Detailrab_model extends CI_Model
 {
-    private $_table = "rab";
+    private $_table = "jenis_pekerjaan";
 
     public $id_rab;
     public $nama_rab;
