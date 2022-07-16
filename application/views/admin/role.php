@@ -28,8 +28,8 @@
                             <td><?= $r['role']; ?></td>
                             <td>
                                 <a href="<?= base_url('admin/roleaccess/') . $r['id']; ?>" class="badge badge-warning">access</a>
-                                <a href="" class="badge badge-success">edit</a>
-                                <a href="" class="badge badge-danger">delete</a>
+                                <a href="<?= site_url('pengguna/edit/' . $r['id']) ?>" class="btn btn-small text-primary"><i class="fas fa-edit"></i> Edit</a>
+                                <a onclick="deleteConfirm('<?php echo site_url('pengguna/delete/' . $r['id']) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a>
                             </td>
                         </tr>
                         <?php $i++; ?>

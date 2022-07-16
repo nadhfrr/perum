@@ -24,10 +24,6 @@
 								<tr>
 									<th>ID RAB</th>
 									<th>Jenis Pekerjaan</th>
-									<!-- <th>Volume</th>
-									<th>Satuan</th>
-									<th>Harga Satuan</th>
-									<th>Jumlah Harga</th> -->
 									<th>Aksi</th>
 								</tr>
 							</thead>
@@ -44,20 +40,8 @@
 										<td width="">
 											<?php echo $detailrab['nama_rab'] ?>
 										</td>
-										<!-- <td width="">
-											0.00
-										</td>
-										<td width="">
-											m2
-										</td>
-										<td width="">
-											Rp.0
-										</td>
-										<td width="">
-											Rp.0
-										</td> -->
 										<td>
-											<a href="" class="btn btn-small text-info"><i class="fas fa-info-circle"></i> Detail</a>
+											<a href="<?= base_url('detailpekerjaan/index' . $detailrab['id_rab']) ?>" class="btn btn-small text-info"><i class="fas fa-info-circle"></i> Detail</a>
 										</td>
 									</tr>
 								<?php endforeach; ?>
