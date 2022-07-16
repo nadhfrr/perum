@@ -7,14 +7,14 @@
 
     <div class="row">
         <div class="col-lg">
-            <?= form_error('detailrab', '<div class="alert alert-danger" role="alert">', '</div>'); ?>
+            <?= form_error('detailpekerjaan', '<div class="alert alert-danger" role="alert">', '</div>'); ?>
 
             <?= $this->session->flashdata('message'); ?>
 
             <!-- DataTables -->
             <div class="card mb-3">
                 <div class="card-header">
-                    <a href="<?php echo site_url('proyek') ?>"><i class="fas fa-arrow-left"></i> Kembali</a>
+                    <a href="<?php echo site_url('detailrab') ?>"><i class="fas fa-arrow-left"></i> Kembali</a>
                 </div>
                 <div class="card-body">
 
@@ -53,7 +53,7 @@
                                             Rp.
                                         </td>
                                         <td>
-                                            <a href="<?= base_url('detailpekerjaan/index' . $dp['kd_proyek']) ?>" class="btn btn-small text-info"><i class="fas fa-info-circle"></i> Detail</a>
+                                            <a href="" class="btn btn-small text-info"><i class="fas fa-info-circle"></i> Detail</a>
                                         </td>
                                     </tr>
                                 <?php endforeach; ?>
