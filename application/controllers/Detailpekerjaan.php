@@ -56,34 +56,34 @@ class Detailpekerjaan extends CI_Controller
         $this->load->view('templates/footer');
     }
 
-    public function edit($id_rab = null)
+    public function edit($id_pekerjaan = null)
     {
-        if (!isset($id_rab)) redirect('detailrab');
+        if (!isset($id_pekerjaan)) redirect('detailpekerjaan');
 
-        $data['title'] = 'Edit Daftar Rincian Detailrab';
+        $data['title'] = 'Edit Daftar Rincian Detailpekerjaan';
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
-        $where = array('id_rab' => $id_rab);
-        $data['detailrab'] = $this->detailrab_model->edit_data($where, 'jenis_pekerjaan')->result_array();
+        $where = array('id_$id_pekerjaan' => $id_pekerjaan);
+        $data['detailpekerjaan'] = $this->detailpekerjaan_model->edit_data($where, 'pekerjaan')->result_array();
 
-        $detailrab = $this->detailrab_model;
+        $detailpekerjaan = $this->detailpekerjaan_model;
         $validation = $this->form_validation;
-        $validation->set_rules($detailrab->rules());
+        $validation->set_rules($detailpekerjaan->rules());
 
         if ($validation->run() == false) {
         } else {
-            $detailrab->update();
+            $detailpekerjaan->update();
             $this->session->set_flashdata('success', 'Berhasil disimpan');
-            // redirect('detailrab');
+            // redirect('detailpekerjaan');
         }
         $this->load->view('templates/header', $data);
         $this->load->view('templates/sidebar', $data);
         $this->load->view('templates/topbar', $data);
-        $this->load->view('detailrab/edit_form', $data);
+        $this->load->view('detailpekerjaan/edit_form', $data);
         $this->load->view('templates/footer');
 
-        $data["detailrab"] = $detailrab->getById($id_rab);
-        if (!$data["detailrab"]) show_404();
+        $data["detailpekerjaan"] = $detailpekerjaan->getById($id_pekerjaan);
+        if (!$data["detailpekerjaan"]) show_404();
     }
 
     public function delete($id = null)

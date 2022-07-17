@@ -64,10 +64,10 @@ class Detailpekerjaan_model extends CI_Model
     public function update()
     {
         $post = $this->input->post();
-        $this->id_rab = $post["id_rab"];
-        $this->nama_rab = $post["nama_rab"];
+        $this->id_pekerjaan = $post["id_pekerjaan"];
+        $this->nama_pekerjaan = $post["nama_pekerjaan"];
 
-        $this->db->update($this->_table, $this, array('id_rab' => $post['id']));
+        $this->db->update($this->_table, $this, array('id_pekerjaan' => $post['id']));
     }
 
     public function delete($id)

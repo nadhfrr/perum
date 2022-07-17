@@ -47,13 +47,13 @@
                                             m2
                                         </td>
                                         <td>
-                                            Rp.
+                                            Rp<?= number_format($dp['harga_satuan']); ?>
                                         </td>
                                         <td>
-                                            Rp.
+                                            Rp<?= number_format($dp['jumlah_harga']); ?>
                                         </td>
                                         <td>
-                                            <a href="" class="btn btn-small text-info"><i class="fas fa-info-circle"></i> Detail</a>
+                                            <a href="<?php echo site_url('detailpekerjaan/edit/' . $dp['id_pekerjaan']) ?>" class="btn btn-small text-primary"><i class="fas fa-edit"></i> Edit</a>
                                         </td>
                                     </tr>
                                 <?php endforeach; ?>
