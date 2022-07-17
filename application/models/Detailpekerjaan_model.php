@@ -31,7 +31,7 @@ class Detailpekerjaan_model extends CI_Model
 
     public function getById($id)
     {
-        return $this->db->get_where($this->_table, ["id_rab" => $id])->row();
+        return $this->db->get_where($this->_table, ["id_pekerjaan" => $id])->row();
     }
 
 

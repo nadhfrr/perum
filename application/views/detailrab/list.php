@@ -30,10 +30,6 @@
 							<tbody>
 								<?php foreach ($detailrab as $detailrab) : ?>
 									<tr>
-										<!-- <td width="80">
-											<?php echo $detailrab['id_rab'] ?>
-											<a href="" class="btn btn-small text-danger" data-toggle="modal" data-target="#addModalDetailrab"><i class="fas fa-plus"></i></a>
-										</td> -->
 										<td>
 											<?php echo $detailrab['id_rab'] ?>
 										</td>
@@ -41,7 +37,7 @@
 											<?php echo $detailrab['nama_rab'] ?>
 										</td>
 										<td>
-											<a href="<?= base_url('detailpekerjaan/index' . $detailrab['id_rab']) ?>" class="btn btn-small text-info"><i class="fas fa-info-circle"></i> Detail</a>
+											<a href="<?= base_url('detailpekerjaan/index/' . $detailrab['id_rab']) ?>" class="btn btn-small text-info"><i class="fas fa-info-circle"></i> Detail</a>
 										</td>
 									</tr>
 								<?php endforeach; ?>
