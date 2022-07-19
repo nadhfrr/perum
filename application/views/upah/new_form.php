@@ -19,24 +19,24 @@
 
 			<div class="card mb-3">
 				<div class="card-header">
-					<a href="<?php echo site_url('bahan') ?>"><i class="fas fa-arrow-left"></i> Kembali</a>
+					<a href="<?php echo site_url('upah') ?>"><i class="fas fa-arrow-left"></i> Kembali</a>
 				</div>
 				<div class="card-body">
 
-					<form action="<?php base_url('bahan/add') ?>" method="post" enctype="multipart/form-data">
+					<form action="<?php base_url('upah/add') ?>" method="post" enctype="multipart/form-data">
 						<div class="form-group">
-							<label for="kd_bahan">Kode Bahan</label>
-							<input class="form-control <?php echo form_error('kd_bahan') ? 'is-invalid' : '' ?>" type="text" name="kd_bahan" placeholder="Kode Bahan" />
+							<label for="kd_upah">Kode Upah</label>
+							<input class="form-control <?php echo form_error('kd_upah') ? 'is-invalid' : '' ?>" type="text" name="kd_upah" placeholder="Kode Upah" />
 							<div class="invalid-feedback">
-								<?php echo form_error('kd_bahan') ?>
+								<?php echo form_error('kd_upah') ?>
 							</div>
 						</div>
 
 						<div class="form-group">
-							<label for="uraian_bahan">Uraian Bahan</label>
-							<input class="form-control <?php echo form_error('uraian_bahan') ? 'is-invalid' : '' ?>" type="text" name="uraian_bahan" min="0" placeholder="Uraian Bahan" />
+							<label for="uraian_upah">Uraian Upah</label>
+							<input class="form-control <?php echo form_error('uraian_upah') ? 'is-invalid' : '' ?>" type="text" name="uraian_upah" min="0" placeholder="Uraian Upah" />
 							<div class="invalid-feedback">
-								<?php echo form_error('uraian_bahan') ?>
+								<?php echo form_error('uraian_upah') ?>
 							</div>
 						</div>
 
