@@ -30,7 +30,7 @@
 						<form action="<?php base_url("upah/edit") ?>" method="post" enctype="multipart/form-data">
 
 							<div class="form-group">
-								<label for="kd_upah">Kode Bahan</label>
+								<label for="kd_upah">Kode Upah</label>
 								<input class="form-control <?php echo form_error('kd_upah') ? 'is-invalid' : '' ?>" type="text" name="kd_upah" placeholder="Kode Upah" value="<?php echo $upah['kd_upah'] ?>" />
 								<div class="invalid-feedback">
 									<?php echo form_error('kd_upah') ?>
