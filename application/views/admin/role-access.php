@@ -16,7 +16,7 @@
                     <tr>
                         <th scope="col">#</th>
                         <th scope="col">Menu</th>
-                        <th scope="col">Access</th>
+                        <th scope="col">Akses</th>
                     </tr>
                 </thead>
                 <tbody>
