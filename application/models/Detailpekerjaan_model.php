@@ -32,19 +32,8 @@ class Detailpekerjaan_model extends CI_Model
     public function getById($id)
     {
         return $this->db->get_where($this->_table, ["id_pekerjaan" => $id])->row();
-    }
-
-
-    public function getproyek($id)
-    {
-        $this->db->select('*');
-        $this->db->from('proyekrab');
-        $this->db->join('proyek', 'proyek.kd_proyek = proyekrab.kd_proyek');
-        $this->db->join('rab', 'rab.id_rab = proyekrab.id_rab');
-        $this->db->where('proyekrab.kd_proyek', $id);
-        $query = $this->db->get();
-        return $query->result();
-        //return $this->db->get_where('subpek', ["id_rab" => $id])->result_array();
+        $detailpekerjaan = "( ( ( id >= '1') AND (id <= '5') ) )";
+        $this->db->where($detailpekerjaan);
     }
 
     public function save()
