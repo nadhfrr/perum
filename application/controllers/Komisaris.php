@@ -17,7 +17,7 @@ class Komisaris extends CI_Controller
         $this->load->view('templates/header', $data);
         $this->load->view('templates/sidebar', $data);
         $this->load->view('templates/topbar', $data);
-        $this->load->view('komisaris/index', $data);
+        $this->load->view('admin/index', $data);
         $this->load->view('templates/footer');
     }
 }

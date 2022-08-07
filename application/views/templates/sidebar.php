@@ -2,7 +2,7 @@
 <ul class="navbar-nav bg-dark sidebar sidebar-dark accordion" id="accordionSidebar">
 
     <!-- Sidebar - Brand -->
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="">
         <div class="sidebar-brand-icon">
             <img src="<?php echo base_url() ?>front-end/assets/img/logo-perum.png" width="55" height="50">
         </div>

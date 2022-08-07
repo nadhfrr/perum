@@ -1,39 +1,66 @@
-<link rel="shortcut icon" href="<?= base_url() ?>front-end/assets/img/logo-perum.png">
+<link rel="shortcut icon" href="<?= base_url() ?>assets/img/logo.png">
 <!-- Begin Page Content -->
 <div class="container-fluid">
 
     <!-- Page Heading -->
-    <h2>
-        Selamat datang
-    </h2>
-    <h4 style=" margin-left: 75%;">
-        <script type='text/javascript'>
-            var months = ['Januari', 'Februari', 'Maret', 'April', 'Mei',
-                'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'
-            ];
+    <h1 class="h3 mb-4 text-gray-800"><?= $title; ?></h1>
 
-            var myDays = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
+    <div class="row">
+        <div class="col-lg">
+            <?= form_error('proyek', '<div class="alert alert-danger" role="alert">', '</div>'); ?>
 
-            var date = new Date();
+            <?= $this->session->flashdata('message'); ?>
 
-            var day = date.getDate();
+            <!-- DataTables -->
+            <div class="card mb-3">
+                <div class="card-header">
+                    <a href="<?php echo site_url('proyek/add') ?>"><i class="fas fa-plus"></i> Tambah Baru</a>
+                </div>
+                <div class="card-body">
 
-            var month = date.getMonth();
+                    <div class="table-responsive">
+                        <table class="table table-hover" id="dataTable" width="100%" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th>Kode Proyek</th>
+                                    <th>Nama Proyek</th>
+                                    <th>Type</th>
+                                    <th>Pemilik Proyek</th>
+                                    <th>Aksi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php foreach ($proyek as $proyek) : ?>
+                                    <tr>
+                                        <td width="140">
+                                            <?= $proyek['kd_proyek']; ?>
+                                        </td>
+                                        <td width="200">
+                                            <?= $proyek['nama_proyek']; ?>
+                                        </td>
+                                        <td width="90">
+                                            <?= $proyek['type']; ?>
+                                        </td>
+                                        <td width="200">
+                                            <?= $proyek['pemilik_proyek']; ?>
+                                        </td>
+                                        <td width="300">
+                                            <a href="<?php echo site_url('detailrab/index/' . $proyek['kd_proyek']) ?>" class="btn btn-small text-info"><i class="fas fa-info-circle"></i> Detail</a>
+                                            <a href="<?php echo site_url('proyek/edit/' . $proyek['kd_proyek']) ?>" class="btn btn-small text-primary"><i class="fas fa-edit"></i> Edit</a>
+                                            <a onclick="deleteConfirm('<?php echo site_url('proyek/delete/' . $proyek['kd_proyek']) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a>
+                                        </td>
+                                    </tr>
+                                <?php endforeach; ?>
 
-            var thisDay = date.getDay(),
-
-                thisDay = myDays[thisDay];
-            var yy = date.getYear();
-
-
-            var year = (yy < 1000) ? yy + 1900 : yy;
-
-            document.write(thisDay + ', ' + day + ' ' + months[month] + ' ' + year);
-        </script>
-    </h4>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </div>
 <!-- /.container-fluid -->
 
 </div>
-<!-- End of Main Content -->
