@@ -34,8 +34,8 @@
                                         <td><?= $r['role']; ?></td>
                                         <td>
                                             <a href="<?= site_url('admin/roleaccess/') . $r['id']; ?>" class="btn btn-small text-dark"><i class="fas fa-cog"></i> Akses</a>
-                                            <a href="<?= site_url('pengguna/edit/' . $r['id']) ?>" class="btn btn-small text-primary"><i class="fas fa-edit"></i> Edit</a>
-                                            <a onclick="deleteConfirm('<?php echo site_url('pengguna/delete/' . $r['id']) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a>
+                                            <a href="<?= site_url('role/edit/' . $r['id']) ?>" class="btn btn-small text-primary"><i class="fas fa-edit"></i> Edit</a>
+                                            <a onclick="deleteConfirm('<?php echo site_url('role/delete/' . $r['id']) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a>
                                         </td>
                                     </tr>
                                     <?php $i++; ?>
