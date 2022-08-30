@@ -7,6 +7,8 @@ class Admin extends CI_Controller
     {
         parent::__construct();
         // is_logged_in();
+        $this->load->model("role_model");
+        $this->load->library('form_validation');
     }
 
     public function index()
@@ -77,13 +79,15 @@ class Admin extends CI_Controller
     {
         if (!isset($id)) redirect('admin/role');
 
+        if (!isset($id)) redirect('admin/role');
+
         $data['title'] = 'Edit Daftar Role';
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
         $where = array('id' => $id);
-        $data['role'] = $this->role_model->edit_data($where, 'user')->result_array();
+        $data['role'] = $this->role_model->edit_data($where, 'user_role')->result_array();
 
-        $role = $this->pengguna_model;
+        $role = $this->role_model;
         $validation = $this->form_validation;
         $validation->set_rules($role->rules());
 
@@ -96,19 +100,19 @@ class Admin extends CI_Controller
         $this->load->view('templates/header', $data);
         $this->load->view('templates/sidebar', $data);
         $this->load->view('templates/topbar', $data);
-        $this->load->view('role/edit_form', $data);
+        $this->load->view('admin/edit_form', $data);
         $this->load->view('templates/footer');
 
-        $data["pengguna"] = $role->getById($id);
-        if (!$data["pengguna"]) show_404();
+        $data["role"] = $role->getById($id);
+        if (!$data["role"]) show_404();
     }
 
     public function delete($id = null)
     {
         if (!isset($id)) show_404();
 
-        if ($this->pengguna_model->delete($id)) {
-            redirect(site_url('pengguna'));
+        if ($this->role_model->delete($id)) {
+            redirect(site_url('admin/role'));
         }
     }
 }
