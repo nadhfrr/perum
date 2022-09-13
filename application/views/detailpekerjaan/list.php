@@ -35,10 +35,10 @@
                                 <?php foreach ($detailpekerjaan as $dp) : ?>
                                     <tr>
                                         <td>
-                                            <?php echo $dp['id_pekerjaan'] ?>
+                                            <?php echo $dp->id_pekerjaan ?>
                                         </td>
                                         <td width="">
-                                            <?php echo $dp['nama_pekerjaan'] ?>
+                                            <?php echo $dp->nama_pekerjaan ?>
                                         </td>
                                         <td>
                                             0.0
@@ -47,13 +47,13 @@
                                             m2
                                         </td>
                                         <td>
-                                            Rp<?= number_format($dp['harga_satuan']); ?>
+                                            Rp<?= number_format($dp->harga_satuan); ?>
                                         </td>
                                         <td>
-                                            Rp<?= number_format($dp['jumlah_harga']); ?>
+                                            Rp<?= number_format($dp->jumlah_harga); ?>
                                         </td>
                                         <td>
-                                            <a href="<?php echo site_url('detailpekerjaan/edit/' . $dp['id_pekerjaan']) ?>" class="btn btn-small text-primary"><i class="fas fa-edit"></i> Edit</a>
+                                            <a href="<?php echo site_url('detailpekerjaan/edit/' . $dp->id_pekerjaan) ?>" class="btn btn-small text-primary"><i class="fas fa-edit"></i> Edit</a>
                                         </td>
                                     </tr>
                                 <?php endforeach; ?>

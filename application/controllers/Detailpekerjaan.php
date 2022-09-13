@@ -11,7 +11,7 @@ class Detailpekerjaan extends CI_Controller
         $this->load->library('form_validation');
     }
 
-    public function index()
+    public function index($id)
     {
         $data['title'] = 'Detail Daftar Pekerjaan';
         $data["detailpekerjaan"] = $this->detailpekerjaan_model->getAll();
@@ -19,6 +19,8 @@ class Detailpekerjaan extends CI_Controller
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
         $data['detailpekerjaan'] = $this->db->get('pekerjaan')->result_array();
+
+        $data['detailpekerjaan'] = $this->detailpekerjaan_model->pekerjaanjoin($id);
 
         $this->form_validation->set_rules('detailpekerjaan', 'Detailpekerjaan', 'required');
 

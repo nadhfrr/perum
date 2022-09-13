@@ -32,8 +32,15 @@ class Detailpekerjaan_model extends CI_Model
     public function getById($id)
     {
         return $this->db->get_where($this->_table, ["id_pekerjaan" => $id])->row();
-        $detailpekerjaan = "( ( ( id >= '1') AND (id <= '5') ) )";
-        $this->db->where($detailpekerjaan);
+    }
+
+    public function pekerjaanjoin($id)
+    {
+        $this->db->select('*');
+        $this->db->from('pekerjaan');
+        $this->db->join('jenis_pekerjaan', 'jenis_pekerjaan.id_rab = pekerjaan.id_rab', 'left');
+        $this->db->where('jenis_pekerjaan.id_rab', $id);
+        return $this->db->get()->result();
     }
 
     public function save()

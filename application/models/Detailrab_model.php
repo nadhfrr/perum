@@ -34,7 +34,6 @@ class Detailrab_model extends CI_Model
         return $this->db->get_where($this->_table, ["id_rab" => $id])->row();
     }
 
-
     public function getproyek($id)
     {
         $this->db->select('*');
