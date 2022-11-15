@@ -29,44 +29,13 @@
                     <?php foreach ($detailpekerjaan as $dpk) : ?>
                         <form action="<?php base_url("proyek/edit") ?>" method="post" enctype="multipart/form-data">
 
+                            <input type="hidden" name="id_pekerjaan" value="<?php echo $dpk['id_pekerjaan'] ?>" />
 
                             <div class="form-group">
-                                <label for="id_pekerjaan">Kode Proyek</label>
-                                <input class="form-control <?php echo form_error('id_pekerjaan') ? 'is-invalid' : '' ?>" type="text" name="id_pekerjaan" placeholder="Kode Proyek" value="<?php echo $proyek['id_pekerjaan'] ?>" />
+                                <label for="volume">Volume</label>
+                                <input class="form-control <?php echo form_error('volume') ? 'is-invalid' : '' ?>" type="text" name="volume" placeholder="Keterangan Lain" value="<?php echo $dpk['volume'] ?>" />
                                 <div class="invalid-feedback">
-                                    <?php echo form_error('id_pekerjaan') ?>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="nama_pekerjaan">Nama pekerjaan</label>
-                                <input class="form-control <?php echo form_error('nama_pekerjaan') ? 'is-invalid' : '' ?>" type="text" name="nama_pekerjaan" min="0" placeholder="Nama pekerjaan" value="<?php echo $dpk['nama_pekerjaan'] ?>" />
-                                <div class="invalid-feedback">
-                                    <?php echo form_error('nama_pekerjaan') ?>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="type">Type</label>
-                                <input class="form-control <?php echo form_error('type') ? 'is-invalid' : '' ?>" type="text" name="type" min="0" placeholder="Type" value="<?php echo $proyek['type'] ?>" />
-                                <div class="invalid-feedback">
-                                    <?php echo form_error('type') ?>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="pemilik_proyek">Pemilik Proyek</label>
-                                <input class="form-control <?php echo form_error('pemilik_proyek') ? 'is-invalid' : '' ?>" type="text" name="pemilik_proyek" min="0" placeholder="Pemilik Proyek" value="<?php echo $proyek['pemilik_proyek'] ?>" />
-                                <div class="invalid-feedback">
-                                    <?php echo form_error('pemilik_proyek') ?>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="keterangan_lain">Keterangan Lain</label>
-                                <input class="form-control <?php echo form_error('keterangan_lain') ? 'is-invalid' : '' ?>" type="text" name="keterangan_lain" min="0" placeholder="Keterangan Lain" value="<?php echo $proyek['keterangan_lain'] ?>" />
-                                <div class="invalid-feedback">
-                                    <?php echo form_error('keterangan_lain') ?>
+                                    <?php echo form_error('volume') ?>
                                 </div>
                             </div>
 
@@ -89,28 +58,3 @@
 
 </div>
 <!-- End of Main Content -->
-
-<!-- Modal -->
-<!-- <div class="modal fade" id="newMenuModal" tabindex="-1" aria-labelledby="newMenuModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="newMenuModalLabel">Add New Menu</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <form action="<?= base_url('menu'); ?>" method="post">
-                <div class="modal-body">
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="menu" name="menu" placeholder="Menu name">
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary">Add</button>
-                </div>
-            </form>
-        </div>
-    </div>
-</div> -->

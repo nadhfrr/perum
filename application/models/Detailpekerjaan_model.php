@@ -5,24 +5,23 @@ class Detailpekerjaan_model extends CI_Model
     private $_table = "pekerjaan";
 
     public $id_pekerjaan;
+    public $id_rab;
     public $nama_pekerjaan;
+    public $volume;
+    public $satuan;
+    public $harga_satuan;
+    public $jumlah_harga;
 
-    // public function rules()
-    // {
-    //     return [
-    //         [
-    //             'field' => 'id_rab',
-    //             'label' => 'id_rab',
-    //             'rules' => 'required'
-    //         ],
-
-    //         [
-    //             'field' => 'nama_rab',
-    //             'label' => 'nama_rab',
-    //             'rules' => 'required'
-    //         ],
-    //     ];
-    // }
+    public function rules()
+    {
+        return [
+            [
+                'field' => 'volume',
+                'label' => 'volume',
+                'rules' => 'required'
+            ]
+        ];
+    }
 
     public function getAll()
     {
@@ -46,7 +45,7 @@ class Detailpekerjaan_model extends CI_Model
     public function save()
     {
         $post = $this->input->post();
-        $this->id_rab = $post["id_rab"];
+        $this->id_pekerjaan = $post["id_pekerjaan"];
         $this->nama_rab = $post["nama_rab"];
 
         $this->db->insert($this->_table, $this);
@@ -68,6 +67,6 @@ class Detailpekerjaan_model extends CI_Model
 
     public function delete($id)
     {
-        return $this->db->delete($this->_table, array("id_rab" => $id));
+        return $this->db->delete($this->_table, array("id_pekerjaan" => $id));
     }
 }
