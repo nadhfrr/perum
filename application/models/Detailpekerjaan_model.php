@@ -46,7 +46,7 @@ class Detailpekerjaan_model extends CI_Model
     {
         $post = $this->input->post();
         $this->id_pekerjaan = $post["id_pekerjaan"];
-        $this->nama_rab = $post["nama_rab"];
+        $this->nama_pekerjaan = $post["nama_pekerjaan"];
 
         $this->db->insert($this->_table, $this);
     }
@@ -60,9 +60,10 @@ class Detailpekerjaan_model extends CI_Model
     {
         $post = $this->input->post();
         $this->id_pekerjaan = $post["id_pekerjaan"];
-        $this->nama_pekerjaan = $post["nama_pekerjaan"];
+        $this->volume = $post["volume"];
+        $this->jumlah_harga = $post["jumlah_harga"];
 
-        $this->db->update($this->_table, $this, array('id_pekerjaan' => $post['id']));
+        $this->db->update($this->_table, $this, array('id_pekerjaan' => $post['id_pekerjaan']));
     }
 
     public function delete($id)

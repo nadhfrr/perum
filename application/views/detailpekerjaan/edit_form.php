@@ -39,6 +39,14 @@
                                 </div>
                             </div>
 
+                            <div class="form-group">
+                                <label for="jumlah_harga">Jumlah Harga</label>
+                                <input class="form-control <?php echo form_error('jumlah_harga') ? 'is-invalid' : '' ?>" type="text" name="jumlah_harga" placeholder="Keterangan Lain" value="<?php echo $dpk['jumlah_harga'] ?>" />
+                                <div class="invalid-feedback">
+                                    <?php echo form_error('jumlah_harga') ?>
+                                </div>
+                            </div>
+
                             <input class="btn btn-dark" type="submit" name="btn" value="Simpan" />
                         </form>
                     <?php endforeach; ?>
