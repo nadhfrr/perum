@@ -105,7 +105,7 @@
                                 <p>Perumahan bersubsidi dan Komersil</p>
 
                                 <div class="slider-btn">
-                                    <a href="#about" class="default-btn">
+                                    <a href="" class="default-btn">
                                         Lihat Selengkapnya
                                     </a>
                                 </div>
@@ -124,7 +124,7 @@
                                 <p><b>Hunian Asri Kawasan Berseri</b></p>
 
                                 <div class="slider-btn">
-                                    <a href="#about" class="default-btn">
+                                    <a href="" class="default-btn">
                                         Lihat Selengkapnya
                                     </a>
                                 </div>
@@ -143,7 +143,7 @@
                                 <p><b>Perumahan bersubsidi dan Komersil</b></p>
 
                                 <div class="slider-btn">
-                                    <a href="#about" class="default-btn">
+                                    <a href="" class="default-btn">
                                         Lihat Selengkapnya
                                     </a>
                                 </div>
@@ -179,10 +179,10 @@
         <div class="container">
             <div class="about-content-wrap">
                 <div class="row">
-                    <div class="col-lg-8">
+                    <div class="col-lg-7">
                         <div class="about-content">
                             <span>Tentang Kami</span>
-                            <h2>PERUMAHAN SUBSIDI DENGAN KONSEP HUNIAN HARMONIS & TERPADU DI GRESIK</h2>
+                            <h2>PERUMAHAN SUBSIDI & KOMERSIAL DENGAN KONSEP HUNIAN HARMONIS & TERPADU DI GRESIK</h2>
                             <p>PT. Kilau Intan Karunia ( KIKA ) mempersembahkan hunian eksklusif
                                 dengan sentuhan minimalis modern untuk kenyamanan anda dan keluarga. Dengan akses jalan yang mudah dijangkau menjadikan
                                 de' DIAMOND PARK menjadi kawasan potensial untuk investasi anda dimasa yang akan datang.</p>
@@ -193,9 +193,9 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-5">
                         <div class="about-img">
-                            <img src="<?= base_url('front-end/'); ?>assets/img/tentang-kami.jpg" alt="Image">
+                            <img src="<?= base_url('front-end/'); ?>assets/img/tentang-kami.jpeg" width="500" height="500" alt="Image">
                         </div>
                     </div>
                 </div>
@@ -208,7 +208,7 @@
     <section class="video-created-area ptb-100">
         <div class="container">
             <div class="video-created-wrap">
-                <img src="<?= base_url('front-end/'); ?>assets/img/video-bg.jpg" alt="Image">
+                <img src="<?= base_url('front-end/'); ?>assets/img/video-bg.jpeg" alt="Image">
 
                 <div class="video-wrap">
                     <a href="https://www.youtube.com/watch?v=r9hf2T-AKhw" class="popup-youtube">
@@ -249,7 +249,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single-blog">
                         <a href="blog-details.html">
-                            <img src="<?= base_url('front-end/'); ?>assets/img/blog/45 dp render 4.jpg" alt="Image">
+                            <img src="<?= base_url('front-end/'); ?>assets/img/blog/tipe-45.jpeg" alt="Image">
                         </a>
 
                         <div class="blog-content">
@@ -269,7 +269,8 @@
                                 <h3>Rumah Contoh Tipe 45</h3>
                             </a>
 
-                            <p>Pembangunan progres rumah contoh tipe 45 dengan luas tanah 84.</p>
+                            <p>Pembangunan progres rumah contoh tipe 45 dengan luas tanah 84. 
+                                Dilengkapi dengan 2 Kamar Tidur, 1 Kamar Mandi, 1 Dapur, dan 1 Carport.</p>
 
                             <a href="blog-details.html" class="read-more">
                                 Lihat Selengkapnya
@@ -301,7 +302,7 @@
                                 <h3>Pintu Masuk Menuju Perumahan de' Diamond Park</h3>
                             </a>
 
-                            <p>Lokasi strategis, terdekat dengan lembaga pendidikan dan puskesmas.</p>
+                            <p>Lokasi strategis, terdekat dengan lembaga pendidikan, puskesmas, dan jalan Tol.</p>
 
                             <a href="blog-details.html" class="read-more">
                                 Lihat Selengkapnya
@@ -333,7 +334,43 @@
                                 <h3>Tipe 36</h3>
                             </a>
 
-                            <p>Progres pembangunan pada rumah dengan tipe 36 dengan luas tanah 72.</p>
+                            <p>Progres pembangunan pada rumah dengan tipe 36 dengan luas tanah 72. Dilengkapi dengan 2 Kamar Tidur,
+                                1 Kamar Mandi, 1 Dapur, dan 1 Carport.
+                            </p>
+
+                            <a href="blog-details.html" class="read-more">
+                                Lihat Selengkapnya
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
+                    <div class="single-blog">
+                        <a href="blog-details.html">
+                            <img src="<?= base_url('front-end/'); ?>assets/img/blog/tipe-30.jpeg" alt="Image">
+                        </a>
+
+                        <div class="blog-content">
+                            <ul>
+                                <li>
+                                    <i class="flaticon-user"></i>
+                                    <a href="#">Admin</a>
+                                </li>
+
+                                <li>
+                                    <i class="flaticon-calendar"></i>
+                                    03/09/2018
+                                </li>
+                            </ul>
+
+                            <a href="blog-details.html">
+                                <h3>Tipe 30</h3>
+                            </a>
+
+                            <p>Progres pembangunan pada rumah dengan tipe 30 dengan luas tanah 60.
+                                Dilengkapi dengan 2 Kamar Tidur, 1 Kamar Mandi, 1 Dapur, dan 1 Carport.
+                            </p>
 
                             <a href="blog-details.html" class="read-more">
                                 Lihat Selengkapnya

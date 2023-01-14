@@ -62,7 +62,7 @@ class Detailpekerjaan extends CI_Controller
     {
         if (!isset($id_pekerjaan)) redirect('detailpekerjaan');
 
-        $data['title'] = 'Edit Daftar Rincian Detailpekerjaan';
+        $data['title'] = 'Edit Daftar Rincian Detail Pekerjaan';
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
         $where = array('id_pekerjaan' => $id_pekerjaan);
