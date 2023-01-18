@@ -36,7 +36,7 @@
                                 foreach ($rab1 as $a) : ?>
 
                                     <tr>
-                                        <th scope="row"><?= $no++ ?></th>
+                                        <th scope="row" width="90"><?= $no++ ?></th>
                                         <td width="200">
                                             <?= $a['nama_pekerjaan']; ?>
                                         </td>
