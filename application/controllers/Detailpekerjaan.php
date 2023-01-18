@@ -21,7 +21,9 @@ class Detailpekerjaan extends CI_Controller
         $data['detailpekerjaan'] = $this->db->get('pekerjaan')->result_array();
 
         $data['detailpekerjaan'] = $this->detailpekerjaan_model->pekerjaanjoin($id_pekerjaan);
-
+        // $data['gettotal'] = $this->detailpekerjaan_model->gettotal($id_pekerjaan)->result();
+        // var_dump($data['gettotal']);
+        // die();
         $this->form_validation->set_rules('detailpekerjaan', 'Detailpekerjaan', 'required');
 
         if ($this->form_validation->run() == false) {
@@ -35,6 +37,21 @@ class Detailpekerjaan extends CI_Controller
             $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">New menu added!</div>');
             redirect('detailpekerjaan');
         }
+    }
+
+    public function details($id_pekerjaan = null)
+    {
+        $data['title'] = 'Detail Daftar Pekerjaan';
+        $data["detailpekerjaan"] = $this->detailpekerjaan_model->getAll();
+
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+        $data['detailpekerjaan'] = $this->detailpekerjaan_model->pekerjaanjoin($id_pekerjaan);
+
+        $this->load->view('templates/header', $data);
+        $this->load->view('templates/sidebar', $data);
+        $this->load->view('templates/topbar', $data);
+        $this->load->view('detailpekerjaan/list', $data);
     }
 
     public function add()
@@ -62,16 +79,19 @@ class Detailpekerjaan extends CI_Controller
     {
         if (!isset($id_pekerjaan)) redirect('detailpekerjaan');
 
-        $data['title'] = 'Edit Daftar Rincian Detail Pekerjaan';
+        $data['title'] = 'Edit Daftar Rincian Detailpekerjaan';
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
         $where = array('id_pekerjaan' => $id_pekerjaan);
         $data['detailpekerjaan'] = $this->detailpekerjaan_model->edit_data($where, 'pekerjaan')->result_array();
+        $getidrab = $this->detailpekerjaan_model->edit_data($where, 'pekerjaan')->result_array();
+        $data['getidrab'] = $getidrab[0]['id_rab'];
 
         $detailpekerjaan = $this->detailpekerjaan_model;
         $validation = $this->form_validation;
         $validation->set_rules($detailpekerjaan->rules());
-
+        // var_dump($data['total']);
+        // die;
         if ($validation->run() == false) {
         } else {
             $detailpekerjaan->update();

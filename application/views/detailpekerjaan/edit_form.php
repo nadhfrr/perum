@@ -21,7 +21,8 @@
             <div class="card mb-3">
                 <div class="card-header">
 
-                    <a href="<?php echo site_url('detailpekerjaan') ?>"><i class="fas fa-arrow-left"></i> Kembali</a>
+                    <a href="<?php echo site_url('detailpekerjaan/index/' . $getidrab . '') ?>"><i class="fas fa-arrow-left"></i>
+                        Kembali</a>
                 </div>
                 <div class="card-body">
 
@@ -29,6 +30,9 @@
                         <form action="<?php base_url("proyek/edit") ?>" method="post" enctype="multipart/form-data">
 
                             <input type="hidden" name="id_pekerjaan" value="<?php echo $dpk['id_pekerjaan'] ?>" />
+                            <input type="hidden" name="id_rab" value="<?php echo $dpk['id_rab'] ?>" />
+                            <input type="hidden" name="nama_pekerjaan" value="<?php echo $dpk['nama_pekerjaan'] ?>" />
+                            <input type="hidden" name="satuan" value="<?php echo $dpk['satuan'] ?>" />
 
                             <div class="form-group">
                                 <label for="volume">Volume</label>
@@ -39,10 +43,10 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="jumlah_harga">Jumlah Harga</label>
-                                <input class="form-control <?php echo form_error('jumlah_harga') ? 'is-invalid' : '' ?>" type="text" name="jumlah_harga" placeholder="Keterangan Lain" value="<?php echo $dpk['jumlah_harga'] ?>" />
+                                <label for="harga_satuan">Harga satuan</label>
+                                <input class="form-control <?php echo form_error('harga_satuan') ? 'is-invalid' : '' ?>" type="text" name="harga_satuan" placeholder="Keterangan Lain" value="<?php echo $dpk['harga_satuan'] ?>" />
                                 <div class="invalid-feedback">
-                                    <?php echo form_error('jumlah_harga') ?>
+                                    <?php echo form_error('harga_satuan') ?>
                                 </div>
                             </div>
 

@@ -33,6 +33,7 @@
                             </thead>
                             <tbody>
                                 <?php foreach ($detailpekerjaan as $dp) : ?>
+
                                     <tr>
                                         <td>
                                             <?php echo $dp->id_pekerjaan ?>
@@ -41,17 +42,19 @@
                                             <?php echo $dp->nama_pekerjaan ?>
                                         </td>
                                         <td>
-                                            0.0
+                                            <?php echo $dp->volume ?>
                                         </td>
                                         <td>
-                                            m2
+                                            <?php echo $dp->satuan ?>
                                         </td>
                                         <td>
                                             Rp<?= number_format($dp->harga_satuan); ?>
                                         </td>
+
                                         <td>
-                                            Rp<?= number_format($dp->jumlah_harga); ?>
+                                            Rp<?= number_format($dp->volume * $dp->harga_satuan); ?>
                                         </td>
+
                                         <td>
                                             <a href="<?php echo site_url('detailpekerjaan/edit/' . $dp->id_pekerjaan) ?>" class="btn btn-small text-primary"><i class="fas fa-edit"></i> Edit</a>
                                         </td>
