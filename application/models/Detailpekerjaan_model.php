@@ -33,11 +33,13 @@ class Detailpekerjaan_model extends CI_Model
         return $this->db->get_where($this->_table, ["id_pekerjaan" => $id])->row();
     }
 
-    public function pekerjaanjoin($id)
+
+    public function pekerjaanjoin($kd_proyek, $id)
     {
         $this->db->select('*');
         $this->db->from('pekerjaan');
         $this->db->join('jenis_pekerjaan', 'jenis_pekerjaan.id_rab = pekerjaan.id_rab', 'left');
+        $this->db->where('pekerjaan.kd_proyek', $kd_proyek);
         $this->db->where('jenis_pekerjaan.id_rab', $id);
         return $this->db->get()->result();
     }

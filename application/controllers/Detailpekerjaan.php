@@ -19,10 +19,12 @@ class Detailpekerjaan extends CI_Controller
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
         $data['detailpekerjaan'] = $this->db->get('pekerjaan')->result_array();
+        $proyek = $this->db->get('pekerjaan')->row_array();
 
-        $data['detailpekerjaan'] = $this->detailpekerjaan_model->pekerjaanjoin($id_pekerjaan);
+
+        $data['detailpekerjaan'] = $this->detailpekerjaan_model->pekerjaanjoin($proyek['kd_proyek'], $id_pekerjaan);
         // $data['gettotal'] = $this->detailpekerjaan_model->gettotal($id_pekerjaan)->result();
-        // var_dump($data['gettotal']);
+        // var_dump($data['detailpekerjaan']);
         // die();
         $this->form_validation->set_rules('detailpekerjaan', 'Detailpekerjaan', 'required');
 
